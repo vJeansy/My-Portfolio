@@ -1,0 +1,50 @@
+/*acordon*/
+.section{
+    width: 70vw;
+    padding: 20px;
+    background-color: #333;
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 20px;
+}
+
+.section details h3{
+    text-align: center;
+}
+
+.section .card{
+    width: 200px;
+}
+
+summary{
+    background: #56ab2f;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #a8e063, #56ab2f);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #a8e063, #56ab2f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-size: 23px;
+    color: #ECE9E6;  /* fallback for old browsers */
+    color: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
+    color: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+summary:hover{
+    transform: scale(1.02);
+}
+
+details .card-content h3{
+    margin: auto;
+    border-radius: 15px;
+    transition: all 0.5s;
+}
+
+details .card-content h3:hover{
+    background-color: #666;
+    transform: scale(1.02);
+}

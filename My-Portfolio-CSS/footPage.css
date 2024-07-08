@@ -1,0 +1,13 @@
+
+.foot-page{
+    margin: 35px;
+    align-items: center;
+    justify-content: center;
+}
+
+.foot-page p{
+    text-align: center;
+    color: #ECE9E6;  /* fallback for old browsers */
+    color: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
+    color: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
