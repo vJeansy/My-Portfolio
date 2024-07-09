@@ -50,12 +50,18 @@
 }
 
 /*Big image*/
+.side .image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
 .side img{
     border-radius: 50%;
     width: 30vw;
     max-width: 1000px;
     min-width: 320px;
-    margin-left: 12vw;
     cursor: pointer;
 }
 

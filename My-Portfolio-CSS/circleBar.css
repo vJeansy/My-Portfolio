@@ -11,58 +11,62 @@
     }
 }
 
+/* gray area for fill */
   .circle-wrap {
     display: grid;
     grid-template-columns: repeat(1, 160px);
     grid-gap: 80px;
-    margin-top: 100px;
-    margin-left: 50px;
-    width: 150px;
-    height: 150px;
+    margin-top: 80px;
+    margin-left: 40px;
+    width: 120px;
+    height: 120px;
     background: #d9d7da;
     border-radius: 50%;
   }
   
+  /* black line size */
   .circle-wrap .circle .mask,
   .circle-wrap .circle .fill-1,
   .circle-wrap .circle .fill-2,
   .circle-wrap .circle .fill-3 {
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     position: absolute;
     border-radius: 50%;
   }
   
+  /* black wraper position */
   .circle-wrap .circle .mask {
-    clip: rect(0px, 150px, 150px, 75px);
+    clip: rect(0px, 150px, 150px, 65px);
   }
   
+  /* red center */
   .circle-wrap .inside-circle {
-    width: 124px;
-    height: 124px;
+    width: 93.5px;
+    height: 93.5px;
     border-radius: 50%;
-    background: #EF3B36;
-    line-height: 120px;
+    background: #eb381d;
+    line-height: 103px;
     text-align: center;
     margin-top: 13px;
     margin-left: 13px;
     position: absolute;
     z-index: 100;
-    font-weight: 700;
-    font-size: 1.3em;
+    font-weight: 600;
+    font-size: 1.0em;
   }
   
   /* color animation */
-  
   .mask .fill-1 {
-    clip: rect(0px, 75px, 150px, 0px);
+    clip: rect(0px, 65px, 175px, 0px);
     background-color: #000000;
   }
   
+  /* 1st bar */
   .mask.full-1,
   .circle .fill-1 {
     animation: fill-1 ease-in-out 3s;
-    transform: rotate(87deg);
+    transform: rotate(78deg);
   }
   
   @keyframes fill-1 {
@@ -70,14 +74,13 @@
       transform: rotate(0deg);
     }
     100% {
-      transform: rotate(87deg);
+      transform: rotate(78deg);
     }
   }
   
   /* 2nd bar */
-  
   .mask .fill-2 {
-    clip: rect(0px, 75px, 150px, 0px);
+    clip: rect(0px, 65px, 150px, 0px);
     background-color: #000000;
   }
   
@@ -98,14 +101,14 @@
   
   /* 3rd progress bar */
   .mask .fill-3 {
-    clip: rect(0px, 75px, 150px, 0px);
+    clip: rect(0px, 65px, 150px, 0px);
     background-color: #000000;
   }
   
   .mask.full-3,
   .circle .fill-3 {
     animation: fill-3 ease-in-out 3s;
-    transform: rotate(85deg);
+    transform: rotate(74deg);
   }
   
   @keyframes fill-3{
@@ -113,6 +116,6 @@
       transform: rotate(0deg);
     }
     100% {
-      transform: rotate(85deg);
+      transform: rotate(74deg);
     }
   }
