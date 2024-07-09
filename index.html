@@ -14,11 +14,15 @@
     <link rel="stylesheet" href="My-Portfolio-CSS/carousel.css">
     <link rel="stylesheet" href="My-Portfolio-CSS/contact.css">
     <link rel="stylesheet" href="My-Portfolio-CSS/footPage.css">
+    <link rel="stylesheet" href="My-Portfolio-CSS/circleBar.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>My Portfolio</title>
 </head>
 <body>
-    
+    <!--in navBar css for style-->
     <header>
         <div class="logo">
             <a href="###">
@@ -48,14 +52,73 @@
             </ul>
         </nav>
         <a href="#section5" class="btn">
-            <button type="button">Contact</button>
+            <button type="button">Get in touch</button>
         </a>
     </header>
 
+    <!--in aside css for style-->
     <aside>
-        <div class="title">
+        <div class="title"> <!--in header css for style-->
             <h1 id="section1">ABOUT ME</h1>
         </div>
+
+        <div class="row">
+            <div class="side">
+                <h4>WELCOME!</h4> 
+                <h5>TO JEANSY PENA</h5> 
+                <h5>PORTFOLIO</h5>
+                <span>On this portfolio you will know about me, my career as a Front-End developer
+                      and additionally see my projects developed by me and the technologies used. <br>
+                      In addition to see all my skills and capability for making a grate job when coding.
+                </span>
+            </div>
+            <div class="main">
+                <h3>Here's my proggress!</h3> 
+                <h5>Front-End Developer</h5> 
+
+                <!--in circleBar css for style-->
+                <div class="all">
+
+                    <div class="circle-wrap">
+                      <div class="circle">
+                        <div class="mask full-1">
+                          <div class="fill-1"></div>
+                        </div>
+                        <div class="mask half">
+                          <div class="fill-1"></div>
+                        </div>
+                        <div class="inside-circle"> HTML 45% </div>
+                      </div>
+                    </div>
+
+                      <div class="circle-wrap">
+                        <div class="circle">
+                          <div class="mask full-2">
+                            <div class="fill-2"></div>
+                          </div>
+                          <div class="mask half">
+                            <div class="fill-2"></div>
+                          </div>
+                          <div class="inside-circle"> JS 40% </div>
+                        </div>
+                      </div>
+
+                        <div class="circle-wrap">
+                          <div class="circle">
+                            <div class="mask full-3">
+                              <div class="fill-3"></div>
+                            </div>
+                            <div class="mask half">
+                              <div class="fill-3"></div>
+                            </div>
+                            <div class="inside-circle"> CSS 43% </div>
+                          </div>
+                        </div>
+                      </div>
+            </div>
+        </div>
+
+        <!--in aside css for style-->
 
         <div class="row">
             <div class="side">
@@ -103,11 +166,13 @@
         </div>
     </aside>
 
+    <!--in section css background for style-->
     <section>
-        <div class="title">
+        <div class="title"> <!--in header css for style-->
             <h2 id="section2">PORTFOLIO</h2>
         </div>
 
+        <!--in cards css for style-->
         <div class="card-container">
             <div class="card">
                 <img src="My-Portfolio-Icons/project-futsal.PNG" alt="project1">
@@ -119,45 +184,6 @@
                         Sed exercitationem ratione tempore.
                     </p>
                     <a href="https://vjeansy.github.io/Liga-Nacional-De-Futsal-Dominicana/" target="_blank" class="btn">See details</a>
-                </div>
-            </div>
-            <div class="card">
-                <img src="My-Portfolio-Icons/project-cocoshop.PNG" alt="project2">
-                <div class="card-content">
-                    <h3>Store Web Site</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Aliquid tempore itaque laborum similique quisquam neque
-                        odit error earum odio fugit, recusandae, quas facere vero modi est?
-                        Sed exercitationem ratione tempore.
-                    </p>
-                    <a href="" class="btn">See details</a>
-                </div>
-            </div>
-            <div class="card">
-                <img src="My-Portfolio-Icons/project-colum.PNG" alt="project3">
-                <div class="card-content">
-                    <h3>Colum Website</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Aliquid tempore itaque laborum similique quisquam neque
-                        odit error earum odio fugit, recusandae, quas facere vero modi est?
-                        Sed exercitationem ratione tempore.
-                    </p>
-                    <a href="" class="btn">See details</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="card-container">
-            <div class="card">
-                <img src="My-Portfolio-Icons/project-futsal.PNG" alt="project1">
-                <div class="card-content">
-                    <h3>Futsal Web Page</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Aliquid tempore itaque laborum similique quisquam neque
-                        odit error earum odio fugit, recusandae, quas facere vero modi est?
-                        Sed exercitationem ratione tempore.
-                    </p>
-                    <a href="" class="btn">See details</a>
                 </div>
             </div>
             <div class="card">
@@ -223,13 +249,53 @@
                     <a href="" class="btn">See details</a>
                 </div>
             </div>
+        </div>
+
+        <div class="card-container">
+            <div class="card">
+                <img src="My-Portfolio-Icons/project-futsal.PNG" alt="project1">
+                <div class="card-content">
+                    <h3>Futsal Web Page</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Aliquid tempore itaque laborum similique quisquam neque
+                        odit error earum odio fugit, recusandae, quas facere vero modi est?
+                        Sed exercitationem ratione tempore.
+                    </p>
+                    <a href="" class="btn">See details</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="My-Portfolio-Icons/project-cocoshop.PNG" alt="project2">
+                <div class="card-content">
+                    <h3>Store Web Site</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Aliquid tempore itaque laborum similique quisquam neque
+                        odit error earum odio fugit, recusandae, quas facere vero modi est?
+                        Sed exercitationem ratione tempore.
+                    </p>
+                    <a href="" class="btn">See details</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="My-Portfolio-Icons/project-colum.PNG" alt="project3">
+                <div class="card-content">
+                    <h3>Colum Website</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Aliquid tempore itaque laborum similique quisquam neque
+                        odit error earum odio fugit, recusandae, quas facere vero modi est?
+                        Sed exercitationem ratione tempore.
+                    </p>
+                    <a href="" class="btn">See details</a>
+                </div>
+            </div>
         </div>-->
 
     </section>
 
         <article class="bg-dark">
 
-            <div class="title">
+            <!--in acrodeon css for style-->
+            <div class="title"> <!--in header css for style-->
                 <h2 id="section3">SKILLS</h2>
             </div>
             <!--Acordeon swith skills inside-->
@@ -326,10 +392,11 @@
                 </details>
             </div>
     
-            <div class="title">
+            <div class="title"> <!--in header css for style-->
                 <h2 id="section4">CERTIFICATES</h2>
             </div>
     
+            <!--in carousel css for style-->
             <div class="slider-box">
     
                 <ul>
@@ -364,7 +431,9 @@
                 </ul>
             </div>
 
-            <div class="title">
+            <!--in contact css for style-->
+
+            <div class="title"> <!--in header css for style-->
                 <h2 id="section5">CONTACT</h2>
             </div>
 
@@ -380,6 +449,8 @@
         </article>
 
     <script>src = "navBar.js"</script>
+
+    <!--in footPage css for style-->
     <footer>
         <div class="foot-page">
             <p>Web designed and developed in 2024 by: Jeansy Peña <br>

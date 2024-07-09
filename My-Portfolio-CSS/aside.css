@@ -5,39 +5,22 @@
     flex-wrap: wrap;
 }
 
-/*Big image*/
-.side img{
-    border-radius: 700px;
-    width: 30vw;
-    max-width: 1000px;
-    min-width: 320px;
-    margin: auto;
-    cursor: pointer;
-    box-shadow: 10px 10px 5px #a6aa9f;
-    transition: all 0.3s;
-}
-
-.side img:hover{
+/*.side img:hover{
     transform: scale(0.8);
-}
+}*/
 
 /*rows*/
 .row{
-    background: #232526;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */              
+    background: #EF3B36;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFFFFF, #ef6a36);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFFFFF, #ef6a36); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */               
     display: flex;
     flex-wrap: wrap;
     border-style: outset;
-    box-shadow: #bdc3c7;  /* fallback for old browsers */
-    box-shadow: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
-    box-shadow: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    cursor: pointer;
-    transition: all 0.5s;
-}
-
-.row:hover{
-    transform: scale(0.9);
+    border-color: #EF3B36;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
 }
 
 /*Left side*/
@@ -48,32 +31,36 @@
 }
 
 .side h3{
-    color: #56ab2f;  /* fallback for old browsers */
-    color: -webkit-linear-gradient(to right, #a8e063, #56ab2f);  /* Chrome 10-25, Safari 5.1-6 */
-    color: linear-gradient(to right, #a8e063, #56ab2f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    text-shadow: 1px 1px 2px black, 0 0 25px #a4ec16, 0 0 5px yellowgreen;
-    -webkit-text-stroke: 0.5px #000;
+    text-align: center;
     padding: 3px 5px;
     margin: 0 15px;
-    font-size: 2em;
-    cursor: pointer;
 }
 
 .side h2{
-    text-shadow: 1px 1px 2px black, 0 0 25px #a4ec16, 0 0 5px yellowgreen;
-    color: #56ab2f;  /* fallback for old browsers */
-    color: -webkit-linear-gradient(to right, #a8e063, #56ab2f);  /* Chrome 10-25, Safari 5.1-6 */
-    color: linear-gradient(to right, #a8e063, #56ab2f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    -webkit-text-stroke: 0.5px #000;
     text-align: center;
-    font-size: 3em;
+}
+
+.side h4{
+    font-size: 40px;
+}
+
+.side h5{
+    font-size: 55px;
+    margin-bottom: 5px;
+}
+
+/*Big image*/
+.side img{
+    border-radius: 50%;
+    width: 30vw;
+    max-width: 1000px;
+    min-width: 320px;
+    margin-left: 12vw;
     cursor: pointer;
 }
 
 .side p{
-    color: #ECE9E6;  /* fallback for old browsers */
-    color: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
-    color: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #222222;
     text-align: center;
     font-size: 1.2em;
 }
@@ -83,53 +70,20 @@
     flex: 40%;
     padding: 20px;
     margin: 10px;
-    /*background-color: #cacaca;*/
-    /*background-image: url(..//My-Portfolio-Icons/codepic.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: auto;*/
-    background: #232526;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */                   
-    border-radius: 50px;
 }
 
 .main h3{
     text-align: center;
-    -webkit-text-stroke: 1px #000;
     font-size: 2.5em;
-    color: #56ab2f;  /* fallback for old browsers */
-    color: -webkit-linear-gradient(to right, #a8e063, #56ab2f);  /* Chrome 10-25, Safari 5.1-6 */
-    color: linear-gradient(to right, #a8e063, #56ab2f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    text-shadow: 1px 1px 2px black, 0 0 25px #a4ec16, 0 0 5px yellowgreen;
-    cursor: pointer;
-    transition: all 0.3s;
 }
 
-.main h3:hover{
-    border-radius: 20px;
-    color: #ECE9E6;  /* fallback for old browsers */
-    color: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
-    color: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background: #56ab2f;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #a8e063, #56ab2f);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #a8e063, #56ab2f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    transform: scale(1.03);
+.main h5{
+    text-align: center;
+    margin-top: 5px;
+    font-size: 1.5em;
 }
 
 .main p{
     font-size: 1.2em;
-    color: #ECE9E6;  /* fallback for old browsers */
-    color: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
-    color: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     transition: 0.5s;
-    cursor: pointer;
-}
-
-.main p:hover{
-    background: #232526;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    border-radius: 10px;
-    transform: scale(1.02);
 }
