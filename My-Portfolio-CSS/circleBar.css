@@ -1,4 +1,4 @@
-.all{
+.all{ /* circleBar container */
     justify-content: center;
     align-content: center;
     display: flex;
@@ -11,37 +11,33 @@
     }
 }
 
-/* gray area for fill */
-  .circle-wrap {
+  .circle-wrap { /* gray area for fill */
     display: grid;
     grid-template-columns: repeat(1, 160px);
     grid-gap: 80px;
-    margin-top: 80px;
-    margin-left: 40px;
+    margin-top: 40px;
+    margin-left: 30px;
     width: 120px;
     height: 120px;
     background: #d9d7da;
     border-radius: 50%;
   }
   
-  /* black line size */
   .circle-wrap .circle .mask,
   .circle-wrap .circle .fill-1,
   .circle-wrap .circle .fill-2,
-  .circle-wrap .circle .fill-3 {
+  .circle-wrap .circle .fill-3 { /* black line size */
     width: 120px;
     height: 120px;
     position: absolute;
     border-radius: 50%;
   }
   
-  /* black wraper position */
-  .circle-wrap .circle .mask {
+  .circle-wrap .circle .mask {  /* black wraper position */
     clip: rect(0px, 150px, 150px, 65px);
   }
   
-  /* red center */
-  .circle-wrap .inside-circle {
+  .circle-wrap .inside-circle { /* red center */
     width: 93.5px;
     height: 93.5px;
     border-radius: 50%;
@@ -56,20 +52,18 @@
     font-size: 1.0em;
   }
   
-  /* color animation */
-  .mask .fill-1 {
+  .mask .fill-1 {  /* color animation */
     clip: rect(0px, 65px, 175px, 0px);
     background-color: #000000;
   }
   
-  /* 1st bar */
   .mask.full-1,
-  .circle .fill-1 {
+  .circle .fill-1 { /* 1st bar */
     animation: fill-1 ease-in-out 3s;
     transform: rotate(78deg);
   }
   
-  @keyframes fill-1 {
+  @keyframes fill-1 { /* black fill animation/rotation */
     0% {
       transform: rotate(0deg);
     }
@@ -90,7 +84,7 @@
     transform: rotate(10deg);
   }
   
-  @keyframes fill-2{
+  @keyframes fill-2{ /* black fill animation/rotation */
     0% {
       transform: rotate(0deg);
     }
@@ -111,7 +105,7 @@
     transform: rotate(74deg);
   }
   
-  @keyframes fill-3{
+  @keyframes fill-3{ /* black fill animation/rotation */
     0% {
       transform: rotate(0deg);
     }

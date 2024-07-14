@@ -1,16 +1,6 @@
-/*Auto container*/
-.container{
-    margin: 25px 10%;
-    display: flex;
-    flex-wrap: wrap;
-}
 
-/*.side img:hover{
-    transform: scale(0.8);
-}*/
 
-/*rows*/
-.row{
+.row{ /* 1st row */
     background: #EF3B36;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #FFFFFF, #ef6a36);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #FFFFFF, #ef6a36); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */               
@@ -23,21 +13,10 @@
     border-right: 0;
 }
 
-/*Left side*/
-.side{
+
+.side{ /*1st Left side */
     flex: 52.3%;
-    padding: 20px;
-    margin-left: 5px;
-}
-
-.side h3{
-    text-align: center;
-    padding: 3px 5px;
-    margin: 0 15px;
-}
-
-.side h2{
-    text-align: center;
+    padding: 0px 20px;
 }
 
 .side h4{
@@ -46,50 +25,88 @@
 
 .side h5{
     font-size: 55px;
-    margin-bottom: 5px;
+    
 }
 
-/*Big image*/
-.side .image{
+.side span{
+    text-align: center;
+    font-size: 1.2em;
+}
+
+
+.main{ /* 1st right side */
+    flex: 40%;
+    padding: 20px;
+    margin: 10px;
+}
+
+.main h4{
+    text-align: center;
+    font-size: 40px;
+}
+
+.main h5{
+    text-align: center;
+    margin-top: 5px;
+    font-size: 55px;
+}
+
+
+.row-2{ /* 2nd row */
+    background: #EF3B36;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFFFFF, #ef6a36);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFFFFF, #ef6a36); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */               
+    display: flex;
+    flex-wrap: wrap;
+    border-style: outset;
+    border-color: #EF3B36;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+}
+
+.side-2{ /* 2nd left side */
+    flex: 52.3%;
+    padding: 0px 20px;
+}
+
+.side-2 h2{
+    text-align: center;
+    padding: 15px;
+    font-size: 30px;
+}
+
+.side-2 p{
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.side-2 .image{ /* Big image */
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 45px;
-    margin-bottom: 45px;
+    margin: 80px 0px ;
 }
-.side img{
-    border-radius: 50%;
+
+.side-2 img{
+    border-radius: 10%;
     width: 30vw;
     max-width: 1000px;
     min-width: 320px;
     cursor: pointer;
 }
 
-.side p{
-    color: #222222;
-    text-align: center;
-    font-size: 1.2em;
-}
-
-/*right side*/
-.main{
+.main-2{ /* 2nd right side */
     flex: 40%;
     padding: 20px;
     margin: 10px;
 }
 
-.main h3{
+.main-2 h2{
     text-align: center;
-    font-size: 2.5em;
+    font-size: 30px;
 }
 
-.main h5{
-    text-align: center;
-    margin-top: 5px;
-    font-size: 1.5em;
-}
-
-.main p{
+.main-2 p{
     font-size: 1.2em;
-    transition: 0.5s;
 }

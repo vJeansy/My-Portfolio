@@ -1,13 +1,14 @@
 
-.contact{
+.contact{ /* contacts container */
     background: #EF3B36;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #FFFFFF, #ef6a36);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #FFFFFF, #ef6a36); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     align-items: center;
-   justify-content: center;
+    justify-content: center;
+    padding: 15px 0px 0px 0px;
 }
 
-.contact ul{
+.contact ul{ /* contacts container of list */
     align-items: center;
     justify-content: center;
     display: flex;
@@ -16,16 +17,16 @@
     height: auto;
 }
 
-.contact li{
-    margin: 50px;
+.contact li{ /* contacts list */
+    margin: 10px 35px;
     transition: all 0.5s;
 }
 
-.contact li:hover{
+.contact li:hover{ /* contacts list animantion */
     transform: scale(1.1);
 }
 
-.contact ul li a{
+.contact ul li a{ 
     color: #000000;
     font-size: 75px;
 }

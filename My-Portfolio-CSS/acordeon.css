@@ -1,5 +1,5 @@
-/*acordon*/
-.section{
+
+.section{ /* acordon container */
     width: 70vw;
     padding: 20px;
     background-color: #f9ebeb;
@@ -11,26 +11,31 @@
     border-radius: 20px;
 }
 
-.section details h3{
+.section details h3{ /* acordon bars */
     text-align: center;
+    font-weight: 700;
 }
 
-.section .card{
-    width: 200px;
+.section details .card-container{
+    transition: all 5s;
 }
 
-summary{
+summary{ /* acordon tittle */
     background: #de614e;
     font-size: 23px;
     padding: 20px;
     text-align: center;
     border-radius: 20px;
     cursor: pointer;
-    transition: all 0.5s;
+    transition: all 0.5s ease;
 }
 
 summary:hover{
     transform: scale(1.02);
+}
+
+.section .card{ /* acordon card with little bit changes since entired card body is taken from card.css*/
+    width: 200px;
 }
 
 details .card-content h3{

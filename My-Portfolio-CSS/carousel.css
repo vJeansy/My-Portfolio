@@ -1,29 +1,29 @@
-.slider-box{
+.slider-box{ /* slider container */
     width: 1280px;
     height: auto;
     margin: 50px auto 0;
     overflow: hidden;
 }
 
-.slider-box ul{
+.slider-box ul{ /* slider container list */
     display: flex;
     padding: 0;
     width: 400%;
     animation: slide 20s infinite alternate ease-in-out;
 }
 
-.slider-box li{
+.slider-box li{ /* slider list of image */
     width: 100%;
     position: absolute;
     position: relative;
 }
 
-.slider-box img{
+.slider-box img{ /* slider image shape */
     width: 100%;
     cursor: pointer;
 }
 
-@keyframes slide {
+@keyframes slide { /* slider autoPlay */
     0% { margin-left: 0%;}
     20% { margin-left: 0%;}
 
@@ -37,7 +37,7 @@
     100% { margin-left: -300%;}
 }
 
-@media(max-width:991px) {
+@media(max-width:991px) { /* slider for smaller screen */
 
     .slider-box{
         width: 100%;

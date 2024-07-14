@@ -1,7 +1,6 @@
-header{
+header{ /* navBar bg and parameters */
     width: 100%;
-    height: 75px;
-    padding: 0 25px;
+    height: 65px;
     background: #EF3B36;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #FFFFFF, #ef6a36);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #FFFFFF, #ef6a36); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
@@ -11,15 +10,11 @@ header{
     justify-content: space-around;
 }
 
-/*logo*/
-header .logo{
-    cursor: pointer;
-}
-
-header .logo img{
-    height: 55px;
+header .logo img{ /* logo */
+    height: 40px;
     width: auto;
     border-radius: 10em;
+    cursor: pointer;
     transition: all 0.5s;
 }
 
@@ -27,19 +22,17 @@ header .logo img:hover{
     transform: scale(1.2);
 }
 
-/*bars*/
-
-.bars{
+.bars{ /* navbar for small screen */
     display: none;
 }
 
-/*list nav*/
-.nav-bar ul{
+
+.nav-bar ul{ /* un-ordered list nav */
     display: flex;
     flex-wrap: wrap;
 }
 
-.nav-bar li a{
+.nav-bar li a{ /* navBar links */
     display: block;
     text-decoration: none;
     color: #000000;
@@ -53,12 +46,11 @@ header .logo img:hover{
     color: #FFFFFF;
 }
 
-.nav-bar li a.active{
+.nav-bar li a.active{ /* navBar link active */
     color: #ffffff;
 }
 
-/*Button style*/
-.btn{
+.btn{ /* Button style */
     padding: 10px 0;
     flex-wrap: wrap;
 }

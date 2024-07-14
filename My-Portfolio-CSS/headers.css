@@ -1,10 +1,30 @@
-.title{
-    padding: 25px 0;
-    margin: 85px 10px;
+.title{ /* Section tittles */
+    padding: 7px 0;
+    margin: 85px 10px 25px 10px;
     text-align: center;
     border-style: groove;
     border-color: #EF3B36;
     border-top: 0;
     border-left: 0;
     border-right: 0;
+}
+
+.roll-up-container .btn-float .btn-roll-up{
+    font-size: 4rem;
+    font-weight: bold;
+    position: fixed;
+    right: 50px;
+    bottom: 70px;
+}
+
+.roll-up-container .btn-float a{
+    color: #EF3B36;
+    opacity: 50%;
+    transition: all 0.3s;
+}
+
+.roll-up-container .btn-float a:hover{
+    opacity: 100%;
+    box-shadow: #EF3B36;
+    transform: scale(1.1);
 }

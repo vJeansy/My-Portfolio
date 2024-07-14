@@ -22,8 +22,8 @@
     <title>My Portfolio</title>
 </head>
 <body>
-    <!--in navBar css for style-->
-    <header>
+    
+    <header> <!-- in navBar.css for style -->
         <div class="logo">
             <a href="###">
                 <img src="My-Portfolio-Icons/Logo.JPG" alt="vJeansy">
@@ -56,9 +56,9 @@
         </a>
     </header>
 
-    <!--in aside css for style-->
-    <aside>
-        <div class="title"> <!--in header css for style-->
+    
+    <aside><!-- in aside.css for style -->
+        <div class="title"> <!-- in header.css for style of all tittles -->
             <h1 id="section1">ABOUT ME</h1>
         </div>
 
@@ -68,16 +68,16 @@
                 <h5>TO JEANSY PENA</h5> 
                 <h5>PORTFOLIO</h5>
                 <span>On this portfolio you will know about me, my career as a Front-End developer
-                      and additionally see my projects developed by me and the technologies used. <br>
+                      and additionally see my projects developed by me and the technologies used.
                       In addition to see all my skills and capability for making a grate job when coding.
                 </span>
             </div>
             <div class="main">
-                <h3>Here's my proggress!</h3> 
+                <h4>Here's my proggress!</h4> 
                 <h5>Front-End Developer</h5> 
 
-                <!--in circleBar css for style-->
-                <div class="all">
+                
+                <div class="all"><!-- in circleBar.css for style -->
 
                     <div class="circle-wrap">
                       <div class="circle">
@@ -118,19 +118,18 @@
             </div>
         </div>
 
-        <!--in aside css for style-->
 
-        <div class="row">
-            <div class="side">
-                <h3>THIS IS ME!</h3>
+        <div class="row-2"><!-- in aside.css for style -->
+            <div class="side-2">
+                <h2>THIS IS ME!</h2>
                 <div class="image">
                     <img src="My-Portfolio-Icons/Logo.JPG" alt="vJeansy">
                 </div>
                 <h2>JEANSY PENA</h2>
                 <p>Just do it! There is no worse diligence than that which is not done.</p>
             </div>
-            <div class="main">
-                <h3>KNOW MORE ABOUT ME</h3> <br><br>
+            <div class="main-2">
+                <h2>KNOW MORE ABOUT ME</h2> <br><br>
                 <p>I am a 22 years old 
                     graduate from 
                     Instituto Técnico Superior 
@@ -144,7 +143,7 @@
                     available technological 
                     platform and provide 
                     solutions. </p> <br><br>
-                    <h3>PERSONAL SUMMARY</h3> <br><br>
+                    <h2>PERSONAL SUMMARY</h2> <br><br>
                     <p>Among my tastes and 
                         hobbies are reading books, 
                         watching documentaries, 
@@ -152,7 +151,7 @@
                         I also like sports, exercising in 
                         the morning and challenging 
                         myself. </p> <br><br>
-                        <h3>ABOUT MY KNOWLEDGES</h3> <br><br>
+                        <h2>ABOUT MY KNOWLEDGES</h2> <br><br>
                         <p>I stated my career as IT support at the INSTITUTO TECNICO SUPERIOR COMUNITARIO (ITSC).
                             During that time I stated learning english with the ENGLISH INMERSION PROGRAM for a whole
                             year. While working as a Supervisor of a team in a call center, I stated to learn coding
@@ -168,14 +167,12 @@
         </div>
     </aside>
 
-    <!--in section css background for style-->
-    <section>
-        <div class="title"> <!--in header css for style-->
+    <section> <!-- in section.css background for style -->
+        <div class="title"> <!-- in header.css for style of all tittles -->
             <h2 id="section2">PORTFOLIO</h2>
         </div>
 
-        <!--in cards css for style-->
-        <div class="card-container">
+        <div class="card-container"> <!-- in cards.css for style of all cards, including cards for skills -->
             <div class="card">
                 <img src="My-Portfolio-Icons/project-futsal.PNG" alt="project1">
                 <div class="card-content">
@@ -292,18 +289,15 @@
             </div>
         </div>-->
 
-    </section>
+        <article class="bg-dark"> <!-- in article.css for style and bg -->
 
-        <article class="bg-dark">
-
-            <!--in acrodeon css for style-->
-            <div class="title"> <!--in header css for style-->
+            <div class="title"> <!-- in header.css for style of all tittles -->
                 <h2 id="section3">SKILLS</h2>
             </div>
-            <!--Acordeon swith skills inside-->
+            <!-- Acordeon swith skills inside -->
             <div class="section">
-                <!--Front-end skills-->
-                <details>
+                <!-- Front-end skills -->
+                <details open> <!-- in acrodeon.css for style -->
                     <summary>Front-End</summary>
                     <div class="card-container">
                         <div class="card">
@@ -394,12 +388,11 @@
                 </details>
             </div>
     
-            <div class="title"> <!--in header css for style-->
+            <div class="title"> <!-- in header.css for style of all tittles -->
                 <h2 id="section4">CERTIFICATES</h2>
             </div>
     
-            <!--in carousel css for style-->
-            <div class="slider-box">
+            <div class="slider-box"> <!-- in carousel.css for style -->
     
                 <ul>
                     <li>
@@ -433,13 +426,11 @@
                 </ul>
             </div>
 
-            <!--in contact css for style-->
-
-            <div class="title"> <!--in header css for style-->
+            <div class="title"> <!-- in header.css for style of all tittles -->
                 <h2 id="section5">CONTACT</h2>
             </div>
 
-            <div class="contact">
+            <div class="contact"> <!-- in contact.css for style -->
                <ul>
                 <li><a href="https://www.linkedin.com/in/jeansy-peña-b575721b0/" target="_blank"><i class="bi bi-linkedin"></i></a></li>
                 <li><a href="https://github.com/vJeansy" target="_blank"><i class="bi bi-github"></i></a></li>
@@ -450,15 +441,22 @@
             </div>
         </article>
 
-    <script>src = "navBar.js"</script>
+    </section>
 
-    <!--in footPage css for style-->
-    <footer>
+    <div class="roll-up-container">
+        <div class="btn-float">
+            <a class="btn-roll-up" href="#section1"><i class="bi bi-arrow-up-circle-fill"></i></a> <!-- roll up icon in header for css style-->
+        </div>
+    </div>
+
+    <script>src = "My-Portfolio-js/navBar/js"</script>
+</body>
+
+    <footer> <!-- in footPage css for style -->
         <div class="foot-page">
             <p>Web designed and developed in 2024 by: Jeansy Peña <br>
                 All rights reserved ©.</p>
         </div>
     </footer>
-</body>
 
 </html>
