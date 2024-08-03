@@ -81,7 +81,7 @@
   .mask.full-2,
   .circle .fill-2 {
     animation: fill-2 ease-in-out 3s;
-    transform: rotate(10deg);
+    transform: rotate(45deg);
   }
   
   @keyframes fill-2{ /* black fill animation/rotation */
@@ -89,7 +89,7 @@
       transform: rotate(0deg);
     }
     100% {
-      transform: rotate(10deg);
+      transform: rotate(45deg);
     }
   }
   

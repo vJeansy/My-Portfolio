@@ -17,6 +17,13 @@
     bottom: 70px;
 }
 
+@media (max-width: 950px) {
+    .roll-up-container .btn-float .btn-roll-up {
+        right: 15px;
+        bottom: 15px;
+    }
+}
+
 .roll-up-container .btn-float a{
     color: #EF3B36;
     opacity: 50%;
