@@ -1,0 +1,26 @@
+[
+    {
+        "tittle": "Futsal Web Page",
+        "direction": "My-Portfolio-Icons/project/Futsal Dominicana/",
+        "description": "Template for a National Futsal League page based on that of Dominican Republic, with the purpose of showing the games and statistics of these during the tournament. It is also important to highlight that it has been designed to place sponsorship advertising.",
+        "pageUrl": "https://vjeansy.github.io/Liga-Nacional-De-Futsal-Dominicana/",
+        "gitUrl": "https://github.com/vJeansy/Liga-Nacional-De-Futsal-Dominicana",
+        "type": "project"
+    },
+    {
+        "tittle": "Tic Tac Toe",
+        "direction": "My-Portfolio-Icons/project/Tic Tac Toe/",
+        "description": "Template for this Classic game that probably will bring some memories to you. You can now play it here and have fun for a while! Do not forget to play hard, we created a machine that will beat you so you do not have it easy. You better whatch out your clicks!",
+        "pageUrl": "https://vjeansy.github.io/Juego-Conecta-Tres/",
+        "gitUrl": "https://github.com/vJeansy/Juego-Conecta-Tres",
+        "type": "project"
+    },
+    {
+        "tittle": "Online Store",
+        "direction": "My-Portfolio-Icons/project/Online Store/",
+        "description": "This template for an online store it's really interactive and with many options to choose and even to expand if needed, this website was created with some technologies such as Bootstrap, JavaScript, and others you can see in details button. hope you like this interactive web application.",
+        "pageUrl": "https://vjeansy.github.io/Oline-Store/",
+        "gitUrl": "https://github.com/vJeansy/Oline-Store",
+        "type": "project"
+    }
+]

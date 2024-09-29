@@ -1,0 +1,38 @@
+[
+    {
+        "name": "(Coursera) Introduction to Front-End Development",
+        "direction": "My-Portfolio-Icons/certificate/",
+        "school": "COURSERA",
+        "type": "certificate"
+    },
+    {
+        "name": "(Coursera) Programming with JS",
+        "direction": "My-Portfolio-Icons/certificate/",
+        "school": "COURSERA",
+        "type": "certificate"
+    },
+    {
+        "name": "(Coursera) Version Control",
+        "direction": "My-Portfolio-Icons/certificate/",
+        "school": "COURSERA",
+        "type": "certificate"
+    },
+    {
+        "name": "(FUNDACION CARLOS SLIM) Tecnico en redes de datos",
+        "direction": "My-Portfolio-Icons/certificate/",
+        "school": "FUNDACION CARLOS SLIM",
+        "type": "certificate"
+    },
+    {
+        "name": "(FUNDACION CARLOS SLIM) Tecnico en seguridad informatica (analisis de riesgo)",
+        "direction": "My-Portfolio-Icons/certificate/",
+        "school": "FUNDACION CARLOS SLIM",
+        "type": "certificate"
+    },
+    {
+        "name": "(ITSC) TECNICO SUPERIOR EN IT SUPPORT",
+        "direction": "My-Portfolio-Icons/certificate/",
+        "school": "ITSC",
+        "type": "certificate"
+    }
+]

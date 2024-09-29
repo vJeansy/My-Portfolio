@@ -1,88 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>My Portfolio</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./My-Portfolio-Icons/react_icon_130845.ico">
-    <link rel="stylesheet" href="My-Portfolio-CSS/index.css">
-    <link rel="stylesheet" href="My-Portfolio-CSS/aside.css">
-    <link rel="stylesheet" href="My-Portfolio-CSS/section.css">
-    <link rel="stylesheet" href="My-Portfolio-CSS/article.css">
-    <link rel="stylesheet" href="My-Portfolio-CSS/navBar.css">
-    <link rel="stylesheet" href="My-Portfolio-CSS/headers.css">
-    <link rel="stylesheet" href="My-Portfolio-CSS/cards.css">
+    <!-- MetaData -->
+    <meta property="og:tittle" content="Jeansy's portafolio">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="react_icon_130845.ico">
+    <meta property="og:url" content="https://vjeansy.github.io/My-Portfolio/">
+    <meta property="og:description" content="Jeansy Peña, passionate Front-End Developer with expertise in HTML, CSS, JavaScript, and Bootstrap. With a solid background in IT support and data management, I build modern, responsive websites that bring ideas to life. Explore my projects and let's create something amazing together!" />
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="My Portfolio">
+    <!-- CSS files/links -->
+    <link rel="stylesheet" href="./My-Portfolio-CSS/index.css">
     <link rel="stylesheet" href="My-Portfolio-CSS/acordeon.css">
-    <link rel="stylesheet" href="My-Portfolio-CSS/carousel.css">
-    <link rel="stylesheet" href="My-Portfolio-CSS/contact.css">
-    <link rel="stylesheet" href="My-Portfolio-CSS/footPage.css">
     <link rel="stylesheet" href="My-Portfolio-CSS/circleBar.css">
+    <link rel="stylesheet" href="./My-Portfolio-CSS/animations.css">
+    <!-- Frameworks and Librery -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <title>My Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
-<body>
-    
-    <header> <!-- in navBar.css for style -->
-        <div class="logo">
-            <a href="###">
-                <img src="My-Portfolio-Icons/Logo.JPG" alt="vJeansy">
-            </a>
-        </div>
-        <div class="bars">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-        </div>
-
-        <nav class="nav-bar">
-            <ul>
-                <li>
-                    <a href="#section1" class="active">About</a>
-                </li>
-                <li>
-                    <a href="#section2">Portfolio</a>
-                </li>
-                <li>
-                    <a href="#section3">Skills</a>
-                </li>
-                <li>
-                    <a href="#section4">Certificates</a>
-                </li>
+<body class="container">
+    <nav class="navbar navbar-expand-lg text-center p-lg-4">
+        <div class="container-fluid ms-md-5 d-flex align-items-center justify-content-between">
+            <!-- Logo -->
+            <a class="navbar-brand" href="./index.html">
+                <img src="./My-Portfolio-Icons/Logo.JPG" alt="Logo" id="logo" width="auto" height="40" style="border-radius: 50%;">
+              </a>
+              <!-- navbar button for small screens -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- Nav links -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 fs-5">
+              <li class="nav-item me-lg-5">
+                <a class="nav-link" aria-current="page" href="#section1">About</a>
+              </li>
+              <li class="nav-item me-lg-5">
+                <a class="nav-link" aria-current="page" href="#section2">Projects</a>
+              </li>
+              <li class="nav-item me-lg-5">
+                <a class="nav-link" aria-current="page" href="#section3">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#section4">Certificates</a>
+              </li>
             </ul>
-        </nav>
-        <a href="#section5" class="btn">
-            <button type="button">Get in touch</button>
-        </a>
-    </header>
-
-    
-    <aside><!-- in aside.css for style -->
-        <div class="title"> <!-- in header.css for style of all tittles -->
-            <h1 id="section1">ABOUT ME</h1>
+            <!-- Get in touch button -->
+            <a href="#section5" class="me-lg-5 align-items-center form">
+              <button class="btn fw-bold" type="button">Get in touch</button>
+            </a>
+          </div>
         </div>
-
-        <div class="row">
-            <div class="side">
-                <h4>WELCOME!</h4> 
-                <h5>TO JEANSY PENA</h5> 
-                <h5>PORTFOLIO</h5>
-                <span>On this portfolio I introduce myself and my path to the career as a Front-End developer
-                      Additionally I developed my web portfolio for you to see all my projects and the 
-                      technologies used. In addition to see all my skills and capability for making a 
-                      grate job when coding.
+      </nav>
+      <!-- ABOUT ME -->
+    <article class="container"><!-- in aside.css for style -->
+        <div class="p-4 m-4 text-center border-bottom">
+            <h2 id="section1" class="fs-3 fw-bold">ABOUT ME</h2>
+        </div>
+        <!-- left side -->
+        <div class="row g-3 mb-5 mt-5">
+            <div id="about-me" class="col ms-md-5">
+                <h4 class="fw-bold fs-6 text-secondary-emphasis">Hi, my name is</h4> 
+                <h5 class="fw-bold fs-1">JEANSY PENA</h5> 
+                <h5 class="fw-bold fs-2 text-secondary-emphasis">I Build things for the web.</h5>
+                <span class="fs-5 text-light">I’m a software engineer specializing in building 
+                    (and occasionally designing) exceptional digital experiences. Front-End developer focus on
+                    UX|UI.
                 </span>
             </div>
-            <div class="main">
-                <h4>Here's my proggress!</h4> 
-                <h5>Front-End Developer</h5> 
-
-                
-                <div class="all"><!-- in circleBar.css for style -->
-
-                    <div class="circle-wrap">
-                      <div class="circle">
+        <div class="col text-center">
+            <h4 class="fw-bold fs-1">Here's my proggress!</h4>
+            <h5 class="fw-bold text-secondary-emphasis">Front-End Developer</h5> 
+            <!-- Right side -->
+            <div class="all">
+                <!-- in circleBar.css for style -->
+                 <!-- HTML PROGRESS -->
+                <div class="circle-wrap">
+                    <div class="circle">
                         <div class="mask full-1">
                           <div class="fill-1"></div>
                         </div>
@@ -92,220 +93,75 @@
                         <div class="inside-circle"> HTML 45% </div>
                       </div>
                     </div>
-
-                      <div class="circle-wrap">
-                        <div class="circle">
-                          <div class="mask full-2">
+                    <!-- JS PROGRESS -->
+                <div class="circle-wrap">
+                    <div class="circle">
+                        <div class="mask full-2">
                             <div class="fill-2"></div>
-                          </div>
-                          <div class="mask half">
+                        </div>
+                        <div class="mask half">
                             <div class="fill-2"></div>
-                          </div>
-                          <div class="inside-circle"> JS 35% </div>
+                        </div>
+                        <div class="inside-circle"> JS 35% </div>
                         </div>
                       </div>
-
-                        <div class="circle-wrap">
-                          <div class="circle">
-                            <div class="mask full-3">
-                              <div class="fill-3"></div>
+                    <!-- CSS PROGRESS -->
+                <div class="circle-wrap">
+                    <div class="circle">
+                        <div class="mask full-3">
+                            <div class="fill-3"></div>
                             </div>
                             <div class="mask half">
                               <div class="fill-3"></div>
                             </div>
                             <div class="inside-circle"> CSS 43% </div>
-                          </div>
                         </div>
-                      </div>
-            </div>
-        </div>
-
-
-        <div class="row-2"><!-- in aside.css for style -->
-            <div class="side-2">
-                <h2>THIS IS ME!</h2>
-                <div class="image">
-                    <img src="My-Portfolio-Icons/Logo.JPG" alt="vJeansy">
-                </div>
-
-                <h2>PERSONAL SUMMARY</h2> <br><br>
-
-                <p>Among my tastes and hobbies are reading books, watching documentaries, listening to music of all kinds, 
-                    I also like sports, exercising in the morning and challenging myself. </p>
-
-            </div>
-            <div class="main-2">
-                <h2>ACADEMY HISTORY</h2> <br><br>
-                <h4>MESCYT</h4>
-                <ul>
-                    <li>2017-2018</li>
-                    <li>ENGLISH IMMERSION PROGRAM</li>
-                </ul> <br>
-                <h4>ITSC</h4>
-                <ul>
-                    <li>2017-2020</li>
-                    <li>IT SUPPORT</li>
-                </ul> <br>
-                <h4>CEAFIM</h4>
-                <ul>
-                    <li>2021</li>
-                    <li>ADVANCED EXCEL</li>
-                </ul> <br>
-                <h4>CAPACITATE PARA EL EMPLEO, (FUNDACION CARLOS SLIM)</h4>
-                <ul>
-                    <li>2018</li>
-                    <li>DATA NETWORK TECHNICIAN</li>
-                </ul> <br>
-                <h4>CAPACITATE PARA EL EMPLEO, (FUNDACION CARLOS SLIM)</h4>
-                <ul>
-                    <li>2018</li>
-                    <li>IT SECURITY TECHNICIAN (RISK ANALYSIS)</li>
-                </ul> <br>
-
-                <h2>ABOUT MY KNOWLEDGES</h2> <br><br>
-
-                <p>I stated my career as IT support at the INSTITUTO TECNICO SUPERIOR COMUNITARIO (ITSC).
-                    During that time I stated learning english with the ENGLISH INMERSION PROGRAM for a whole
-                    year. While working as a Supervisor of a team in a call center, I stated learning how to code
-                    at LMS plataform such as COURSERA and W3SCHOOL.</p> <br><br>
-
-                    <p>I am still earning knowledges doing my own investigations and practicing my codes
-                    and logic. I am still intereting in going to the collage for enginer developer degree.
-                    Currently I can do the job as Front-Developer and I am looking forward to learn about more technologies,
-                    and resources that will improove my carrier as a developer and also domain the back-end developer's tools.
-                </p>
-
-            </div>
-        </div>
-    </aside>
-
-    <section> <!-- in section.css background for style -->
-        <div class="title"> <!-- in header.css for style of all tittles -->
-            <h2 id="section2">PORTFOLIO</h2>
-        </div>
-
-        <div class="card-container"> <!-- in cards.css for style of all cards, including cards for skills -->
-            <div class="card">
-                <img src="My-Portfolio-Icons/project-futsal.PNG" alt="futballsala web page">
-                <div class="card-content">
-                    <h3>Futsal Web Page</h3>
-                    <p>Template for a National Futsal League page based on that of
-                        Dominican Republic, with the purpose of showing the games and 
-                        statistics of these during the tournament. It is also important to highlight 
-                        that it has been designed to place sponsorship advertising. <br>
-                    </p>
-                    <a href="https://vjeansy.github.io/Liga-Nacional-De-Futsal-Dominicana/" target="_blank" class="btn">See details</a>
-                </div>
-            </div>
-            <div class="card">
-                <img src="My-Portfolio-Icons/juegoX.O.PNG" alt="tic tac toe">
-                <div class="card-content">
-                    <h3>X & O Classic Game</h3>
-                    <p> Template for this Classic game that probably will bring some memories
-                        to you. You can now play it here and have fun for a while!
-                        Do not forget to play hard, we created a machine that will beat you
-                        so you do not have it easy. You better whatch out your clicks! <br>
-                    </p>
-                    <a href="https://vjeansy.github.io/Juego-Conecta-Tres/" target="_blank" class="btn">See details</a>
-                </div>
-            </div>
-            <div class="card">
-                <img src="./My-Portfolio-Icons/tienda en linea.PNG" alt="tienda en linea">
-                <div class="card-content">
-                    <h3>Online Store</h3>
-                    <p>This template for an online store it's really interactive
-                        and with many options to choose and even to expand if needed,
-                        this website was created with some technologies such as Bootstrap,
-                        JavaScript, and others you can see in details button.
-                        hope you like this interactive web application.
-                    </p>
-                    <a href="https://vjeansy.github.io/Oline-Store/" target="_blank" class="btn">See details</a>
+                    </div>
                 </div>
             </div>
         </div>
-
-        <!--<div class="card-container">
-            <div class="card">
-                <img src="My-Portfolio-Icons/project-futsal.PNG" alt="project1">
-                <div class="card-content">
-                    <h3>Futsal Web Page</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Aliquid tempore itaque laborum similique quisquam neque
-                        odit error earum odio fugit, recusandae, quas facere vero modi est?
-                        Sed exercitationem ratione tempore.
-                    </p>
-                    <a href="" class="btn">See details</a>
+        <!-- projects info -->
+         <div class="row g-3 mb-3 d-flex flex-wrap">
+            <div id="img-container" class="col ms-md-5">
+                <div id="jeansy-pena" class="m-4">
+                    <h4 class="position-absolute text-start m-5 text-secondary-emphasis fw-bold">
+                        Hobbies and culture</h4><br>
+                    <p class="position-absolute text-start m-5 text-light">
+                        About my hobbies and culture, <br>
+                        I love playing video games <br>
+                        and also like reading few books<br>
+                        some times. Additionally, I still <br>
+                        enjoy playing basketball whenever <br>
+                        have the time for.</p>
+                    <img src="./My-Portfolio-Icons/Logo.JPG" alt="Jeansy Pena" class="flex-wrap">
                 </div>
             </div>
-            <div class="card">
-                <img src="My-Portfolio-Icons/project-cocoshop.PNG" alt="project2">
-                <div class="card-content">
-                    <h3>Store Web Site</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Aliquid tempore itaque laborum similique quisquam neque
-                        odit error earum odio fugit, recusandae, quas facere vero modi est?
-                        Sed exercitationem ratione tempore.
-                    </p>
-                    <a href="" class="btn">See details</a>
+            <div class="col justify-content-center align-content-center text-center">
+                <div id="about-me" class="">
+                    <span class="fs-5 text-light">
+                        Hello! My name is Jeansy and I enjoy creating things that live on the internet.
+                        My interest in web development started back in 2022 when I decided to try creating
+                        my own online store. I learned a lot about HTML and CSS during this, an after that
+                        I stated looking for online classes and certifications. <br>
+                        <p class="fw-bolder text-dark">I also started with some own projects you can see below.</p>
+                    </span>
                 </div>
             </div>
-            <div class="card">
-                <img src="My-Portfolio-Icons/project-colum.PNG" alt="project3">
-                <div class="card-content">
-                    <h3>Colum Website</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Aliquid tempore itaque laborum similique quisquam neque
-                        odit error earum odio fugit, recusandae, quas facere vero modi est?
-                        Sed exercitationem ratione tempore.
-                    </p>
-                    <a href="" class="btn">See details</a>
-                </div>
-            </div>
+         </div>
+    </article>
+    <!-- PROJECTS -->
+    <section class="container-fluid">
+        <div class="p-4 m-4 text-center border-bottom">
+            <h2 id="section2" class="fs-3 fw-bold">PROJECTS</h2>
         </div>
-
-        <div class="card-container">
-            <div class="card">
-                <img src="My-Portfolio-Icons/project-futsal.PNG" alt="project1">
-                <div class="card-content">
-                    <h3>Futsal Web Page</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Aliquid tempore itaque laborum similique quisquam neque
-                        odit error earum odio fugit, recusandae, quas facere vero modi est?
-                        Sed exercitationem ratione tempore.
-                    </p>
-                    <a href="" class="btn">See details</a>
-                </div>
-            </div>
-            <div class="card">
-                <img src="My-Portfolio-Icons/project-cocoshop.PNG" alt="project2">
-                <div class="card-content">
-                    <h3>Store Web Site</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Aliquid tempore itaque laborum similique quisquam neque
-                        odit error earum odio fugit, recusandae, quas facere vero modi est?
-                        Sed exercitationem ratione tempore.
-                    </p>
-                    <a href="" class="btn">See details</a>
-                </div>
-            </div>
-            <div class="card">
-                <img src="My-Portfolio-Icons/project-colum.PNG" alt="project3">
-                <div class="card-content">
-                    <h3>Colum Website</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Aliquid tempore itaque laborum similique quisquam neque
-                        odit error earum odio fugit, recusandae, quas facere vero modi est?
-                        Sed exercitationem ratione tempore.
-                    </p>
-                    <a href="" class="btn">See details</a>
-                </div>
-            </div>
-        </div>-->
-
-        <article class="bg-dark"> <!-- in article.css for style and bg -->
-
-            <div class="title"> <!-- in header.css for style of all tittles -->
-                <h2 id="section3">SKILLS</h2>
+        <!-- cards -->
+        <!-- in index.css for style of all cards, including cards for skills -->
+        <div id="card-projects" class="card-container"></div> <!-- Projects are provided using JS -->
+    </section>
+    <!-- SKILLS -->
+        <article class="container-fluid">
+            <div class="p-4 m-4 text-center border-bottom">
+                <h2 id="section3" class="fs-3 fw-bold">SKILLS</h2>
             </div>
             <!-- Acordeon swith skills inside -->
             <div class="section">
@@ -385,13 +241,13 @@
                                 <h3>NPM</h3>
                             </div>
                         </div>
-                        <!--<div class="card">
-                            <img src="" alt="">
+                        <div class="card">
+                            <img src="./My-Portfolio-Icons/Skills/Technologies/3.svg" alt="github">
                             <div class="card-content">
-                                <h3></h3>
+                                <h3>GITHUB</h3>
                             </div>
                         </div>
-                        <div class="card">
+                        <!--<div class="card">
                             <img src="" alt="">
                             <div class="card-content">
                                 <h3></h3>
@@ -400,76 +256,67 @@
                     </div>
                 </details>
             </div>
-    
-            <div class="title"> <!-- in header.css for style of all tittles -->
-                <h2 id="section4">CERTIFICATES</h2>
+            <!-- CERTIFICATES -->
+            <div class="p-4 m-4 text-center border-bottom">
+                <h2 id="section4" class="fs-3 fw-bold">CERTIFICATES</h2>
             </div>
-    
-            <div class="slider-box"> <!-- in carousel.css for style -->
-    
-                <ul>
-                    <li>
-                        <img src="My-Portfolio-Icons/certificate-introduction-to-front-end.PNG" alt="frontEnd">
-                        <div class="text">
-                            <h2></h2>
-                            <p></p>
-                        </div>
-                    </li>
-                    <li>
-                        <img src="My-Portfolio-Icons/certificate-security data.PNG" alt="securityData">
-                        <div class="text">
-                            <h2></h2>
-                            <p></p>
-                        </div>
-                    </li>
-                    <li>
-                        <img src="My-Portfolio-Icons/certificate-data-red.PNG" alt="daraRed">
-                        <div class="text">
-                            <h2></h2>
-                            <p></p>
-                        </div>
-                    </li>
-                    <li>
-                        <img src="My-Portfolio-Icons/certificate-itsc.jpeg" alt="itsc">
-                        <div class="text">
-                            <h2></h2>
-                            <p></p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="title"> <!-- in header.css for style of all tittles -->
-                <h2 id="section5">CONTACT</h2>
-            </div>
-
-            <div class="contact"> <!-- in contact.css for style -->
-               <ul>
-                <li><a href="https://www.linkedin.com/in/jeansy-peña-b575721b0/" target="_blank"><i class="bi bi-linkedin"></i></a></li>
-                <li><a href="https://github.com/vJeansy" target="_blank"><i class="bi bi-github"></i></a></li>
-                <li><a href="https://www.instagram.com/vjeansy/" target="_blank"><i class="bi bi-instagram"></i></a></li>
-                <li><a href="https://www.facebook.com/jeansypen10?locale=es_LA" target="_blank"><i class="bi bi-facebook"></i></a></li>
-                <li><a href="mailto:jeansygregorio@gmail.com" target="_blank"><i class="bi bi-envelope"></i></a></li>
-               </ul>
-            </div>
+<!-- Carousel -->
+<div id="certificates" class="carousel slide container" data-bs-ride="carousel">
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#certificates" data-bs-slide-to="0" class="active text-bg-dark"></button>
+      <button type="button" data-bs-target="#certificates" data-bs-slide-to="1" class="text-bg-dark"></button>
+      <button type="button" data-bs-target="#certificates" data-bs-slide-to="2" class="text-bg-dark"></button>
+      <button type="button" data-bs-target="#certificates" data-bs-slide-to="3" class="text-bg-dark"></button>
+      <button type="button" data-bs-target="#certificates" data-bs-slide-to="4" class="text-bg-dark"></button>
+      <button type="button" data-bs-target="#certificates" data-bs-slide-to="5" class="text-bg-dark"></button>
+    </div>
+    <!-- The slideshow/carousel -->
+    <div id="certificates" class="carousel slide" data-bs-ride="carousel">
+      <div id="certificates-carousel" class="carousel-inner">
+        <!-- images are provided using JS -->
+      </div>
+    </div>
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#certificates" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon text-bg-dark"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#certificates" data-bs-slide="next">
+      <span class="carousel-control-next-icon text-bg-dark"></span>
+    </button>
+  </div>
         </article>
-
-    </section>
-
-    <div class="roll-up-container">
-        <div class="btn-float">
-            <a class="btn-roll-up" href="#section1"><i class="bi bi-arrow-up-circle-fill"></i></a> <!-- roll up icon in header for css style-->
+                <!-- sticky button -->
+    <div class="position-fixed bottom-0 end-0 m-4 fw-bold">
+        <div class="p-lg-5">
+            <a href="#section1" type="button" id="upButton"><i class="bi bi-arrow-up-circle-fill"></i></a> <!-- roll up icon in header for css style-->
         </div>
     </div>
-
-    <script>src = "My-Portfolio-js/navBar/js"</script>
+    <div class="contact m-4 text-center border-bottom"> <!-- in header.css for style of all tittles -->
+        <h2 class="fs-3 fw-bold">Contact</h2>
+    </div>
+<!-- script files -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./My-Portfolio-JS/projects.js"></script>
+    <script src="./My-Portfolio-JS/certificates.js"></script>
+    <script src="./My-Portfolio-JS/animation.js"></script>
 </body>
-
-    <footer> <!-- in footPage css for style -->
-        <div class="foot-page">
+<!-- foot page -->
+    <footer id="section5"> <!-- in footPage css for style -->
+<!-- contact info -->
+    <div>
+        <ul class="d-flex justify-content-center fs-1">
+         <li><a href="https://www.linkedin.com/in/jeansy-peña-b575721b0/" target="_blank"><i class="bi bi-linkedin me-3 text-black"></i></a></li>
+         <li><a href="https://github.com/vJeansy" target="_blank"><i class="bi bi-github me-3 text-black"></i></a></li>
+         <li><a href="https://www.instagram.com/vjeansy/" target="_blank"><i class="bi bi-instagram me-3 text-black"></i></a></li>
+         <li><a href="https://www.facebook.com/jeansypen10?locale=es_LA" target="_blank"><i class="bi bi-facebook me-3 text-black"></i></a></li>
+         <li><a href="mailto:jeansygregorio@gmail.com" target="_blank"><i class="bi bi-envelope text-black"></i></a></li>
+        </ul>
+     </div>
+        <div class="d-flex justify-content-center text-center">
             <p>Web designed and developed in 2024 by: Jeansy Peña <br>
                 All rights reserved ©.</p>
         </div>
     </footer>
-
 </html>
