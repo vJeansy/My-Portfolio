@@ -18,7 +18,7 @@ function certificatesCarousel (art) {
     art.forEach(cert => {
         carouselImages.innerHTML += `
                 <div class="carousel-item ${isFirst ? 'active' : ''}">
-            <img src="${cert.direction}${img}.png" alt="${cert.name}" class="d-block" style="width:100%; height: 38vmax;">
+            <img src="./${cert.direction}${img}.png" alt="${cert.name}" class="d-block" style="width:100%; height: 38vmax;">
         </div>`;
         isFirst = false; // After the first iteration, ensure no other items are marked active
         img++; // Increment id to move to the next image

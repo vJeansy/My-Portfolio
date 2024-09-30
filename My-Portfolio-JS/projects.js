@@ -31,7 +31,7 @@ function jasonCards(art, container, nProjects){
                 document.getElementById('rows-' + i). innerHTML += `
                     <div class="card">
                     <a href="" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    <img src="${art[id].direction}1.png" class="card-img-top" alt="${art[id].tittle}"></a>
+                    <img src="./${art[id].direction}1.png" class="card-img-top" alt="${art[id].tittle}"></a>
                         <div class="card-content">
                             <h5 class="fw-bold fs-3">${art[id].tittle}</h5>
                             <p>${art[id].description}</p>
