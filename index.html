@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./My-Portfolio-Icons/react_icon_130845.ico">
+    <!-- MetaData -->
+    <meta property="og:tittle" content="Jeansy's portafolio">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="My-Portfolio-Icons/Logo.JPG">
+    <meta property="og:url" content="https://vjeansy.github.io/My-Portfolio/">
+    <meta property="og:description" content="Jeansy Peña, passionate Front-End Developer with expertise in HTML, CSS, JavaScript, and Bootstrap. With a solid background in IT support and data management, I build modern, responsive websites that bring ideas to life. Explore my projects and let's create something amazing together!" />
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="My Portfolio">
+    <!-- CSS files/links -->
+    <link rel="stylesheet" href="./My-Portfolio-CSS/index.css">
+    <link rel="stylesheet" href="My-Portfolio-CSS/acordeon.css">
+    <link rel="stylesheet" href="My-Portfolio-CSS/circleBar.css">
+    <link rel="stylesheet" href="./My-Portfolio-CSS/animations.css">
+    <!-- Frameworks and Librery -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body class="container">
+    <nav class="navbar navbar-expand-lg text-center p-lg-4">
+        <div class="container-fluid ms-md-5 d-flex align-items-center justify-content-between">
+            <!-- Logo -->
+            <a class="navbar-brand" href="./index.html">
+                <img src="./My-Portfolio-Icons/Logo.JPG" alt="Logo" id="logo" width="auto" height="40" style="border-radius: 50%;">
+              </a>
+              <!-- navbar button for small screens -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- Nav links -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 fs-5">
+              <li class="nav-item me-lg-5">
+                <a class="nav-link" aria-current="page" href="#section1">About</a>
+              </li>
+              <li class="nav-item me-lg-5">
+                <a class="nav-link" aria-current="page" href="#section2">Projects</a>
+              </li>
+              <li class="nav-item me-lg-5">
+                <a class="nav-link" aria-current="page" href="#section3">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#section4">Certificates</a>
+              </li>
+            </ul>
+            <!-- Get in touch button -->
+            <a href="#section5" class="me-lg-5 align-items-center form">
+              <button class="btn fw-bold" type="button">Get in touch</button>
+            </a>
+          </div>
+        </div>
+      </nav>
+      <!-- ABOUT ME -->
+    <article class="container"><!-- in aside.css for style -->
+        <div class="p-4 m-4 text-center border-bottom">
+            <h2 id="section1" class="fs-3 fw-bold">ABOUT ME</h2>
+        </div>
+        <!-- left side -->
+        <div class="row g-3 mb-5 mt-5">
+            <div id="about-me" class="col ms-md-5">
+                <h4 class="fw-bold fs-6 text-secondary-emphasis">Hi, my name is</h4> 
+                <h5 class="fw-bold fs-1">JEANSY PENA</h5> 
+                <h5 class="fw-bold fs-2 text-secondary-emphasis">I Build things for the web.</h5>
+                <span class="fs-5 text-light">I’m a software engineer specializing in building 
+                    (and occasionally designing) exceptional digital experiences. Front-End developer focus on
+                    UX|UI.
+                </span>
+            </div>
+        <div class="col text-center">
+            <h4 class="fw-bold fs-1">Here's my proggress!</h4>
+            <h5 class="fw-bold text-secondary-emphasis">Front-End Developer</h5> 
+            <!-- Right side -->
+            <div class="all">
+                <!-- in circleBar.css for style -->
+                 <!-- HTML PROGRESS -->
+                <div class="circle-wrap">
+                    <div class="circle">
+                        <div class="mask full-1">
+                          <div class="fill-1"></div>
+                        </div>
+                        <div class="mask half">
+                          <div class="fill-1"></div>
+                        </div>
+                        <div class="inside-circle"> HTML 65% </div>
+                      </div>
+                    </div>
+                    <!-- JS PROGRESS -->
+                <div class="circle-wrap">
+                    <div class="circle">
+                        <div class="mask full-2">
+                            <div class="fill-2"></div>
+                        </div>
+                        <div class="mask half">
+                            <div class="fill-2"></div>
+                        </div>
+                        <div class="inside-circle"> JS 45% </div>
+                        </div>
+                      </div>
+                    <!-- CSS PROGRESS -->
+                <div class="circle-wrap">
+                    <div class="circle">
+                        <div class="mask full-3">
+                            <div class="fill-3"></div>
+                            </div>
+                            <div class="mask half">
+                              <div class="fill-3"></div>
+                            </div>
+                            <div class="inside-circle"> CSS 53% </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- projects info -->
+         <div class="row g-3 mb-3 d-flex flex-wrap">
+            <div id="img-container" class="col ms-md-5">
+                <div id="jeansy-pena" class="m-4">
+                    <h4 class="position-absolute text-start m-5 text-secondary-emphasis fw-bold">
+                        Hobbies and culture</h4><br>
+                    <p class="position-absolute text-start m-5 text-light">
+                        About my hobbies and culture, <br>
+                        I love playing video games <br>
+                        and also like reading few books<br>
+                        some times. Additionally, I still <br>
+                        enjoy playing basketball whenever <br>
+                        have the time for.</p>
+                    <img src="./My-Portfolio-Icons/Logo.JPG" alt="Jeansy Pena" class="flex-wrap">
+                </div>
+            </div>
+            <div class="col justify-content-center align-content-center text-center">
+                <div id="about-me" class="">
+                    <span class="fs-5 text-light">
+                        Hello! My name is Jeansy and I enjoy creating things that live on the internet.
+                        My interest in web development started back in 2022 when I decided to try creating
+                        my own online store. I learned a lot about HTML and CSS during this, an after that
+                        I stated looking for online classes and certifications. <br>
+                        <p class="fw-bolder text-dark">I also started with some own projects you can see below.</p>
+                    </span>
+                </div>
+            </div>
+         </div>
+    </article>
+    <!-- PROJECTS -->
+    <section class="container-fluid">
+        <div class="p-4 m-4 text-center border-bottom">
+            <h2 id="section2" class="fs-3 fw-bold">PROJECTS</h2>
+        </div>
+        <!-- cards -->
+        <!-- in index.css for style of all cards, including cards for skills -->
+        <div id="card-projects" class="card-container"></div> <!-- Projects are provided using JS -->
+    </section>
+    <!-- SKILLS -->
+        <article class="container-fluid">
+            <div class="p-4 m-4 text-center border-bottom">
+                <h2 id="section3" class="fs-3 fw-bold">SKILLS</h2>
+            </div>
+            <!-- Acordeon swith skills inside -->
+            <div class="section container">
+                <!-- Front-end skills -->
+                <details open> <!-- in acrodeon.css for style -->
+                    <summary>Front-End</summary>
+                    <div class="card-container">
+                        <div class="card">
+                            <img src="https://hernanreiq.github.io/portafolio/Habilidades/html5.svg" alt="html5">
+                            <div class="card-content">
+                                <h3>HTML5</h3>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="https://hernanreiq.github.io/portafolio/Habilidades/css3.svg" alt="css3">
+                            <div class="card-content">
+                                <h3>CSS2</h3>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="https://hernanreiq.github.io/portafolio/Habilidades/javascript.svg" alt="js">
+                            <div class="card-content">
+                                <h3>JS</h3>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="https://hernanreiq.github.io/portafolio/Habilidades/bootstrap.svg" alt="bootstrap">
+                            <div class="card-content"> <br><br>
+                            <h3>BOOTSTRAP</h3>
+                        </div>
+                    </div>
+                    </div>
+                </details>
+                <!--Back-end skills-->
+                <!--<details>
+                    <summary>Back-End</summary>
+                    <div class="card-container">
+                        <div class="card">
+                            <img src="" alt="">
+                            <div class="card-content">
+                                <h3></h3>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="" alt="">
+                            <div class="card-content">
+                                <h3></h3>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="" alt="">
+                            <div class="card-content">
+                                <h3></h3>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="" alt="">
+                            <div class="card-content">
+                                <h3></h3>
+                            </div>
+                        </div>
+                    </div>
+                </details>-->
+                <!--Technologies skills-->
+                <details>
+                    <summary>Technologies</summary>
+                    <div class="card-container">
+                        <div class="card">
+                            <img src="https://hernanreiq.github.io/portafolio/Habilidades/git.svg" alt="git">
+                            <div class="card-content">
+                                <h3>GIT</h3>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="https://hernanreiq.github.io/portafolio/Habilidades/npm.svg" alt="npm">
+                            <div class="card-content">
+                                <h3>NPM</h3>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./My-Portfolio-Icons/Skills/Technologies/3.svg" alt="github">
+                            <div class="card-content">
+                                <h3>GITHUB</h3>
+                            </div>
+                        </div>
+                        <!--<div class="card">
+                            <img src="" alt="">
+                            <div class="card-content">
+                                <h3></h3>
+                            </div>
+                        </div>-->
+                    </div>
+                </details>
+            </div>
+            <!-- CERTIFICATES -->
+            <div class="p-4 m-4 text-center border-bottom">
+                <h2 id="section4" class="fs-3 fw-bold">CERTIFICATES</h2>
+            </div>
+<!-- Carousel -->
+<div id="certificates" class="carousel slide container" data-bs-ride="carousel">
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#certificates" data-bs-slide-to="0" class="active text-bg-dark"></button>
+      <button type="button" data-bs-target="#certificates" data-bs-slide-to="1" class="text-bg-dark"></button>
+      <button type="button" data-bs-target="#certificates" data-bs-slide-to="2" class="text-bg-dark"></button>
+      <button type="button" data-bs-target="#certificates" data-bs-slide-to="3" class="text-bg-dark"></button>
+      <button type="button" data-bs-target="#certificates" data-bs-slide-to="4" class="text-bg-dark"></button>
+      <button type="button" data-bs-target="#certificates" data-bs-slide-to="5" class="text-bg-dark"></button>
+    </div>
+    <!-- The slideshow/carousel -->
+    <div id="certificates" class="carousel slide" data-bs-ride="carousel">
+      <div id="certificates-carousel" class="carousel-inner">
+        <!-- images are provided using JS -->
+      </div>
+    </div>
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#certificates" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon text-bg-dark"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#certificates" data-bs-slide="next">
+      <span class="carousel-control-next-icon text-bg-dark"></span>
+    </button>
+  </div>
+        </article>
+                <!-- sticky button -->
+    <div class="position-fixed bottom-0 end-0 m-4 fw-bold">
+        <div class="p-lg-5">
+            <a href="#section1" type="button" id="upButton"><i class="bi bi-arrow-up-circle-fill"></i></a> <!-- roll up icon in header for css style-->
+        </div>
+    </div>
+    <div class="contact m-4 text-center border-bottom"> <!-- in header.css for style of all tittles -->
+        <h2 class="fs-3 fw-bold">Contact</h2>
+    </div>
+<!-- script files -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./My-Portfolio-JS/projects.js"></script>
+    <script src="./My-Portfolio-JS/certificates.js"></script>
+    <script src="./My-Portfolio-JS/animation.js"></script>
+</body>
+<!-- foot page -->
+    <footer id="section5"> <!-- in footPage css for style -->
+<!-- contact info -->
+    <div>
+        <ul class="d-flex justify-content-center fs-1">
+         <li><a href="https://www.linkedin.com/in/jeansy-peña-b575721b0/" target="_blank"><i class="bi bi-linkedin me-3 text-black"></i></a></li>
+         <li><a href="https://github.com/vJeansy" target="_blank"><i class="bi bi-github me-3 text-black"></i></a></li>
+         <li><a href="https://www.instagram.com/vjeansy/" target="_blank"><i class="bi bi-instagram me-3 text-black"></i></a></li>
+         <li><a href="https://www.facebook.com/jeansypen10?locale=es_LA" target="_blank"><i class="bi bi-facebook me-3 text-black"></i></a></li>
+         <li><a href="mailto:jeansygregorio@gmail.com" target="_blank"><i class="bi bi-envelope text-black"></i></a></li>
+        </ul>
+     </div>
+        <div class="d-flex justify-content-center text-center">
+            <p>Web designed and developed in 2024 by: Jeansy Peña <br>
+                All rights reserved ©.</p>
+        </div>
+    </footer>
+</html>

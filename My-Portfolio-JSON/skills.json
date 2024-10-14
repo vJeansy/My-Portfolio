@@ -1,0 +1,36 @@
+[
+    {
+        "tittle": "HTML5",
+        "direction": "My-Portfolio-Icons/Skills/FrontEnd/",
+        "type": "front-end"
+    },
+    {
+        "tittle": "CSS",
+        "direction": "My-Portfolio-Icons/Skills/FrontEnd/",
+        "type": "front-end"
+    },
+    {
+        "tittle": "JS",
+        "direction": "My-Portfolio-Icons/Skills/FrontEnd/",
+        "type": "front-end"
+    },
+    {
+        "tittle": "BOOTSTRAP",
+        "direction": "My-Portfolio-Icons/Skills/FrontEnd/",
+        "type": "front-end"
+    },    {
+        "tittle": "GIT",
+        "direction": "My-Portfolio-Icons/Skills/Technologies/",
+        "type": "technologies"
+    },
+    {
+        "tittle": "BOOTSTRAP",
+        "direction": "My-Portfolio-Icons/Skills/Technologies/",
+        "type": "technologies"
+    },
+    {
+        "tittle": "GITHUB",
+        "direction": "My-Portfolio-Icons/Skills/Technologies/",
+        "type": "technologies"
+    }
+  ]

@@ -1,0 +1,6 @@
+{
+    "editor.cursorBlinking": "blink",
+    "editor.cursorStyle": "line",
+    "editor.fontSize": 12,
+    "npm.enableRunFromFolder": true
+}
