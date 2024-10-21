@@ -22,5 +22,13 @@
         "pageUrl": "https://vjeansy.github.io/Oline-Store/",
         "gitUrl": "https://github.com/vJeansy/Oline-Store",
         "type": "project"
+    },
+    {
+        "tittle": "Calculator",
+        "direction": "My-Portfolio-Icons/project/Calculator/",
+        "description": "Hope you enjoy this calculatior app made with react. It's my first project in react requiting my logical skills and having some basic visual skills with react. Hope this project help bigginer to understand better how powerfull is this tool as I wished in the biggining.",
+        "pageUrl": "https://vjeansy.github.io/Calculator/",
+        "gitUrl": "https://github.com/vJeansy/Calculator",
+        "type": "project"
     }
 ]
