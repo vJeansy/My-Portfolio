@@ -89,30 +89,85 @@ nav #navbarSupportedContent .btn:hover{ /* get in touch button hover style */
 #upButton{
     color: #fc2a23;
 }
-/* img's article */
-#img-container{
+/* Main img */
+
+#About-Me { /* Bg card for about me section */
+    background-color: #ef6a36;
+    height: 250px;
+}
+
+article #jeansy-pena{ /* img bg */
     justify-content: center;
     align-items: center;
     text-align: center;
 }
-#jeansy-pena{ /* img bg */
-    background-color: #eb381d;
-    width: 18rem;
-    border-radius: 3%;
-}
-#jeansy-pena img{ /* image's article */
-    height: 18rem;
+article #jeansy-pena img{ /* image's article */
+    height: 17rem;
     width: auto;
     border-radius: 3%;
     transform: scale(0.9);
     transition: all 2s;
+    background-image: none;
+    filter: drop-shadow(0 0 1em #fc2a23);
+
 }
-#jeansy-pena img:hover{
-    transform: translate3d(275px, 0, 0);
-    transition: all 0.5s;
+
+article #jeansy-pena {
+    position: relative;
+    transition: all .3s ease;
 }
-#about-me{ /* bg for first articles */
-    background-color: #eb381d;
-    border-radius: 5%;
-    border-bottom-left-radius: 0;
+
+article #jeansy-pena img:first-child {
+    border-radius: 4px;
+    object-fit: cover;
+    width: auto;
+}
+
+#jeansy-pena img:last-child {
+    position: absolute;
+    width: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transform: translateY(25%);
+    transition: .3s ease;
+    opacity: 0;
+}
+article #jeansy-pena:hover{
+    transform:
+    perspective(250px)
+    rotateX(10deg)
+    translateY(-5%)
+    translateZ(0);
+}
+article #jeansy-pena::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    width: 55%;
+    background-image: 
+    linear-gradient(
+        to bottom,
+        transparent 10%,
+        rgba(0, 0, 0, 0.5) 50%,
+        rgba(0, 0, 0) 95%
+    );
+    opacity: 0;
+    transition: all .3s ease;
+}
+
+article #jeansy-pena:hover::before {
+    opacity: 1;
+}
+
+article #jeansy-pena:hover img:last-child {
+    opacity: 1;
+    transform: translateY(10%);
+}
+
+article #jeansy-pena:hover img:first-child {
+    opacity: 30%;
+    transition: .1s ease-in-out;
 }
