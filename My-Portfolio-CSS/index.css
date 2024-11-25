@@ -1,4 +1,4 @@
-/* fix webpage body for box-sizing */
+/* GLOBAL STYLE */
 *{
     box-sizing: border-box;
     margin: 0;
@@ -6,17 +6,25 @@
     list-style: none;
     font-family: 'Times New Roman', Times, serif;
 }
-/* bg for whole page */
 body{
     background: #EF3B36;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #FFFFFF, #ef6a36);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #FFFFFF, #ef6a36); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
 }
-/* nav links style */
+
+html {
+    overscroll-behavior-x: none;
+    overflow: auto;
+    height: 100%;
+}
+
+/*====================
+====== NavBar ========
+=====================*/
+
 nav #navbarSupportedContent a:hover{ /* navlinks hover */
     color: #ECE9E6;
 }
-/* NavBar button style */
 nav #navbarSupportedContent .btn{ /* get in touch button style */
     color: #222222;
     background: #eb381d;
@@ -33,67 +41,40 @@ nav #navbarSupportedContent .btn:hover{ /* get in touch button hover style */
     background: #eb381d;
     transform: scale(1.1);
 }
-/* cards */
-.card-container{ /* card container */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-top: 1rem;
 
-}
-.card{ /* card shape */
-    width: 325px;
-    background: #fdeaea;
-    border-radius: 1rem;
-    border: #000000;
-    overflow: hidden;
-    box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
-    margin: 1rem;
-}
-.card img{ /* card image */
-    width: 100%;
-    height: auto;
-    cursor:zoom-in;
-    transition: all 1s;
-}
-.card img:hover{ /* card image hover */
-    transform: scale(1.1);
-}
-.card-content{ /* card text */
-    padding: 1em;
-}
-.card-content h3{ /* card tittle */
-    font-size: 1.5em;
-    margin: 1rem;
-}
-.card-content p{ /* card fontsize */
-    font-size: 1em;
-    line-height: 1.3;
-}
-.card-content .btn:hover{
-    font-weight: 700;
-}
-/* sticky button */
-#upButton{
-    font-size: 4rem;
-    color: #EF3B36;
-    display: none;
-    opacity: 0;
-    transition: opacity 0.5s ease;
-}
-#upButton.show {
-    display: block;
-    animation: upButton 1s forwards;
-}
-#upButton{
-    color: #fc2a23;
-}
-/* Main img */
+/* ======================
+=== ABOUT ME SECTION ====
+=========================*/
 
 #About-Me { /* Bg card for about me section */
     background-color: #ef6a36;
     height: 250px;
+    border-radius: 1%;
+}
+
+@media (max-width: 991px) {
+    #About-Me {
+        height: 395px;
+    }
+    @media (max-width: 767px) {
+        #About-Me {
+            height: 525px;
+        }
+    }
+}
+
+#text > h4 {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+#text > h5 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+#text > span {
+    font-size: 1.25rem;
 }
 
 article #jeansy-pena{ /* img bg */
@@ -101,6 +82,7 @@ article #jeansy-pena{ /* img bg */
     align-items: center;
     text-align: center;
 }
+
 article #jeansy-pena img{ /* image's article */
     height: 17rem;
     width: auto;
@@ -109,7 +91,6 @@ article #jeansy-pena img{ /* image's article */
     transition: all 2s;
     background-image: none;
     filter: drop-shadow(0 0 1em #fc2a23);
-
 }
 
 article #jeansy-pena {
@@ -118,7 +99,7 @@ article #jeansy-pena {
 }
 
 article #jeansy-pena img:first-child {
-    border-radius: 4px;
+    border-radius: 15px;
     object-fit: cover;
     width: auto;
 }
@@ -134,6 +115,7 @@ article #jeansy-pena img:first-child {
     transition: .3s ease;
     opacity: 0;
 }
+
 article #jeansy-pena:hover{
     transform:
     perspective(250px)
@@ -141,6 +123,7 @@ article #jeansy-pena:hover{
     translateY(-5%)
     translateZ(0);
 }
+
 article #jeansy-pena::before {
     content: '';
     position: absolute;
@@ -170,4 +153,203 @@ article #jeansy-pena:hover img:last-child {
 article #jeansy-pena:hover img:first-child {
     opacity: 30%;
     transition: .1s ease-in-out;
+}
+
+/*=====================
+======== Projects ========
+=======================*/
+
+.projects-card-container{ /* cards container */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+@media (max-width: 1280px) {
+    .projects-card-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: 715px) {
+        .projects-card-container {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+}
+
+.projects-card-container .card{ /* card shape */
+    width: 325px;
+    background: #f6f4f4;
+    border-radius: 1rem;
+    border: #000000;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+    margin: 1rem;
+}
+
+.projects-card-container .card img{ /* card image */
+    width: 100%;
+    height: auto;
+    cursor:zoom-in;
+    transition: all 1s;
+}
+
+.projects-card-container .card img:hover{ /* card image hover */
+    transform: scale(1.1);
+}
+
+.projects-card-container .card-content{ /* card text */
+    padding: 1em;
+}
+
+.projects-card-container .card-content h3{ /* card tittle */
+    font-size: 1.5em;
+    margin: 1rem;
+}
+
+.projects-card-container .card-content p{ /* card fontsize */
+    font-size: 1em;
+    line-height: 1.3;
+}
+
+.projects-card-container .card-content .btn:hover{
+    font-weight: 700;
+}
+
+/*==============================
+========= skills card ==========
+================================*/
+
+.accordion .card-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+
+    background: #fef0f0;
+}
+
+@media (max-width: 1399px) {
+    .accordion .card-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    @media (max-width: 991px) {
+        .accordion .card-container {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @media (max-width: 540px) {
+            .accordion .card-container {
+                grid-template-columns: repeat(1, 1fr);
+                gap: 2px;
+                margin: 0;
+            }
+        }
+    }
+}
+
+.accordion button {
+    background-color: #de614e;
+}
+
+.accordion .card {
+    width: 195px;
+    background: #ffffff;
+    border-radius: 1rem;
+    border: #000000;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+    margin: 1rem;
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.accordion .card img{ /* card image */
+    width: 100%;
+    height: auto;
+    cursor:zoom-in;
+    transition: all 1s;
+}
+
+.accordion .card img:hover{ /* card image hover */
+    transform: scale(1.1);
+}
+/* sticky button */
+#upButton{
+    font-size: 4rem;
+    color: #EF3B36;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+#upButton.show {
+    display: block;
+    animation: upButton 1s forwards;
+}
+#upButton{
+    color: #fc2a23;
+}
+
+/* ======================
+======== ACORDEON ========
+==========================*/
+
+
+.section{ /* acordon container */
+    width: 70vw;
+    padding: 20px;
+    background-color: #f9ebeb;
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 20px;
+}
+
+.section h3{ /* acordon bars */
+    text-align: center;
+    font-weight: 700;
+}
+
+.section .card-container{
+    transition: all 5s;
+}
+
+article summary{ /* acordon tittle */
+    background: #de614e;
+    font-size: 23px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+article summary:hover{
+    transform: scale(1.02);
+}
+
+.section .card{ /* acordon card with little bit changes since entired card body is taken from card.css*/
+    width: 200px;
+}
+
+details .card-content h3{
+    margin: auto;
+    border-radius: 15px;
+    transition: all 0.5s;
+}
+
+details .card-content h3:hover{
+    background-color: #fafafa;
+    transform: scale(1.02);
 }

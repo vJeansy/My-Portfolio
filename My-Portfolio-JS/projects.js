@@ -1,36 +1,24 @@
 // creating DOMs
 var cardProjects = document.getElementById('card-projects');
-var projects;
 // calling data from json file
-function jsonProjects(container){
+function jsonProjects(){
     axios({
         method: 'GET',
         url: 'My-Portfolio-JSON/projects.json'
     }).then(res =>{
-        projects = res.data;
-        jasonCards(res.data, container, res.data.length);
+        jasonCards(res.data); // Call jasoncards here with the data
     }).catch(err =>{
         console.log('Hubo un error al cargar los proyectos', err)
     });
 };
-// Container for product cards
-function rows(container, nProjects){
-    var nRows = Math.ceil(nProjects / 3);
-    for(var i = 1; i <= nRows; i++){
-        container.innerHTML += `<div class="card-container" id="rows-${i}"></div>`;
-    }
-}
+
 // creating cards with json file's informatino
-function jasonCards(art, container, nProjects){
-    rows(container, nProjects);
-    var nRows = Math.ceil(nProjects / 3);
+function jasonCards(art){
     var id = 0;
-    for(let i = 1; i <= nRows; i++){
-        for(let j = 1; j <= 3; j++){
+    for(let i = 0; i < art.length; i++) {
             if(art[id] != undefined){
-                document.getElementById('rows-' + i). innerHTML += `
+                document.getElementById('card-projects'). innerHTML += `
                     <div class="card">
-                    <a href="" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     <img src="${art[id].direction}1.PNG" class="card-img-top" alt="${art[id].tittle}"></a>
                         <div class="card-content">
                             <h5 class="fw-bold fs-3">${art[id].tittle}</h5>
@@ -45,6 +33,5 @@ function jasonCards(art, container, nProjects){
             }
         }
     }
-}
 //call function and arrow the DOM variable.
 jsonProjects(cardProjects);

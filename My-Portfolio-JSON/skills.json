@@ -1,36 +1,81 @@
 [
     {
         "tittle": "HTML5",
-        "direction": "My-Portfolio-Icons/Skills/FrontEnd/",
+        "logo": "https://www.svgrepo.com/show/452228/html-5.svg",
         "type": "front-end"
     },
     {
-        "tittle": "CSS",
-        "direction": "My-Portfolio-Icons/Skills/FrontEnd/",
+        "tittle": "CSS3",
+        "logo": "https://www.svgrepo.com/show/452185/css-3.svg",
         "type": "front-end"
     },
     {
         "tittle": "JS",
-        "direction": "My-Portfolio-Icons/Skills/FrontEnd/",
+        "logo": "https://www.svgrepo.com/show/373705/js-official.svg",
         "type": "front-end"
     },
     {
         "tittle": "BOOTSTRAP",
-        "direction": "My-Portfolio-Icons/Skills/FrontEnd/",
+        "logo": "https://www.svgrepo.com/show/303293/bootstrap-4-logo.svg",
         "type": "front-end"
     },    {
+        "tittle": "REACT",
+        "logo": "https://www.svgrepo.com/show/493719/react-javascript-js-framework-facebook.svg",
+        "type": "front-end"
+    },
+    {
+        "tittle": "AXIOS",
+        "logo": "https://hernanreiq.github.io/portafolio/Habilidades/axios.svg",
+        "type": "front-end"
+    },
+    {
+        "tittle": "UI ball LDRS",
+        "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCqvPMMZcmOtfGCKpj-BzjnIFTNpVkImodgA&s",
+        "type": "front-end"
+    },
+    {
+        "tittle": "Chakra",
+        "logo": "https://pbs.twimg.com/profile_images/1244925541448286208/rzylUjaf_400x400.jpg",
+        "type": "front-end"
+    },
+    {
+        "tittle": "Motion",
+        "logo": "https://user-images.githubusercontent.com/7850794/164965509-2a8dc49e-2ed7-4243-a2c9-481b03bbc31a.png",
+        "type": "front-end"
+    },
+    {
+        "tittle": "Animate.css",
+        "logo": "https://hernanreiq.github.io/portafolio/Habilidades/animatecss.svg",
+        "type": "front-end"
+    },
+    {
+        "tittle": "Node.js",
+        "logo": "https://www.svgrepo.com/show/452075/node-js.svg",
+        "type": "back-end"
+    },
+    {
         "tittle": "GIT",
-        "direction": "My-Portfolio-Icons/Skills/Technologies/",
+        "logo": "https://www.svgrepo.com/show/452210/git.svg",
         "type": "technologies"
     },
     {
-        "tittle": "BOOTSTRAP",
-        "direction": "My-Portfolio-Icons/Skills/Technologies/",
+        "tittle": "NPM",
+        "logo": "https://www.svgrepo.com/show/452077/npm.svg",
         "type": "technologies"
     },
     {
         "tittle": "GITHUB",
-        "direction": "My-Portfolio-Icons/Skills/Technologies/",
+        "logo": "https://www.svgrepo.com/show/512317/github-142.svg",
+        "type": "technologies"
+    },
+    {
+        "tittle": "JSON",
+        "logo": "https://www.svgrepo.com/show/353943/json.svg",
+        "type": "technologies"
+    },
+    {
+        "tittle": "APIs",
+        "logo": "https://indiaforensic.com/wp-content/uploads/2020/09/api.png",
         "type": "technologies"
     }
   ]

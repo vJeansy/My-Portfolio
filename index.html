@@ -15,251 +15,300 @@
     <meta property="og:site_name" content="My Portfolio">
     <!-- CSS files/links -->
     <link rel="stylesheet" href="./My-Portfolio-CSS/index.css">
-    <link rel="stylesheet" href="My-Portfolio-CSS/acordeon.css">
-    <link rel="stylesheet" href="My-Portfolio-CSS/circleBar.css">
     <link rel="stylesheet" href="./My-Portfolio-CSS/animations.css">
     <!-- Frameworks and Librery -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
+
 <body class="container">
-
-          <!-- Loading page -->
-
-          <div id="loader" class="loader">
-            <div class="spinner"></div>
+    <!-- Loading page -->
+    <div id="loader" class="loader">
+        <div class="spinner"></div>
           </div>
 
-          <!-- Main content -->
+    <!-- Main content -->
+    <div id="main-content" class="hidden">
+        <nav class="navbar navbar-expand-lg text-center p-lg-4">
+            <div class="container-fluid ms-md-5 d-flex align-items-center justify-content-between">
 
-          <div id="main-content" class="hidden">
-            <nav class="navbar navbar-expand-lg text-center p-lg-4">
-                <div class="container-fluid ms-md-5 d-flex align-items-center justify-content-between">
+    <!-- Logo -->
+    <a class="navbar-brand" href="./index.html">
+        <img src="./My-Portfolio-Icons/Logo.JPG" alt="Logo" id="logo" width="auto" height="40" style="border-radius: 50%;">
+            </a>
 
-                    <!-- Logo -->
-
-                    <a class="navbar-brand" href="./index.html">
-                        <img src="./My-Portfolio-Icons/Logo.JPG" alt="Logo" id="logo" width="auto" height="40" style="border-radius: 50%;">
-                      </a>
-
-                      <!-- navbar button for small screens -->
-
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-
-                  <!-- Nav links -->
-
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 fs-5">
-                      <li class="nav-item me-lg-5">
-                        <a class="nav-link" aria-current="page" href="#section1">About</a>
-                      </li>
-                      <li class="nav-item me-lg-5">
-                        <a class="nav-link" aria-current="page" href="#section2">Projects</a>
-                      </li>
-                      <li class="nav-item me-lg-5">
-                        <a class="nav-link" aria-current="page" href="#section3">Skills</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#section4">Certificates</a>
-                      </li>
-                    </ul>
-
-                    <!-- Get in touch button -->
-
-                    <a href="#section5" class="me-lg-5 align-items-center form">
-                      <button class="btn fw-bold" type="button">Get in touch</button>
-                    </a>
-                  </div>
-                </div>
-              </nav>
-
-              <!-- ABOUT ME -->
-
-            <article class="container"><!-- in aside.css for style -->
-                <div class="p-4 m-4 text-center border-bottom">
-                    <h2 id="section1" class="fs-3 fw-bold">ABOUT ME</h2>
-                </div>
-                <!-- left side -->
-                <div id="About-Me" class="row g-3 mb-5 mt-5">
-                    <div class="col ms-sm-5">
-                        <h4 class="fw-bold fs-6 text-secondary-emphasis">Hi, my name is</h4> 
-                        <h5 class="fw-bold fs-1">JEANSY PENA</h5> 
-                        <h5 class="fw-bold fs-2 text-secondary-emphasis">I Build things for the web.</h5>
-                        <span class="fs-5 text-dark">I’m a software engineer specializing in building 
-                            (and occasionally designing) exceptional digital experiences. Front-End developer focus on
-                            UX|UI.
-                        </span>
-                    </div>
-                    <!-- Right side -->
-                    <div id="img-container" class="col ms-sm-5">
-                        <article id="jeansy-pena">
-                            <img src="./My-Portfolio-Icons/Logo.JPG" alt="Jeansy Pena" class="flex-wrap">
-                            <img src="./My-Portfolio-Icons/img2.jpeg" alt="Jeansy Pena 2">
-                        </article>
-                    </div>
-            </article>
-
-            <!-- PROJECTS -->
-
-            <section class="container-fluid">
-                <div class="p-4 m-4 text-center border-bottom">
-                    <h2 id="section2" class="fs-3 fw-bold">PROJECTS</h2>
-                </div>
-                <!-- cards -->
-                <!-- in index.css for style of all cards, including cards for skills -->
-                <div id="card-projects" class="card-container"></div> <!-- Projects are provided using JS -->
-            </section>
-            <!-- SKILLS -->
-                <article class="container-fluid">
-                    <div class="p-4 m-4 text-center border-bottom">
-                        <h2 id="section3" class="fs-3 fw-bold">SKILLS</h2>
-                    </div>
-                    <!-- Acordeon swith skills inside -->
-                    <div class="section container">
-                        <!-- Front-end skills -->
-                        <details open> <!-- in acrodeon.css for style -->
-                            <summary>Front-End</summary>
-                            <div class="card-container">
-                                <div class="card">
-                                    <img src="https://hernanreiq.github.io/portafolio/Habilidades/html5.svg" alt="html5">
-                                    <div class="card-content">
-                                        <h3>HTML5</h3>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <img src="https://hernanreiq.github.io/portafolio/Habilidades/css3.svg" alt="css3">
-                                    <div class="card-content">
-                                        <h3>CSS2</h3>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <img src="https://hernanreiq.github.io/portafolio/Habilidades/javascript.svg" alt="js">
-                                    <div class="card-content">
-                                        <h3>JS</h3>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <img src="https://hernanreiq.github.io/portafolio/Habilidades/bootstrap.svg" alt="bootstrap">
-                                    <div class="card-content"> <br><br>
-                                    <h3>BOOTSTRAP</h3>
-                                </div>
-                            </div>
-                            </div>
-                        </details>
-                        <!--Back-end skills-->
-                        <!--<details>
-                            <summary>Back-End</summary>
-                            <div class="card-container">
-                                <div class="card">
-                                    <img src="" alt="">
-                                    <div class="card-content">
-                                        <h3></h3>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <img src="" alt="">
-                                    <div class="card-content">
-                                        <h3></h3>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <img src="" alt="">
-                                    <div class="card-content">
-                                        <h3></h3>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <img src="" alt="">
-                                    <div class="card-content">
-                                        <h3></h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </details>-->
-                        <!--Technologies skills-->
-                        <details>
-                            <summary>Technologies</summary>
-                            <div class="card-container">
-                                <div class="card">
-                                    <img src="https://hernanreiq.github.io/portafolio/Habilidades/git.svg" alt="git">
-                                    <div class="card-content">
-                                        <h3>GIT</h3>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <img src="https://hernanreiq.github.io/portafolio/Habilidades/npm.svg" alt="npm">
-                                    <div class="card-content">
-                                        <h3>NPM</h3>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <img src="./My-Portfolio-Icons/Skills/Technologies/3.svg" alt="github">
-                                    <div class="card-content">
-                                        <h3>GITHUB</h3>
-                                    </div>
-                                </div>
-                                <!--<div class="card">
-                                    <img src="" alt="">
-                                    <div class="card-content">
-                                        <h3></h3>
-                                    </div>
-                                </div>-->
-                            </div>
-                        </details>
-                    </div>
-                    <!-- CERTIFICATES -->
-                    <div class="p-4 m-4 text-center border-bottom">
-                        <h2 id="section4" class="fs-3 fw-bold">CERTIFICATES</h2>
-                    </div>
-        <!-- Carousel -->
-        <div id="certificates" class="carousel slide container" data-bs-ride="carousel">
-            <!-- Indicators/dots -->
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#certificates" data-bs-slide-to="0" class="active text-bg-dark"></button>
-              <button type="button" data-bs-target="#certificates" data-bs-slide-to="1" class="text-bg-dark"></button>
-              <button type="button" data-bs-target="#certificates" data-bs-slide-to="2" class="text-bg-dark"></button>
-              <button type="button" data-bs-target="#certificates" data-bs-slide-to="3" class="text-bg-dark"></button>
-              <button type="button" data-bs-target="#certificates" data-bs-slide-to="4" class="text-bg-dark"></button>
-              <button type="button" data-bs-target="#certificates" data-bs-slide-to="5" class="text-bg-dark"></button>
-            </div>
-            <!-- The slideshow/carousel -->
-            <div id="certificates" class="carousel slide" data-bs-ride="carousel">
-              <div id="certificates-carousel" class="carousel-inner">
-                <!-- images are provided using JS -->
-              </div>
-            </div>
-            <!-- Left and right controls/icons -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#certificates" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon text-bg-dark"></span>
+    <!-- navbar button for small screens -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
             </button>
+
+    <!-- Nav links -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 fs-5">
+            <li class="nav-item me-lg-5">
+                <a class="nav-link" aria-current="page" href="#section1">About</a>
+                    </li>
+            <li class="nav-item me-lg-5">
+                <a class="nav-link" aria-current="page" href="#section2">Projects</a>
+                    </li>
+            <li class="nav-item me-lg-5">
+                <a class="nav-link" aria-current="page" href="#section3">Skills</a>
+                    </li>
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#section4">Certificates</a>
+                    </li>
+                        </ul>
+
+    <!-- Get in touch button -->
+    <a href="#section5" class="me-lg-5 align-items-center form">
+        <button class="btn fw-bold" type="button">Get in touch</button>
+            </a>
+                </div>
+                    </div>
+                         </nav>
+
+    <!-- ABOUT ME -->    
+        <article class="container"><!-- in aside.css for style -->
+            <div class="p-4 m-4 text-center border-bottom">
+                <h2 id="section1" class="fs-3 fw-bold">ABOUT ME</h2>
+                    </div>
+    <!-- left side -->
+        <div id="About-Me" class="row g-3 mb-5 mt-5">
+            <div id="text" class="col ms-sm-5">
+                <h4>Hi, my name is</h4>
+                <h5>JEANSY PENA</h5>
+                <h5>I Build things for the web.</h5>
+                <span>I’m a software engineer specializing in building
+                (and occasionally designing) exceptional digital experiences. Front-End developer focus on
+                UX|UI.
+                    </span>
+                        </div>
+
+    <!-- Right side -->
+        <div id="img-container" class="col ms-sm-5">
+            <article id="jeansy-pena">
+                <img src="./My-Portfolio-Icons/Logo.JPG" alt="Jeansy Pena" class="flex-wrap">
+                 <img src="./My-Portfolio-Icons/img2.jpeg" alt="Jeansy Pena 2"> <!-- picture begind -->
+                    </article>
+                        </div>
+                            </article>
+
+    <!-- PROJECTS -->
+        <div class="container">
+            <div class="p-4 m-4 text-center border-bottom">
+                <h2 id="section2" class="fs-3 fw-bold">PROJECTS</h2>
+                    </div>
+
+    <!-- projects cards are provided using JS and JSON -->
+        <div id="card-projects" class="projects-card-container"></div> <!-- Projects are provided using JS -->
+            </div>
+
+    <!-- SKILLS -->
+        <div class="container">
+            <div class="p-4 m-4 text-center border-bottom">
+                <h2 id="section3" class="fs-3 fw-bold">SKILLS</h2>
+                    </div>
+
+    <!-- Acordeon swith skills inside -->
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                    Front-End
+                        </button>
+                            </h2>
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                <div class="accordion-body">
+
+    <!-- skills cards -->
+        <div id="front-end" class="card-container">
+            <div class="card">
+                <img src="https://www.svgrepo.com/show/452228/html-5.svg" style="width: 9rem;" alt="html5">
+                    <div class="card-content">
+                        <h3>HTML5</h3>
+                            </div>
+                                </div>
+            <div class="card">
+                <img src="https://hernanreiq.github.io/portafolio/Habilidades/css3.svg" style="width: 9rem;" alt="css3">
+                    <div class="card-content">
+                        <h3>CSS2</h3>
+                            </div>
+                                </div>
+            <div class="card">
+                <img src="https://hernanreiq.github.io/portafolio/Habilidades/javascript.svg" style="width: 9rem;" alt="js">
+                    <div class="card-content">
+                        <h3>JS</h3>
+                            </div>
+                                </div>
+            <div class="card">
+                <img src="https://hernanreiq.github.io/portafolio/Habilidades/bootstrap.svg" style="width: 9rem;" alt="bootstrap">
+                    <div class="card-content"> <br>
+                        <h3>BOOTSTRAP</h3>
+                            </div>
+                                </div>
+            <div class="card">
+                <img src="https://hernanreiq.github.io/portafolio/Habilidades/react.svg" style="width: 9rem;" alt="react">
+                    <div class="card-content">
+                        <h3>REACT</h3>
+                            </div>
+                                </div>
+            <div class="card">
+                <img src="https://hernanreiq.github.io/portafolio/Habilidades/axios.svg" style="width: 9rem;" alt="axios">
+                    <div class="card-content">
+                        <h3>AXIOS</h3>
+                            </div>
+                                </div>
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCqvPMMZcmOtfGCKpj-BzjnIFTNpVkImodgA&s" style="width: 9rem;" alt="UI ball LDRS">
+                    <div class="card-content">
+                        <h3>UI ball LDRS</h3>
+                            </div>
+                                </div>
+            <div class="card">
+                <img src="https://pbs.twimg.com/profile_images/1244925541448286208/rzylUjaf_400x400.jpg" style="width: 9rem;" alt="chakra">
+                    <div class="card-content">
+                        <h3>Chakra</h3>
+                            </div>
+                                </div>
+            <div class="card">
+                <img src="https://user-images.githubusercontent.com/7850794/164965509-2a8dc49e-2ed7-4243-a2c9-481b03bbc31a.png" style="width: 9rem;" alt="motion">
+                    <div class="card-content">
+                        <h3>Motion</h3>
+                            </div>
+                                </div>
+            <div class="card">
+                <img src="https://hernanreiq.github.io/portafolio/Habilidades/animatecss.svg" style="width: 9rem;" alt="motion">
+                    <div class="card-content">
+                        <h3>Animate.css</h3>
+                            </div>
+                                </div>
+                                    </div> <!-- closing div for card container -->
+                                        </div>
+                                            </div>
+                                                </div>
+    <!-- Back end accordion -->
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                Back-End
+                    </button>
+                        </h2>
+        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+            <div class="accordion-body">
+
+    <!-- skills cards -->
+        <div id="back-end" class="card-container">
+            <div class="card">
+                <img src="https://hernanreiq.github.io/portafolio/Habilidades/nodejs.svg" alt="node.js">
+                    <div class="card-content">
+                        <h3>Node.js</h3>
+                            </div>
+                                </div>
+                                    </div> <!-- closing div for card-container -->
+                                        </div>
+                                            </div>
+                                                </div>
+    <!-- Technologies accordion -->
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                Technologies
+                    </button>
+                          </h2>
+        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+            <div class="accordion-body">
+
+    <!-- skills cards -->
+        <div id="technologies" class="card-container">
+            <div class="card">
+                <img src="https://hernanreiq.github.io/portafolio/Habilidades/git.svg" alt="git">
+                    <div class="card-content">
+                        <h3>GIT</h3>
+                            </div>
+                                </div>
+            <div class="card">
+                <img src="https://hernanreiq.github.io/portafolio/Habilidades/npm.svg" alt="npm">
+                    <div class="card-content">
+                        <h3>NPM</h3>
+                            </div>
+                                </div>
+            <div class="card">
+                <img src="./My-Portfolio-Icons/Skills/Technologies/3.svg" alt="github">
+                    <div class="card-content">
+                        <h3>GITHUB</h3>
+                            </div>
+                                </div>
+            <div class="card">
+                <img src="https://hernanreiq.github.io/portafolio/Habilidades/json.svg" alt="react">
+                    <div class="card-content">
+                        <h3>JSON</h3>
+                            </div>
+                                </div>
+            <div class="card">
+                <img src="https://indiaforensic.com/wp-content/uploads/2020/09/api.png" alt="api">
+                    <div class="card-content">
+                        <h3>APIs</h3>
+                            </div>
+                                </div>
+                                    </div> <!-- closing div for card-container -->
+                                        </div>
+                                            </div>
+                                                </div>
+                                                    </div>
+
+    <!-- CERTIFICATES -->
+        <div class="p-4 m-4 text-center border-bottom">
+            <h2 id="section4" class="fs-3 fw-bold">CERTIFICATES</h2>
+                </div>
+
+    <!-- Carousel -->
+        <div id="certificates" class="carousel slide container" data-bs-ride="carousel">
+
+    <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#certificates" data-bs-slide-to="0" class="active text-bg-dark"></button>
+            <button type="button" data-bs-target="#certificates" data-bs-slide-to="1" class="text-bg-dark"></button>
+            <button type="button" data-bs-target="#certificates" data-bs-slide-to="2" class="text-bg-dark"></button>
+            <button type="button" data-bs-target="#certificates" data-bs-slide-to="3" class="text-bg-dark"></button>
+            <button type="button" data-bs-target="#certificates" data-bs-slide-to="4" class="text-bg-dark"></button>
+            <button type="button" data-bs-target="#certificates" data-bs-slide-to="5" class="text-bg-dark"></button>
+                </div>
+
+    <!-- The slideshow/carousel -->
+        <div id="certificates" class="carousel slide" data-bs-ride="carousel">
+              <div id="certificates-carousel" class="carousel-inner">
+                    <!-- images are provided using JS -->
+              </div>
+                </div>
+
+    <!-- Left and right controls/icons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#certificates" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon text-bg-dark"></span>
+        </button>
             <button class="carousel-control-next" type="button" data-bs-target="#certificates" data-bs-slide="next">
               <span class="carousel-control-next-icon text-bg-dark"></span>
             </button>
-          </div>
-                </article>
+                </div>
+                    </div> <!-- closing div from projects section -->
+
                         <!-- sticky button -->
             <div class="position-fixed bottom-0 end-0 m-4 fw-bold">
                 <div class="p-lg-5">
                     <a href="#section1" type="button" id="upButton"><i class="bi bi-arrow-up-circle-fill"></i></a> <!-- roll up icon in header for css style-->
-                </div>
-            </div>
+                        </div>
+                            </div>
             <div class="contact m-4 text-center border-bottom"> <!-- in header.css for style of all tittles -->
                 <h2 class="fs-3 fw-bold">Contact</h2>
-            </div>
-        <!-- script files -->
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-            <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-            <script src="./My-Portfolio-JS/projects.js"></script>
-            <script src="./My-Portfolio-JS/certificates.js"></script>
-            <script src="./My-Portfolio-JS/animation.js"></script>
-            <!-- foot page -->
-            <footer id="section5"> <!-- in footPage css for style -->
-        <!-- contact info -->
+                    </div>
+
+    <!-- foot page -->
+        <footer id="section5"> <!-- in footPage css for style -->
+
+    <!-- contact info -->
             <div>
                 <ul class="d-flex justify-content-center fs-1">
                  <li><a href="https://www.linkedin.com/in/jeansy-peña-b575721b0/" target="_blank"><i class="bi bi-linkedin me-3 text-black"></i></a></li>
@@ -268,12 +317,19 @@
                  <li><a href="https://www.facebook.com/jeansypen10?locale=es_LA" target="_blank"><i class="bi bi-facebook me-3 text-black"></i></a></li>
                  <li><a href="mailto:jeansygregorio@gmail.com" target="_blank"><i class="bi bi-envelope text-black"></i></a></li>
                 </ul>
-             </div>
-                <div class="d-flex justify-content-center text-center">
-                    <p>Web designed and developed in 2024 by: Jeansy Peña <br>
-                        All rights reserved ©.</p>
-                </div>
-            </footer>
-          </div>
-</body>
+                    </div>
+            <div class="d-flex justify-content-center text-center">
+                <p>Web designed and developed in 2024 by: Jeansy Peña <br>
+                    All rights reserved ©.</p>
+                    </div>
+                        </footer>
+                            </div> <!-- closing div for main content -->
+
+    <!-- script files -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="./My-Portfolio-JS/projects.js"></script>
+        <script src="./My-Portfolio-JS/certificates.js"></script>
+        <script src="./My-Portfolio-JS/animation.js"></script>
+    </body>
 </html>

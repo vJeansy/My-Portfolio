@@ -1,5 +1,5 @@
 /* nav initial animation */
-@keyframes bounce {
+@keyframes navBar {
     from {
         transform: translate3d(0, -100px, 0);
     }
@@ -8,7 +8,7 @@
     }
 }
 nav{ /* passing animation to nav */
-    animation: bounce 2s;
+    animation: navBar 2s;
     animation-direction: alternate;
     animation-iteration-count: initial;
 }
@@ -33,7 +33,6 @@ h1, h2, h3, h4, h5, span, p{
        opacity: 1;
     }
 }
-
 /* Loader Screen */
 
 .loader {
