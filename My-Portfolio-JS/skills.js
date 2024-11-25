@@ -4,7 +4,7 @@ var backEnd = document.getElementById('back-end');
 var technologies = document.getElementById('technologies');
 // Fetch data from json file
 const obtainSkills = () => {
-    axios.get('./My-Portfolio-JSON/skills.json')
+    axios.get('My-Portfolio-JSON/skills.json')
     .then(res => {
         skillsCards(res.data);
     })
