@@ -18,6 +18,24 @@
         "type": "certificate"
     },
     {
+        "name": "HTML and CSS in depth",
+        "direction": "My-Portfolio-Icons/certificate/",
+        "school": "COURSERA",
+        "type": "certificate"
+    },
+    {
+        "name": "React Basics",
+        "direction": "My-Portfolio-Icons/certificate/",
+        "school": "COURSERA",
+        "type": "certificate"
+    },
+    {
+        "name": "Advanced React",
+        "direction": "My-Portfolio-Icons/certificate/",
+        "school": "COURSERA",
+        "type": "certificate"
+    },
+    {
         "name": "(FUNDACION CARLOS SLIM) Tecnico en redes de datos",
         "direction": "My-Portfolio-Icons/certificate/",
         "school": "FUNDACION CARLOS SLIM",
