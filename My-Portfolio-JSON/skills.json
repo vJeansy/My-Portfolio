@@ -49,6 +49,21 @@
         "type": "front-end"
     },
     {
+        "tittle": "Vite.dev",
+        "logo": "https://es.vitejs.dev/logo-with-shadow.png",
+        "type": "front-end"
+    },
+    {
+        "tittle": "React Bootstrap",
+        "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwmVA4pqRhKuQtGIe_kC8KcOj-1Aa_Y2Rm1Lg6qDCCq8Q318gvx9jPEVeOxUFlvSvxvtQ&usqp=CAU",
+        "type": "front-end"
+    },
+    {
+        "tittle": "Figma",
+        "logo": "https://cdn-icons-png.flaticon.com/128/5968/5968705.png",
+        "type": "front-end"
+    },
+    {
         "tittle": "Node.js",
         "logo": "https://www.svgrepo.com/show/452075/node-js.svg",
         "type": "back-end"
