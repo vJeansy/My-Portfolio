@@ -71,13 +71,12 @@ h1, h2, h3, h4, h5, span, p{
     animation: l9 2s linear infinite;
     /* Usamos 3s para que crezca lentamente */
   }
-  
   .spinner:before {
     content: "Loading"; /* El texto que se muestra */
     display: block; /* Para asegurar que el texto tenga espacio */
     text-align: center;
   }
-  
+
   @keyframes l9 {
     to {
       background-position: calc(50% + 1.6em) 0, calc(50% + 3.2em) .8em;

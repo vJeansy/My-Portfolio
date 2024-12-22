@@ -39,6 +39,7 @@ nav #navbarSupportedContent .btn:hover{ /* get in touch button hover style */
     color: -webkit-linear-gradient(to right, #a8e063, #56ab2f);  /* Chrome 10-25, Safari 5.1-6 */
     color: linear-gradient(to right, #a8e063, #56ab2f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background: #eb381d;
+    box-shadow: rgb(48, 48, 48) 12px 12px 7px 0;
     transform: scale(1.1);
 }
 
@@ -50,6 +51,26 @@ nav #navbarSupportedContent .btn:hover{ /* get in touch button hover style */
     background-color: #ef6a36;
     height: 250px;
     border-radius: 1%;
+    box-shadow: rgb(48, 48, 48) 12px 12px 7px 0;
+}
+
+#About-Me button {
+    border-radius: 15px;
+    width: 90px;
+    color: #222222;
+    background: #eb381d;
+    border: solid;
+    border-color: #222222;
+    border-radius: 1rem;
+    cursor: pointer;
+    font-weight: 700;
+    transition: all 0.3s ease 0s;
+}
+
+#About-Me button:hover {
+    box-shadow: rgb(48, 48, 48) 7px 7px 3px 0;
+    background: #ec6b58;
+    transform: scale(1.1);
 }
 
 @media (max-width: 991px) {
@@ -86,73 +107,11 @@ article #jeansy-pena{ /* img bg */
 article #jeansy-pena img{ /* image's article */
     height: 17rem;
     width: auto;
-    border-radius: 3%;
+    border-radius: 250px;
     transform: scale(0.9);
     transition: all 2s;
     background-image: none;
-    filter: drop-shadow(0 0 1em #fc2a23);
-}
-
-article #jeansy-pena {
-    position: relative;
-    transition: all .3s ease;
-}
-
-article #jeansy-pena img:first-child {
-    border-radius: 15px;
-    object-fit: cover;
-    width: auto;
-}
-
-#jeansy-pena img:last-child {
-    position: absolute;
-    width: auto;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    transform: translateY(25%);
-    transition: .3s ease;
-    opacity: 0;
-}
-
-article #jeansy-pena:hover{
-    transform:
-    perspective(250px)
-    rotateX(10deg)
-    translateY(-5%)
-    translateZ(0);
-}
-
-article #jeansy-pena::before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    height: 100%;
-    width: 55%;
-    background-image: 
-    linear-gradient(
-        to bottom,
-        transparent 10%,
-        rgba(0, 0, 0, 0.5) 50%,
-        rgba(0, 0, 0) 95%
-    );
-    opacity: 0;
-    transition: all .3s ease;
-}
-
-article #jeansy-pena:hover::before {
-    opacity: 1;
-}
-
-article #jeansy-pena:hover img:last-child {
-    opacity: 1;
-    transform: translateY(10%);
-}
-
-article #jeansy-pena:hover img:first-child {
-    opacity: 30%;
-    transition: .1s ease-in-out;
+    box-shadow: rgb(31, 31, 31) 9px 9px 9px 0;
 }
 
 /*=====================
@@ -352,4 +311,92 @@ details .card-content h3{
 details .card-content h3:hover{
     background-color: #fafafa;
     transform: scale(1.02);
+}
+
+/* side socials */
+
+.side-socials {
+    display:block;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+
+.side-socials .bi-linkedin,
+.side-socials .bi-github,
+.side-socials .bi-instagram,
+.side-socials .bi-facebook,
+.side-socials .bi-envelope {
+    font-size: 2.7rem;
+    color: #222222;
+    transition: all 0.3s ease 0s;
+}
+
+.side-socials .bi-linkedin:hover{
+    color: #0e76a8;
+    filter: drop-shadow(0 0 0.75rem #0e76a8);
+}
+
+.side-socials .bi-github:hover{
+    color: #6e5494;
+    filter: drop-shadow(0 0 0.75rem #6e5494);
+}
+
+.side-socials .bi-instagram:hover{
+    color: #e1306c;
+    filter: drop-shadow(0 0 0.75rem #e1306c);
+}
+
+.side-socials .bi-facebook:hover{
+    color: #3b5998;
+    filter: drop-shadow(0 0 0.75rem #3b5998);
+}
+
+.side-socials .bi-envelope:hover{
+    color: #ea4335;
+    filter: drop-shadow(0 0 0.75rem #ea4335);
+}
+
+footer img {
+    width: 155px;
+    height: auto;
+    margin: 0 45px 15px 0;
+}
+
+@media (max-width: 1921px) {
+    .social-contact {
+        display: none;
+    }
+}
+
+@media (max-width: 441px) {
+    .side-socials {
+        display: none;
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    footer .footer-context {
+        flex-direction: column;
+        align-items: center;
+    }
+    footer img {
+        margin: 0 auto 15px auto;
+    }
+    footer .doormat,
+    footer .social-contact,
+    footer .contact {
+        margin: 10px 0;
+    }
+    footer .doormat ul,
+    footer .contact ul {
+        padding: 0;
+    }
+    footer .doormat ul li,
+    footer .contact ul li {
+        margin: 5px 0;
+    }
 }
