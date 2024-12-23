@@ -363,38 +363,43 @@ footer img {
     margin: 0 45px 15px 0;
 }
 
-@media (max-width: 1921px) {
-    .social-contact {
-        display: none;
-    }
-}
-
 @media (max-width: 441px) {
     .side-socials {
         display: none;
     }
+
+    .social-contact {
+        display: flex;
+        justify-content: center;
+        margin: 10px 0;
+    }
+
     footer {
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
+
     footer .footer-context {
         flex-direction: column;
         align-items: center;
     }
+
     footer img {
         margin: 0 auto 15px auto;
     }
+
     footer .doormat,
-    footer .social-contact,
     footer .contact {
         margin: 10px 0;
     }
+
     footer .doormat ul,
     footer .contact ul {
         padding: 0;
     }
+
     footer .doormat ul li,
     footer .contact ul li {
         margin: 5px 0;

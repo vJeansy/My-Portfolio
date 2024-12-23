@@ -43,5 +43,14 @@
         "gitUrl": "https://github.com/vJeansy/PokeDex",
         "technologies": "HTML, CSS, Bootstrap 5v, JavaScript, React, 3rd party API (PokeAPI), NPM, Git",
         "type": "project"
+    },
+    {
+        "tittle": "Little Lemon Restaurant Reservation System",
+        "direction": "My-Portfolio-Icons/project/The Little Lemon Restaurant/",
+        "description": "The Little Lemon Restaurant Reservation System is a web application that allows users to make reservations at the Little Lemon restaurant. Users can select a date, time, number of guests, and occasion for their reservation.",
+        "pageUrl": "https://vjeansy.github.io/coursera-practice/",
+        "gitUrl": "https://github.com/vJeansy/coursera-practice",
+        "technologies": "React: For building the user interface, React Router: For navigation between different pages, Font Awesome: For icons, Jest & React Testing Library: For unit testing, GitHub Pages: For deployment.",
+        "type": "project"
     }
 ]
