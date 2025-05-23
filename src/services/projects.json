@@ -6,7 +6,7 @@
         "description": "A web template inspired by the Dominican Republic National Futsal League. It displays live games, tournament statistics, and is designed to showcase sponsorship advertisements. Built for sports organizations seeking a modern, informative, and visually appealing platform.",
         "pageUrl": "https://vjeansy.github.io/Liga-Nacional-De-Futsal-Dominicana/",
         "gitUrl": "https://github.com/vJeansy/Liga-Nacional-De-Futsal-Dominicana",
-        "technologies": "HTML, CSS, Bootstrap 5v, NPM, Git",
+        "technologies": "HTML, CSS, Bootstrap, NPM, Git",
         "amountOfImages": 3,
         "type": "project"
     },
@@ -17,7 +17,7 @@
         "description": "A classic Tic Tac Toe game built for the web, featuring a challenging AI opponent. Enjoy a nostalgic experience with a modern interface, designed for both fun and to demonstrate interactive JavaScript logic and responsive design.",
         "pageUrl": "https://vjeansy.github.io/Juego-Conecta-Tres/",
         "gitUrl": "https://github.com/vJeansy/Juego-Conecta-Tres",
-        "technologies": "HTML, CSS, Bootstrap 5v, JavaScript, NPM, Git",
+        "technologies": "HTML, CSS, Bootstrap, JavaScript, NPM, Git",
         "amountOfImages": 3,
         "type": "project"
     },
@@ -28,7 +28,7 @@
         "description": "An interactive online store template with dynamic product listings, filtering, and expandable features. Built to be easily customized and extended, it demonstrates e-commerce fundamentals and modern web development practices.",
         "pageUrl": "https://vjeansy.github.io/Oline-Store/",
         "gitUrl": "https://github.com/vJeansy/Oline-Store",
-        "technologies": "HTML, CSS, Bootstrap 5v, JavaScript, NPM, Git",
+        "technologies": "HTML, CSS, Bootstrap, JavaScript, NPM, Git",
         "amountOfImages": 3,
         "type": "project"
     },
@@ -39,7 +39,7 @@
         "description": "A simple yet functional calculator app built with React. This project demonstrates the use of React components, state management, and user interaction, making it a great learning resource for beginners.",
         "pageUrl": "https://vjeansy.github.io/Calculator/",
         "gitUrl": "https://github.com/vJeansy/Calculator",
-        "technologies": "HTML, CSS, Bootstrap 5v, JavaScript, React, NPM, Git",
+        "technologies": "HTML, CSS, Bootstrap, JavaScript, React, NPM, Git",
         "amountOfImages": 1,
         "type": "project"
     },
@@ -50,7 +50,7 @@
         "description": "A Pokédex web app that fetches data from the PokeAPI. Features include searching and filtering Pokémon by name and type, and viewing detailed stats. Built with React and hooks, it showcases API integration and dynamic UI updates.",
         "pageUrl": "https://vjeansy.github.io/PokeDex/",
         "gitUrl": "https://github.com/vJeansy/PokeDex",
-        "technologies": "HTML, CSS, Bootstrap 5v, JavaScript, React, 3rd party API (PokeAPI), NPM, Git",
+        "technologies": "HTML, CSS, Bootstrap, JavaScript, React, 3rd party API (PokeAPI), NPM, Git",
         "amountOfImages": 3,
         "type": "project"
     },

@@ -28,14 +28,17 @@ export async function createModal(projectId) {
 
     // Modal content structure
     let modalContent = `
-        <div class="bg-[#0D1117] p-6 rounded-lg w-[60rem] text-center relative z-60
+        <div id="modal" class="bg-[#0D1117] rounded-lg w-[60rem] text-center relative z-60
         transition transform duration-300 opacity-0 scale-95 animate-[fadeZoom_0.5s_ease-out_forwards]">
-            <button id="closeModalBtn" class="absolute top-1 right-2 text-slate-50 p-1 text-xl rounded cursor-pointer" title="Close">✖</button>
+            <button id="closeModalBtn" class="absolute top-1 right-4 text-slate-50 p-1 text-xl rounded
+            cursor-pointer hover:bg-red-400 h-10 w-12" title="Close">✖</button>
             <h2 class="text-xl font-bold mb-4 text-slate-50">${project.tittle}</h2>
-            <div id="carousel" class="relative w-full h-full mt-4">
+            <div id="carousel" class="relative w-full h-full">
                 <img id="carouselImg" src="${imagePaths[0] || ''}" class="rounded shadow-lg w-full h-full object-cover">
-                <button id="prevBtn" class="absolute left-2 top-1/2 bg-gray-600 text-white p-1 rounded h-8 w-8" title="Previous">◀</button>
-                <button id="nextBtn" class="absolute right-2 top-1/2 bg-gray-600 text-white p-1 rounded h-8 w-8 cursor-pointer" title="Next">▶</button>
+                <button id="prevBtn" class="absolute left-2 top-1/2 bg-gray-600 text-white
+                p-1 rounded h-8 w-8 cursor-pointer hover:bg-gray-500" title="Previous">◀</button>
+                <button id="nextBtn" class="absolute right-2 top-1/2 bg-gray-600
+                text-white p-1 rounded h-8 w-8 cursor-pointer hover:bg-gray-500" title="Next">▶</button>
             </div>
         </div>
     `;
