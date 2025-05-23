@@ -61,7 +61,7 @@ export async function projectsData() {//Projects handler
             duration-300 flex-shrink-0 cursor-pointer xl:mask-r-from-50% xl:mask-r-to-90% xl:blur-xs hover:blur-none`;
             projectsLeftCard.appendChild(imgContainer);
             const img = document.createElement('img');
-            img.src = project.path + '1.PNG';
+            img.src = project.path + '1.png';
             img.className = 'imgs-projects img-container-left shadow-xl rounded-md ';
             img.style.height = '20rem';
             img.style.width = '40rem';
@@ -125,7 +125,7 @@ export async function projectsData() {//Projects handler
             transition-all duration-300 flex-shrink-0 cursor-pointer xl:mask-l-from-50% xl:mask-l-to-90% xl:blur-xs hover:blur-none`;
             projectsRightCard.appendChild(imgContainer);
             const img = document.createElement('img');
-            img.src = project.path + '1.PNG';
+            img.src = project.path + '1.png';
             img.className = 'imgs-projects img-container-left shadow-xl rounded-md';
             img.style.height = '20rem';
             img.style.width = '40rem';
