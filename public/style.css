@@ -204,3 +204,9 @@ header>div {
     margin: 1rem 3rem;
     padding: 1rem 1rem;
 }
+
+#modal{
+    margin: 5px;
+    padding: 1rem;
+    background-color: #0D1117;
+}
