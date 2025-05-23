@@ -1,0 +1,29 @@
+[
+        {
+        "id": 1,
+        "name": "TECNICO SUPERIOR EN IT SUPPORT",
+        "logo": "https://www.itsc.edu.do/wp-content/uploads/2023/02/logo-12-1-e1677264157702.png",
+        "school": "Instituto Tecnológico Superior de Comunitario",
+        "type": "Associate Degree",
+        "emissionDate": "2020-07-01",
+        "certificationLink": "https://www.itsc.edu.do"
+    },
+    {
+        "id": 2,
+        "name": "Front-End developer from META",
+        "logo": "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera.s3.amazonaws.com/media/coursera-rebrand-logo-square.png?auto=format%2Ccompress&dpr=1",
+        "school": "COURSERA",
+        "type": "Course Certificate",
+        "emissionDate": "2025-01-01",
+        "certificationLink": "https://coursera.org/share/43642a31343d8312e1ec429985f42c36"
+    },
+        {
+        "id": 3,
+        "name": "Full-Stack developer",
+        "logo": "https://play-lh.googleusercontent.com/dsCkmJE2Fa8IjyXERAcwc5YeQ8_NvbZ4_OI8LgqyjILpXUfS5YhEcnAMajKPrZI-og",
+        "school": "UDEMY",
+        "type": "Course Certificate",
+        "emissionDate": "2025-04-01",
+        "certificationLink": "https://www.udemy.com/certificate/UC-ea118b47-d9c5-4b3a-9a67-4a0094c5019d/"
+    }
+]
