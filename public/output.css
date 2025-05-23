@@ -8,6 +8,7 @@
     --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-red-400: oklch(70.4% 0.191 22.216);
     --color-red-500: oklch(63.7% 0.237 25.331);
     --color-sky-500: oklch(68.5% 0.169 237.323);
     --color-blue-400: oklch(70.7% 0.165 254.624);
@@ -246,8 +247,20 @@
   .top-6 {
     top: calc(var(--spacing) * 6);
   }
+  .right-0 {
+    right: calc(var(--spacing) * 0);
+  }
+  .right-1 {
+    right: calc(var(--spacing) * 1);
+  }
   .right-2 {
     right: calc(var(--spacing) * 2);
+  }
+  .right-4 {
+    right: calc(var(--spacing) * 4);
+  }
+  .right-5 {
+    right: calc(var(--spacing) * 5);
   }
   .right-6 {
     right: calc(var(--spacing) * 6);
@@ -285,6 +298,9 @@
   .-m-2\.5 {
     margin: calc(var(--spacing) * -2.5);
   }
+  .m-6 {
+    margin: calc(var(--spacing) * 6);
+  }
   .mt-2 {
     margin-top: calc(var(--spacing) * 2);
   }
@@ -302,6 +318,9 @@
   }
   .mb-4 {
     margin-bottom: calc(var(--spacing) * 4);
+  }
+  .mb-10 {
+    margin-bottom: calc(var(--spacing) * 10);
   }
   .block {
     display: block;
@@ -325,8 +344,14 @@
     width: calc(var(--spacing) * 10);
     height: calc(var(--spacing) * 10);
   }
+  .h-5 {
+    height: calc(var(--spacing) * 5);
+  }
   .h-8 {
     height: calc(var(--spacing) * 8);
+  }
+  .h-10 {
+    height: calc(var(--spacing) * 10);
   }
   .h-12 {
     height: calc(var(--spacing) * 12);
@@ -363,6 +388,12 @@
   }
   .w-8 {
     width: calc(var(--spacing) * 8);
+  }
+  .w-10 {
+    width: calc(var(--spacing) * 10);
+  }
+  .w-12 {
+    width: calc(var(--spacing) * 12);
   }
   .w-20 {
     width: calc(var(--spacing) * 20);
@@ -525,44 +556,8 @@
     --tw-gradient-position: to right in oklab;
     background-image: linear-gradient(var(--tw-gradient-stops));
   }
-  .bg-\[url\(\.\/Header5\.webp\)\] {
-    background-image: url(./Header5.webp);
-  }
-  .bg-\[url\(\.\/Portfolio\/public\/Header5\.webp\)\] {
-    background-image: url(./Portfolio/public/Header5.webp);
-  }
   .bg-\[url\(\.\/assets\/Header5\.webp\)\] {
     background-image: url(./assets/Header5.webp);
-  }
-  .bg-\[url\(\.\/public\/assets\/Header5\.webp\)\] {
-    background-image: url(./public/assets/Header5.webp);
-  }
-  .bg-\[url\(\.\/src\/assets\/image\/Header5\.webp\)\] {
-    background-image: url(./src/assets/image/Header5.webp);
-  }
-  .bg-\[url\(\.public\/Header5\.webp\)\] {
-    background-image: url(.public/Header5.webp);
-  }
-  .bg-\[url\(\/Header5\.webp\)\] {
-    background-image: url(/Header5.webp);
-  }
-  .bg-\[url\(\/Projects\/Portfolio\/public\/Header5\.webp\)\] {
-    background-image: url(/Projects/Portfolio/public/Header5.webp);
-  }
-  .bg-\[url\(\/assets\/Header5\.webp\)\] {
-    background-image: url(/assets/Header5.webp);
-  }
-  .bg-\[url\(\/public\/assets\/Header5\.webp\)\] {
-    background-image: url(/public/assets/Header5.webp);
-  }
-  .bg-\[url\(C\:\/Users\/jeans\/Documents\/Projects\/Portfolio\/public\/Header5\.webp\)\] {
-    background-image: url(C:/Users/jeans/Documents/Projects/Portfolio/public/Header5.webp);
-  }
-  .bg-\[url\(C\:\\Users\\jeans\\Documents\\Projects\\Portfolio\\public\\Header5\.webp\)\] {
-    background-image: url(C:\Users\jeans\Documents\Projects\Portfolio\public\Header5.webp);
-  }
-  .bg-\[url\(assets\/Header5\.webp\)\] {
-    background-image: url(assets/Header5.webp);
   }
   .from-slate-900 {
     --tw-gradient-from: var(--color-slate-900);
@@ -712,9 +707,6 @@
   .text-gray-600 {
     color: var(--color-gray-600);
   }
-  .text-purple-500 {
-    color: var(--color-purple-500);
-  }
   .text-red-500 {
     color: var(--color-red-500);
   }
@@ -832,6 +824,27 @@
       }
     }
   }
+  .hover\:bg-gray-500 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-gray-500);
+      }
+    }
+  }
+  .hover\:bg-gray-600 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-gray-600);
+      }
+    }
+  }
+  .hover\:bg-red-400 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-red-400);
+      }
+    }
+  }
   .hover\:mask-r-from-100\% {
     &:hover {
       @media (hover: hover) {
@@ -915,11 +928,6 @@
     &:focus {
       --tw-outline-style: none;
       outline-style: none;
-    }
-  }
-  .md\:block {
-    @media (width >= 48rem) {
-      display: block;
     }
   }
   .md\:flex {
