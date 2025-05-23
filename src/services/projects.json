@@ -57,7 +57,7 @@
     {
         "id": 6,
         "tittle": "Little Lemon Restaurant Reservation System",
-        "path": "src/assets/projects/The Little Lemon Restaurant/",
+        "path": "src/assets/projects/TheLittleLemonRestaurant/",
         "description": "A reservation system for the Little Lemon restaurant, allowing users to book tables by selecting date, time, guests, and occasion. Built with React and React Router, it includes unit testing and is deployed via GitHub Pages.",
         "pageUrl": "https://vjeansy.github.io/coursera-practice/",
         "gitUrl": "https://github.com/vJeansy/coursera-practice",
