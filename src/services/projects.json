@@ -64,5 +64,16 @@
         "technologies": "React, React Router, Font Awesome, Jest, React Testing Library, GitHub Pages",
         "amountOfImages": 1,
         "type": "project"
+    },
+    {
+        "id": 7,
+        "tittle": "NoteNest",
+        "path": "src/assets/projects/NoteNest/",
+        "description": "A note-taking app that allows users to create, edit, and delete notes. Built with React, it features a clean UI and responsive design, showcasing state management and component-based architecture.",
+        "pageUrl": "https://notenest-alpha.vercel.app",
+        "gitUrl": "https://github.com/vJeansy/NoteNest/tree/master",
+        "technologies": "HTML, CSS, Material-UI, JavaScript, React, NPM, Git, PostgreSQL, Express, Node.js, JWT, bcrypt",
+        "amountOfImages": 9,
+        "type": "project"
     }
 ]

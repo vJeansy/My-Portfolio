@@ -1,152 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <title>JPenaDev.</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
     <link rel="icon" type="image/svg" href="./src/assets/image/JPDevLogo.png">
-    <!-- MetaData -->
-    <meta property="og:tittle" content="Jeansy's portafolio">
+
+    <!-- Open Graph Meta -->
+    <meta property="og:title" content="Jeansy's portafolio">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://vjeansy.github.io/My-Portfolio/public/JPDevLogo.png">
     <meta property="og:url" content="https://vjeansy.github.io/My-Portfolio/">
-    <meta property="og:description"
-        content="JEANSY PENA. I Build things for the web. I’m a software engineer specializing in building (and occasionally designing) exceptional digital experiences. Front-End developer focus on UX|UI." />
+    <meta property="og:description" content="JEANSY PENA. I Build things for the web. I’m a software engineer specializing in building (and occasionally designing) exceptional digital experiences. Front-End developer focus on UX|UI." />
     <meta property="og:locale" content="en_US">
     <meta property="og:site_name" content="JP.Dev">
-    <!-- CSS files/links -->
+
+    <!-- CSS Files -->
     <link rel="stylesheet" href="./public/style.css">
-    <!-- Frameworks and Librery -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
     <link rel="stylesheet" href="./public/output.css">
+
+    <!-- Fonts and Icons -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-        integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-    <header id="main-header" class="w-full h-[50rem] mask-b-from-65% mask-b-to-95%
-    bg-[url(./assets/Header5.webp)] bg-cover bg-no-repeat md:bg-center
-    opacity-0 -translate-y-10 transition-all duration-1000">
+    <!-- ================= HEADER ================= -->
+    <header id="main-header" class="w-full h-[50rem] mask-b-from-65% mask-b-to-95% bg-[url(./assets/Header5.webp)] bg-cover bg-no-repeat md:bg-center opacity-0 -translate-y-10 transition-all duration-1000">
         <div class="flex justify-between items-center h-30">
+            <!-- Logo -->
             <div class="text-slate-50 text-md hover:scale-105 transition-all duration-300">
                 <a class="flex items-center" href="index.html" title="Home">
                     <img class="h-12 w-auto" src="./src/assets/image/JPDevLogo.png" alt="logo">
-                    <p class="text-4xl font-extrabold hidden lg:flex text-slate-50">JPenaDev<span
-                            class="text-blue-400 font-extrabold">.</span></p>
+                    <p class="text-4xl font-extrabold hidden lg:flex text-slate-50">JPenaDev<span class="text-blue-400 font-extrabold">.</span></p>
                 </a>
             </div>
+            <!-- Desktop Navigation -->
             <nav class="flex items-center [&>ul>li]:flex">
-                <ul class="text-slate-50 text-md md:text-sm hidden md:flex gap-15 md:gap-9 [&>li]:transition-all
-                [&>li]:duration-300 [&>li]:hover:scale-105 [&>li]:items-center">
+                <ul class="text-slate-50 text-md md:text-sm hidden md:flex gap-15 md:gap-9 [&>li]:transition-all [&>li]:duration-300 [&>li]:hover:scale-105 [&>li]:items-center">
                     <li>
-                        <svg width="28" height="28">
-                            <use href="./src/assets/sprite.svg#exclamation-circle" />
-                        </svg>
+                        <svg width="28" height="28"><use href="./src/assets/sprite.svg#exclamation-circle" /></svg>
                         <a href="#about">About</a>
                     </li>
                     <li>
-                        <svg width="28" height="28">
-                            <use href="./src/assets/sprite.svg#cog-6-tooth" />
-                        </svg>
+                        <svg width="28" height="28"><use href="./src/assets/sprite.svg#cog-6-tooth" /></svg>
                         <a href="#skills">Skills</a>
                     </li>
                     <li>
-                        <svg width="28" height="28">
-                            <use href="./src/assets/sprite.svg#folder" />
-                        </svg>
+                        <svg width="28" height="28"><use href="./src/assets/sprite.svg#folder" /></svg>
                         <a href="#projects">Projects</a>
                     </li>
                     <li>
-                        <svg width="28" height="28">
-                            <use href="./src/assets/sprite.svg#academic-cap" />
-                        </svg>
+                        <svg width="28" height="28"><use href="./src/assets/sprite.svg#academic-cap" /></svg>
                         <a href="#education">Education</a>
                     </li>
+                </ul>
             </nav>
+            <!-- Contact Button & Burger Menu -->
             <div>
-                <div class="hidden md:flex items-center justify-center text-slate-50 text-center bg-blue-400 rounded-lg px-6 py-2
-            text-lg font-bold shadow-md h-12 w-50 hover:bg-blue-500
-            transition-colors duration-300 cursor-pointer md:text-md">
-                    <a class="w-full text-center" href="mailto:jeansypenar@outlook.com" title="Email me">
-                        Contact Me
-                    </a>
+                <!-- Desktop Contact Button -->
+                <div class="hidden md:flex items-center justify-center text-slate-50 text-center bg-blue-400 rounded-lg px-6 py-2 text-lg font-bold shadow-md h-12 w-50 hover:bg-blue-500 transition-colors duration-300 cursor-pointer md:text-md">
+                    <a class="w-full text-center" href="mailto:jeansypenar@outlook.com" title="Email me">Contact Me</a>
                 </div>
-                <!-- burger button -->
+                <!-- Mobile Burger Button -->
                 <div class="flex md:hidden">
-                    <button id="burger-btn" type="button"
-                        class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-slate-50">
+                    <button id="burger-btn" type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-slate-50">
                         <span class="sr-only">Open main menu</span>
-                        <svg class="size-10" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-                            aria-hidden="true" data-slot="icon">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        <svg class="size-10" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                         </svg>
                     </button>
-                    <!-- Flyour menu (hidden by default) -->
-                    <div id="mobile-menu" class="fixed inset-0 z-50 bg-slate-900 bg-opacity-95 flex flex-col items-center
-      justify-center gap-8 text-2xl text-slate-50 transition-all duration-300 opacity-0 pointer-events-none">
+                    <!-- Mobile Flyout Menu -->
+                    <div id="mobile-menu" class="fixed inset-0 z-50 bg-slate-900 bg-opacity-95 flex flex-col items-center justify-center gap-8 text-2xl text-slate-50 transition-all duration-300 opacity-0 pointer-events-none">
                         <button id="close-menu" class="absolute top-6 right-6 text-4xl">&times;</button>
                         <a href="#about" class="hover:text-blue-400">About</a>
-                        <a href="#projects" class="hover:text-blue-400">Skills</a>
-                        <a href="#contact" class="hover:text-blue-400">Projects</a>
-                        <a href="#contact" class="hover:text-blue-400">Education</a>
+                        <a href="#skills" class="hover:text-blue-400">Skills</a>
+                        <a href="#projects" class="hover:text-blue-400">Projects</a>
+                        <a href="#education" class="hover:text-blue-400">Education</a>
                         <hr class="w-1/2 border-t border-slate-50">
-                        <button class="md:hidden text-slate-50 bg-blue-400 rounded-lg px-6 py-2
-        text-lg font-bold shadow-md h-12 w-50 hover:bg-blue-500
-        transition-colors duration-300 cursor-pointer md:text-md" title="Email me">
-                            Contact Me </button>
+                        <button class="md:hidden text-slate-50 bg-blue-400 rounded-lg px-6 py-2 text-lg font-bold shadow-md h-12 w-50 hover:bg-blue-500 transition-colors duration-300 cursor-pointer md:text-md" title="Email me">
+                            Contact Me
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- Hero Section -->
         <div class="flex flex-col items-center justify-center h-full">
             <div class="text-center">
                 <h1 id="typewriter" class="text-5xl font-extrabold text-slate-50"></h1>
                 <p class="text-xl text-slate-50 mt-4">I build things for the web.</p>
-                <p class="text-lg text-slate-50 mt-2">I’m a software developer specializing in building (and occasionally
-                    designing) exceptional digital experiences.</p>
+                <p class="text-lg text-slate-50 mt-2">I’m a software developer specializing in building (and occasionally designing) exceptional digital experiences.</p>
                 <a href="#projects" class="mt-6 text-blue-400 hover:underline">See my work</a>
             </div>
+            <!-- Social Icons -->
             <div class="social-icons">
-                <ul class="text-slate-50 flex gap-10 [&>li]:transition-all
-            [&>li]:duration-300 [&>li]:hover:scale-105 [&>a]:items-center [&>li>a]:text-5xl">
+                <ul class="text-slate-50 flex gap-10 [&>li]:transition-all [&>li]:duration-300 [&>li]:hover:scale-105 [&>a]:items-center [&>li>a]:text-5xl">
                     <li>
-                        <a href="https://github.com/vJeansy" title="GitHub" target="_blank" rel="noopener">
-                            <i class="fa-brands fa-github"></i>
-                        </a>
+                        <a href="https://github.com/vJeansy" title="GitHub" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i></a>
                     </li>
                     <li>
-                        <a href="https://www.linkedin.com/in/jeansy-peña-b575721b0/" title="LinkedIn" target="_blank"
-                            rel="noopener">
-                            <i class="fa-brands fa-linkedin"></i>
-                        </a>
+                        <a href="https://www.linkedin.com/in/jeansy-peña-b575721b0/" title="LinkedIn" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i></a>
                     </li>
                     <li>
-                        <a href="https://www.instagram.com/vjeansy/" title="Instagram" target="_blank" rel="noopener">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
+                        <a href="https://www.instagram.com/vjeansy/" title="Instagram" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i></a>
                     </li>
                     <li>
-                        <a href="https://www.youtube.com/@vJeansy" title="YouTube" target="_blank" rel="noopener">
-                            <i class="fa-brands fa-youtube"></i>
-                        </a>
-                    </li>
-                    </a>
+                        <a href="https://www.youtube.com/@vJeansy" title="YouTube" target="_blank" rel="noopener"><i class="fa-brands fa-youtube"></i></a>
                     </li>
                 </ul>
             </div>
         </div>
     </header>
-    <main id="main-content" class="[&>section>div]:text-center [&>section>div>h1]:text-slate-50 [&>section>div>h1]:text-4xl
-        [&>section>div>h1]:font-extrabold [&>section>div>h2]:text-slate-50 [&>section>div>h2]:text-8xl
-        [&>section>div>h2]:opacity-10 [&>section>div>h2]:relative [&>section>div>h2]:-top-32">
+
+    <!-- ================= MAIN ================= -->
+    <main id="main-content" class="[&>section>div]:text-center [&>section>div>h1]:text-slate-50 [&>section>div>h1]:text-4xl [&>section>div>h1]:font-extrabold [&>section>div>h2]:text-slate-50 [&>section>div>h2]:text-8xl [&>section>div>h2]:opacity-10 [&>section>div>h2]:relative [&>section>div>h2]:-top-32">
+        <!-- Skills Section -->
         <section id="skills">
             <div>
                 <h1>Skills</h1>
@@ -179,16 +151,24 @@
                 </div>
             </div>
         </section>
+
+        <!-- Projects Section -->
         <section id="projects">
             <div>
                 <h1>Projects</h1>
                 <h2>Projects</h2>
             </div>
-            <!-- Left -->
             <div id="projects-container" class="flex flex-col gap-10">
                 <!-- projects fetched using JS -->
             </div>
+            <div id="show-more-projects" class="show-more-container flex justify-center">
+                <div class="flex text-slate-50 text-center bg-blue-400 rounded-lg px-6 py-2 text-lg font-bold h-12 w-50 hover:bg-blue-500 transition-colors duration-300 cursor-pointer md:text-md mx-auto mt-6">
+                    <button class="w-full text-center cursor-pointer" title="Show more projects">Show more</button>
+                </div>
+            </div>
         </section>
+
+        <!-- Education Section -->
         <section id="education">
             <div>
                 <h1>Education</h1>
@@ -196,58 +176,39 @@
             </div>
             <div id="education-container" class="flex flex-col lg:flex-row gap-10 justify-center items-center">
                 <!-- education certificates will be fetched using JS if increased -->
-                <div id="itsc" class="grid bg-gradient-to-r from-slate-900 to-slate-800
-                 justify-center text-center text-slate-50 h-64 w-96 rounded-lg shadow-lg shadow-gray-700
-                 transition-all transform hover:scale-105 hover:shadow-2xl">
-                    <img class="h-20 w-20"
-                        src="https://www.itsc.edu.do/wp-content/uploads/2023/02/logo-12-1-e1677264157702.png"
-                        alt="Instituto Tecnico Superior Comunitario">
+                <div id="itsc" class="grid bg-gradient-to-r from-slate-900 to-slate-800 justify-center text-center text-slate-50 h-64 w-96 rounded-lg shadow-lg shadow-gray-700 transition-all transform hover:scale-105 hover:shadow-2xl">
+                    <img class="h-20 w-20" src="https://www.itsc.edu.do/wp-content/uploads/2023/02/logo-12-1-e1677264157702.png" alt="Instituto Tecnico Superior Comunitario">
                     <h3>Instituto Tecnico Superior Comunitario</h3>
-                    <a href="https://www.itsc.edu.do" target="_blank" class="text-blue-400 hover:underline">
-                        Information Technology Technical Support Specialist(TI)</a>
+                    <a href="https://www.itsc.edu.do" target="_blank" class="text-blue-400 hover:underline">Information Technology Technical Support Specialist(TI)</a>
                     <span>Sep 2020</span>
                 </div>
-                <div id="coursera" class="grid bg-gradient-to-r from-slate-900 to-slate-800
-                justify-center text-center text-slate-50 h-64 w-96 rounded-lg shadow-lg shadow-gray-700
-                transition-all transform hover:scale-105 hover:shadow-2xl">
-                    <img class="h-20 w-20"
-                        src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera.s3.amazonaws.com/media/coursera-rebrand-logo-square.png?auto=format%2Ccompress&dpr=1"
-                        alt="Instituto Tecnico Superior Comunitario">
+                <div id="coursera" class="grid bg-gradient-to-r from-slate-900 to-slate-800 justify-center text-center text-slate-50 h-64 w-96 rounded-lg shadow-lg shadow-gray-700 transition-all transform hover:scale-105 hover:shadow-2xl">
+                    <img class="h-20 w-20" src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera.s3.amazonaws.com/media/coursera-rebrand-logo-square.png?auto=format%2Ccompress&dpr=1" alt="Coursera">
                     <h3>COURSERA</h3>
-                    <a href="https://coursera.org/share/43642a31343d8312e1ec429985f42c36" target="_blank"
-                        class="text-blue-400 hover:underline">
-                        Front-End developer from META</a>
+                    <a href="https://coursera.org/share/43642a31343d8312e1ec429985f42c36" target="_blank" class="text-blue-400 hover:underline">Front-End developer from META</a>
                     <span>Jan 2025</span>
                 </div>
-                <div id="udemy" class="grid bg-gradient-to-r from-slate-900 to-slate-800
-                justify-center text-center text-slate-50 h-64 w-96 rounded-lg shadow-lg shadow-gray-700
-                transition-all transform hover:scale-105 hover:shadow-2xl">
-                    <img class="h-20 w-20"
-                        src="https://play-lh.googleusercontent.com/dsCkmJE2Fa8IjyXERAcwc5YeQ8_NvbZ4_OI8LgqyjILpXUfS5YhEcnAMajKPrZI-og"
-                        alt="Instituto Tecnico Superior Comunitario">
+                <div id="udemy" class="grid bg-gradient-to-r from-slate-900 to-slate-800 justify-center text-center text-slate-50 h-64 w-96 rounded-lg shadow-lg shadow-gray-700 transition-all transform hover:scale-105 hover:shadow-2xl">
+                    <img class="h-20 w-20" src="https://play-lh.googleusercontent.com/dsCkmJE2Fa8IjyXERAcwc5YeQ8_NvbZ4_OI8LgqyjILpXUfS5YhEcnAMajKPrZI-og" alt="Udemy">
                     <h3>UDEMY</h3>
-                    <a href="https://www.udemy.com/certificate/UC-ea118b47-d9c5-4b3a-9a67-4a0094c5019d/" target="_blank"
-                        class="text-blue-400 hover:underline">
-                        Full-Stack developer</a>
+                    <a href="https://www.udemy.com/certificate/UC-ea118b47-d9c5-4b3a-9a67-4a0094c5019d/" target="_blank" class="text-blue-400 hover:underline">Full-Stack developer</a>
                     <span>Apr 2025</span>
                 </div>
             </div>
         </section>
+
+        <!-- Contact Section -->
         <section id="contact">
             <div>
                 <h1>Contact</h1>
                 <h2>Contact</h2>
             </div>
-            <div id="contact-container" class="min-h-screen flex items-center justify-center">
-                <div
-                    class="bg-[#0D1117] border-2 border-gray-600 text-white rounded-lg w-full h-96 max-w-5xl flex
-                    flex-col md:flex-row shadow-lg overflow-hidden">
+            <div id="contact-container" class="min-h-screen flex items-center justify-center ">
+                <div class="bg-[#0D1117] border-2 border-gray-600 text-white rounded-lg w-full h-full max-w-5xl flex flex-col md:flex-row shadow-lg overflow-hidden">
                     <!-- Left side -->
-                    <div
-                        class="w-full md:w-1/2 flex flex-col items-center justify-center p-8
-                        text-center border-b md:border-b-0 md:border-r border-gray-600">
+                    <div class="hidden w-full md:flex flex-col items-center justify-center p-8 text-center border-b md:border-b-0 md:border-r border-gray-600 bg-gradient-to-r from-slate-900 to-slate-800">
                         <h2 class="text-4xl md:text-5xl font-serif leading-tight">
-                            <span class="block">Contac</span>
+                            <span class="block">Contact</span>
                             <span class="block">me!</span>
                         </h2>
                         <div class="mt-8">
@@ -255,45 +216,40 @@
                         </div>
                     </div>
                     <!-- Right side (Form) -->
-                    <form id="contactForm" class="w-full md:w-1/2 space-y-6">
+                    <form id="contactForm" class="w-full h-full p-8">
                         <div>
-                            <label for="fullName" class="block text-sm uppercase tracking-widest mb-1">Full name</label>
-                            <input type="text" id="fullName" name="fullName"
-                                class="w-full bg-transparent border-b border-gray-500 focus:outline-none focus:border-white placeholder-gray-400 text-sm"
-                                placeholder="Your name">
+                            <label for="fullName" class="block text-md font-bold uppercase tracking-widest mb-1">Full name</label>
+                            <input type="text" id="fullName" name="fullName" class="w-full bg-transparent border-b border-gray-500 focus:outline-none focus:border-white placeholder-gray-400 text-md" placeholder="Your name">
                         </div>
                         <div>
-                            <label for="email" class="block text-sm uppercase tracking-widest mb-1">Email
-                                Address</label>
-                            <input type="email" id="email" name="email"
-                                class="w-full bg-transparent border-b border-gray-500 focus:outline-none focus:border-white placeholder-gray-400 text-sm"
-                                placeholder="you@example.com">
+                            <label for="email" class="block text-md font-bold uppercase tracking-widest mb-1">Email Address</label>
+                            <input type="email" id="email" name="email" class="w-full bg-transparent border-b border-gray-500 focus:outline-none focus:border-white placeholder-gray-400 text-md" placeholder="youremail@example.com">
                         </div>
                         <div>
-                            <label for="message" class="block text-sm uppercase tracking-widest mb-1">Tell me all about
-                                it:</label>
-                            <textarea id="message" name="message" rows="4"
-                                class="w-full bg-transparent border border-gray-500 rounded p-2 resize-none focus:outline-none focus:border-white placeholder-gray-400 text-sm"
-                                placeholder="Your message..."></textarea>
+                            <label for="message" class="block text-md font-bold uppercase tracking-widest mb-1">Tell me all about it:</label>
+                            <textarea id="message" name="message" rows="4" class="w-full bg-transparent border border-gray-500 rounded p-2 resize-none focus:outline-none focus:border-white placeholder-gray-400 text-md" placeholder="FYI: This is just a demo since the form doesn't actually send an email bacause the project does not support back-end logic"></textarea>
                         </div>
-                        <div class="text-right">
-                            <button id="sendBtn" type="submit"
-                                class="bg-white text-black px-6 py-1 rounded shadow hover:bg-gray-200 transition">
-                                Send
-                            </button>
+                        <div class="flex justify-end">
+                            <div class="flex text-center text-slate-50 bg-blue-400 rounded-lg px-6 py-2 text-lg font-bold h-10 w-50 hover:bg-blue-500 transition-colors duration-300 cursor-pointer md:text-md mx-auto mt-6">
+                                <button id="sendBtn" type="submit" class="w-full text-center cursor-pointer">Send</button>
+                            </div>
                         </div>
                     </form>
-                    <div id="error-message" class="text-red-500">
-                        <!-- Error message will be displayed here -->
-                    </div>
                 </div>
+            </div>
+            <div id="error-message" class="text-red-500">
+                <!-- Error message will be displayed here -->
             </div>
         </section>
     </main>
+
+    <!-- ================= FOOTER ================= -->
     <footer class="bg-slate-900 text-slate-50 text-center py-4">
         <p>&copy; <span id="current-year"></span> JPenaDev. All rights reserved.</p>
         <p>Designed and developed by Jeansy Peña.</p>
     </footer>
+
+    <!-- ================= SCRIPTS ================= -->
     <script src="./src/components/animation.js"></script>
     <script src="./src/components/flyoutMenu.js"></script>
     <script type="module" src="./index.js"></script>

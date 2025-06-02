@@ -8,8 +8,8 @@ export async function createModal(projectId) {
         return;
     }
 
-    console.log('projectId:', projectId);
-    console.log('projectsList:', projectsList);
+    //console.log('projectId:', projectId);
+    //console.log('projectsList:', projectsList);
     // Ensure type consistency for id comparison
     const project = projectsList.find(
         p => String(p.id) === String(projectId)

@@ -1,212 +1,232 @@
+/* =========================
+    1. Reset & Base Styles
+    ========================= */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: weight;
-    font-style: normal;
-    background-color: #0D1117;
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
 }
 
 html {
-    scroll-behavior: smooth;
+     scroll-behavior: smooth;
 }
 
-header>div {
-    margin: 0 10rem;
+body {
+     font-family: "Inter", sans-serif;
+     font-optical-sizing: auto;
+     font-weight: weight; /* Consider replacing 'weight' with a numeric value */
+     font-style: normal;
+     background-color: #0D1117;
 }
 
-@media screen and (max-width: 1080px) {
-    header>div {
-        margin: 0 2rem;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    header>div {
-        margin: 0 1rem;
-    }
-}
-
-#skills h1, #skills h2,
-#projects h1, #projects h2,
-#education h1, #education h2,
-#contact h1, #contact h2 {
-    margin: 2.5rem 0 0 0;
-}
-
-#projects-container:last-child{
-    margin-bottom: 6.5rem;
-}
-
-.social-icons {
-    margin: 1.5rem 0;
+/* =========================
+    2. Layout Containers
+    ========================= */
+header > div {
+     margin: 0 10rem;
 }
 
 #skills-container,
 #projects-container,
 #education-container,
 #contact-container {
-    margin: 0 10.2rem;
+     margin: 0 10.2rem;
 }
 
-#contactForm{
-    margin: 0 10.2rem;
-    padding: 5rem 0;
-}
-
-@media screen and (max-width: 1080px) {
-    #skills-container,
-    #projects-container,
-    #education-container {
-        margin: 0 3rem;
-    }
-}
-
-#projects-left-card,
-#projects-right-card {
-    margin: 4rem 0;
+#contactForm {
+     margin: 0 10.2rem;
+     padding: 5rem 0;
 }
 
 #education,
 #skills,
-#projects{
-    margin: 0 0 10rem 0;
+#projects {
+     margin: 0 0 10rem 0;
 }
 
-@media screen and (max-width: 480px) {
-    #skills-container,
-    #projects-container
-     {
-        margin: 0 3rem;
-    }
+.show-more-container {
+     margin: 9rem 0;
+}
+
+/* =========================
+    3. Section Headings & Content
+    ========================= */
+#skills h1, #skills h2,
+#projects h1, #projects h2,
+#education h1, #education h2,
+#contact h1, #contact h2 {
+     margin: 2.5rem 0 0 0;
 }
 
 #skills-container h3 {
-    margin: 1rem 0;
+     margin: 1rem 0;
 }
 
+#projects-container:last-child {
+     margin-bottom: 6.5rem;
+}
+
+#projects-left-card,
+#projects-right-card {
+     margin: 4rem 0;
+}
+
+/* =========================
+    4. Images & Logos
+    ========================= */
 #education-container img {
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    margin: 0.5rem auto;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin: 0.5rem auto;
 }
 
 .img-container-left > img,
-.img-container-right > img
- {
-    height: 20rem;
-    width: 40rem;
+.img-container-right > img {
+     height: 20rem;
+     width: 40rem;
+}
+
+/* =========================
+    5. Social & External Links
+    ========================= */
+.social-icons {
+     margin: 1.5rem 0;
+}
+
+.external-links {
+     display: flex;
 }
 
 .external-links-left i,
 .external-links-right i {
-    margin: 1rem 2rem;
+     margin: 1rem 2rem;
 }
 
-.external-links {
-    display:flex;
-}
-
+/* =========================
+    6. Animations & Effects
+    ========================= */
 /* Header animation */
 #main-header::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: inherit;
-    opacity: 0;
-    transform: translateY(40px);
-    transition: opacity 1s, transform 2.5s;
-    z-index: -1;
+     content: "";
+     position: absolute;
+     inset: 0;
+     background: inherit;
+     opacity: 0;
+     transform: translateY(40px);
+     transition: opacity 1s, transform 2.5s;
+     z-index: -1;
 }
 
 #main-header.bg-animate::after {
-    opacity: 1;
-    transform: translateY(0);
+     opacity: 1;
+     transform: translateY(0);
 }
 
-/* infinite logo carousel */
+/* Infinite logo carousel */
 @keyframes slide-left {
-    from {
-        transform: translateX(0);
-    }
-
-    to {
-        transform: translateX(-100%);
-    }
+     from { transform: translateX(0); }
+     to { transform: translateX(-100%); }
 }
 
 @keyframes slide-right {
-    from {
-        transform: translateX(-100%);
-    }
-
-    to {
-        transform: translateX(0);
-    }
+     from { transform: translateX(-100%); }
+     to { transform: translateX(0); }
 }
 
 @keyframes fadeZoom {
-  0% { opacity: 0; transform: scale(0.9); }
-  100% { opacity: 1; transform: scale(1); }
+     0% { opacity: 0; transform: scale(0.9); }
+     100% { opacity: 1; transform: scale(1); }
 }
 
 .logos {
-    overflow: hidden;
-    white-space: nowrap;
-    margin: 25px 0;
+     overflow: hidden;
+     white-space: nowrap;
+     margin: 25px 0;
 }
 
 .logos:hover .logos-slide-left,
 .logos:hover .logos-slide-right {
-    animation-play-state: paused;
+     animation-play-state: paused;
 }
 
 .logos-slide-left {
-    display: inline-flex;
-    animation: 35s slide-left infinite linear;
-    gap: 25px;
-}
-
-.logos-slide>a {
-    margin: -25px;
+     display: inline-flex;
+     animation: 35s slide-left infinite linear;
+     gap: 25px;
 }
 
 .logos-slide-right {
-    display: inline-flex;
-    animation: 35s slide-right infinite linear;
-    gap: 25px;
+     display: inline-flex;
+     animation: 35s slide-right infinite linear;
+     gap: 25px;
 }
 
+.logos-slide > a {
+     margin: -25px;
+}
+
+/* =========================
+    7. Buttons & Modals
+    ========================= */
 .up-button {
-    position: fixed;
-    bottom: 2rem;
-    right: 2rem;
-    color: white;
-    padding: 1rem;
-    cursor: pointer;
-    font-size: 2.5rem;
+     position: fixed;
+     bottom: 2rem;
+     right: 2rem;
+     color: white;
+     padding: 1rem;
+     cursor: pointer;
+     font-size: 2.5rem;
 }
 .up-button:hover {
-    border: 1px solid white;
+     border: 1px solid white;
 }
-
 .up-button .show {
-    display: block;
+     display: block;
 }
 
+#modal {
+     margin: 5px;
+     padding: 1rem;
+     background-color: #0D1117;
+}
+
+/* =========================
+    8. Miscellaneous
+    ========================= */
 #itsc, #coursera, #udemy {
-    margin: 1rem 3rem;
-    padding: 1rem 1rem;
+     margin: 1rem 3rem;
+     padding: 1rem 1rem;
 }
 
-#modal{
-    margin: 5px;
-    padding: 1rem;
-    background-color: #0D1117;
+#contactForm > div,
+#contactForm > div > label {
+     margin: 1.5rem 0;
+}
+
+/* =========================
+    9. Responsive Design
+    ========================= */
+@media screen and (max-width: 1080px) {
+     header > div {
+          margin: 0 2rem;
+     }
+     #skills-container,
+     #projects-container,
+     #education-container {
+          margin: 0 3rem;
+     }
+}
+
+@media screen and (max-width: 480px) {
+     header > div {
+          margin: 0 1rem;
+     }
+     #skills-container,
+     #projects-container {
+          margin: 0 3rem;
+     }
+     #contactForm {
+          margin: 0;
+     }
 }
