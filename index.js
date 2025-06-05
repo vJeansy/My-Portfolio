@@ -36,6 +36,8 @@ export async function skillsData() {
             skill.type === 'back-end' ? backEndSkills :
             skill.type === 'technologies' ? technologiesSkills :
             null;
+            container.setAttribute('data-aos', 'fade-up');
+            container.setAttribute('data-aos-once', 'true');
 
         if (container) {
             const img = document.createElement('img');
@@ -43,6 +45,7 @@ export async function skillsData() {
             img.alt = skill.tittle;
             img.title = skill.tittle;
             img.className = 'h-16 w-auto cursor-grab';
+            img.style.filter = `drop-shadow(0 0 0.75rem ${skill.color})`;
 
             const p = document.createElement('p');
             p.textContent = skill.tittle;
@@ -82,20 +85,40 @@ function renderProjects(count) {
         // Card container
         let card, imgContainer, img, textContainer;
 
-        // Alternate card layout based on project id
+        // Even id: left card
         if (project.id % 2 === 0) {
             card = document.createElement('div');
             card.className = 'flex flex-col lg:flex-row items-center gap-6 lg:gap-8 p-7 rounded-2xl';
             projectsContainer.appendChild(card);
 
             imgContainer = document.createElement('div');
-            imgContainer.className = `hover:scale-105 hover:mask-r-from-100% hover:mask-r-to-100% transition-all
-                duration-300 flex-shrink-0 cursor-pointer xl:mask-r-from-50% xl:mask-r-to-90% xl:blur-xs hover:blur-none`;
+            imgContainer.setAttribute('data-aos', 'fade-right');
+            imgContainer.setAttribute('data-aos-once', 'true');
+            imgContainer.className = [
+                'flex-shrink-0'
+            ].join(' ');
             card.appendChild(imgContainer);
 
             img = document.createElement('img');
+            img.id = `project-img-${project.id}`;
             img.src = project.path + '1.png';
-            img.className = 'imgs-projects img-container-left shadow-xl rounded-md';
+            img.className = [
+                'imgs-projects',
+                'img-container-left',
+                'shadow-xl',
+                'rounded-md',
+                'transition-all',
+                'duration-300',
+                'ease-in-out',
+                'hover:scale-105',
+                'hover:mask-r-from-100%',
+                'hover:mask-r-to-100%',
+                'cursor-pointer',
+                'xl:mask-r-from-50%',
+                'xl:mask-r-to-90%',
+                'xl:blur-xs',
+                'hover:blur-none'
+            ].join(' ');
             img.style.height = '20rem';
             img.style.width = '40rem';
             img.style.objectFit = 'cover';
@@ -164,22 +187,40 @@ function renderProjects(count) {
 
             // Modal on image click
             img.addEventListener('click', () => createModal(project.id));
-        }
-
-        // Odd id: right card
-        if (project.id % 2 !== 0) {
+        } else {
+            // Odd id: right card
             card = document.createElement('div');
             card.className = 'flex flex-col lg:flex-row-reverse items-center gap-6 lg:gap-8 p-7 rounded-2xl';
             projectsContainer.appendChild(card);
 
             imgContainer = document.createElement('div');
-            imgContainer.className = `hover:scale-105 hover:mask-l-from-100% hover:mask-l-to-100%
-                transition-all duration-300 flex-shrink-0 cursor-pointer xl:mask-l-from-50% xl:mask-l-to-90% xl:blur-xs hover:blur-none`;
+            imgContainer.setAttribute('data-aos', 'fade-left');
+            imgContainer.setAttribute('data-aos-once', 'true');
+            imgContainer.className = [
+                'flex-shrink-0'
+            ].join(' ');
             card.appendChild(imgContainer);
 
             img = document.createElement('img');
+            img.id = `project-img-${project.id}`;
             img.src = project.path + '1.png';
-            img.className = 'imgs-projects img-container-left shadow-xl rounded-md';
+            img.className = [
+                'imgs-projects',
+                'img-container-left',
+                'shadow-xl',
+                'rounded-md',
+                'transition-all',
+                'duration-300',
+                'ease-in-out',
+                'hover:scale-105',
+                'hover:mask-l-from-100%',
+                'hover:mask-l-to-100%',
+                'cursor-pointer',
+                'xl:mask-l-from-50%',
+                'xl:mask-l-to-90%',
+                'xl:blur-xs',
+                'hover:blur-none'
+            ].join(' ');
             img.style.height = '20rem';
             img.style.width = '40rem';
             img.style.objectFit = 'cover';

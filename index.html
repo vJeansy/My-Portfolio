@@ -19,6 +19,7 @@
     <!-- CSS Files -->
     <link rel="stylesheet" href="./public/style.css">
     <link rel="stylesheet" href="./public/output.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
 
     <!-- Fonts and Icons -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -40,7 +41,7 @@
             </div>
             <!-- Desktop Navigation -->
             <nav class="flex items-center [&>ul>li]:flex">
-                <ul class="text-slate-50 text-md md:text-sm hidden md:flex gap-15 md:gap-9 [&>li]:transition-all [&>li]:duration-300 [&>li]:hover:scale-105 [&>li]:items-center">
+                <ul class="text-slate-50 text-md sm:text-sm font-bold hidden md:flex gap-15 md:gap-9 [&>li]:transition-all [&>li]:duration-300 [&>li]:hover:scale-105 [&>li]:items-center">
                     <li>
                         <svg width="28" height="28"><use href="./src/assets/sprite.svg#exclamation-circle" /></svg>
                         <a href="#about">About</a>
@@ -74,7 +75,7 @@
                         </svg>
                     </button>
                     <!-- Mobile Flyout Menu -->
-                    <div id="mobile-menu" class="fixed inset-0 z-50 bg-slate-900 bg-opacity-95 flex flex-col items-center justify-center gap-8 text-2xl text-slate-50 transition-all duration-300 opacity-0 pointer-events-none">
+                    <div id="mobile-menu" class="fixed inset-0 z-50 bg-slate-900 bg-opacity-95 flex flex-col items-center justify-center gap-8 text-xl text-slate-50 transition-all duration-300 opacity-0 pointer-events-none">
                         <button id="close-menu" class="absolute top-6 right-6 text-4xl">&times;</button>
                         <a href="#about" class="hover:text-blue-400">About</a>
                         <a href="#skills" class="hover:text-blue-400">Skills</a>
@@ -91,24 +92,24 @@
         <!-- Hero Section -->
         <div class="flex flex-col items-center justify-center h-full">
             <div class="text-center">
-                <h1 id="typewriter" class="text-5xl font-extrabold text-slate-50"></h1>
+                <h1 id="typewriter" class="text-6xl font-extrabold text-slate-50"></h1>
                 <p class="text-xl text-slate-50 mt-4">I build things for the web.</p>
-                <p class="text-lg text-slate-50 mt-2">I’m a software developer specializing in building (and occasionally designing) exceptional digital experiences.</p>
+                <p class="text-lg text-slate-50 mt-2"><span class="text-blue-400 font-extrabold">I’m a software developer</span> specializing in building (and occasionally designing) exceptional digital experiences.</p>
                 <a href="#projects" class="mt-6 text-blue-400 hover:underline">See my work</a>
             </div>
             <!-- Social Icons -->
             <div class="social-icons">
                 <ul class="text-slate-50 flex gap-10 [&>li]:transition-all [&>li]:duration-300 [&>li]:hover:scale-105 [&>a]:items-center [&>li>a]:text-5xl">
-                    <li>
+                    <li data-aos="fade-up" data-aos-duration="1500">
                         <a href="https://github.com/vJeansy" title="GitHub" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i></a>
                     </li>
-                    <li>
+                    <li data-aos="fade-up" data-aos-duration="1800">
                         <a href="https://www.linkedin.com/in/jeansy-peña-b575721b0/" title="LinkedIn" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i></a>
                     </li>
-                    <li>
+                    <li data-aos="fade-up" data-aos-duration="2000">
                         <a href="https://www.instagram.com/vjeansy/" title="Instagram" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i></a>
                     </li>
-                    <li>
+                    <li data-aos="fade-up" data-aos-duration="2300">
                         <a href="https://www.youtube.com/@vJeansy" title="YouTube" target="_blank" rel="noopener"><i class="fa-brands fa-youtube"></i></a>
                     </li>
                 </ul>
@@ -121,8 +122,8 @@
         <!-- Skills Section -->
         <section id="skills">
             <div>
-                <h1>Skills</h1>
-                <h2>Skills</h2>
+                <h1 data-aos="flip-left">Skills</h1>
+                <h2 data-aos="flip-left">Skills</h2>
             </div>
             <div id="skills-container" class="grid justify-center [&>div>h3]:my-10">
                 <div>
@@ -155,8 +156,8 @@
         <!-- Projects Section -->
         <section id="projects">
             <div>
-                <h1>Projects</h1>
-                <h2>Projects</h2>
+                <h1 data-aos="flip-right">Projects</h1>
+                <h2 data-aos="flip-right">Projects</h2>
             </div>
             <div id="projects-container" class="flex flex-col gap-10">
                 <!-- projects fetched using JS -->
@@ -171,24 +172,24 @@
         <!-- Education Section -->
         <section id="education">
             <div>
-                <h1>Education</h1>
-                <h2>Education</h2>
+                <h1 data-aos="flip-up">Education</h1>
+                <h2 data-aos="flip-up">Education</h2>
             </div>
             <div id="education-container" class="flex flex-col lg:flex-row gap-10 justify-center items-center">
                 <!-- education certificates will be fetched using JS if increased -->
-                <div id="itsc" class="grid bg-gradient-to-r from-slate-900 to-slate-800 justify-center text-center text-slate-50 h-64 w-96 rounded-lg shadow-lg shadow-gray-700 transition-all transform hover:scale-105 hover:shadow-2xl">
+                <div data-aos="fade-up-right" data-aos-once = "true" id="itsc" class="grid bg-gradient-to-r from-slate-900 to-slate-800 justify-center text-center text-slate-50 h-64 w-96 rounded-lg shadow-lg shadow-gray-700 transition-all transform hover:scale-105 hover:shadow-2xl">
                     <img class="h-20 w-20" src="https://www.itsc.edu.do/wp-content/uploads/2023/02/logo-12-1-e1677264157702.png" alt="Instituto Tecnico Superior Comunitario">
                     <h3>Instituto Tecnico Superior Comunitario</h3>
                     <a href="https://www.itsc.edu.do" target="_blank" class="text-blue-400 hover:underline">Information Technology Technical Support Specialist(TI)</a>
                     <span>Sep 2020</span>
                 </div>
-                <div id="coursera" class="grid bg-gradient-to-r from-slate-900 to-slate-800 justify-center text-center text-slate-50 h-64 w-96 rounded-lg shadow-lg shadow-gray-700 transition-all transform hover:scale-105 hover:shadow-2xl">
+                <div data-aos="fade-up" data-aos-once = "true" id="coursera" class="grid bg-gradient-to-r from-slate-900 to-slate-800 justify-center text-center text-slate-50 h-64 w-96 rounded-lg shadow-lg shadow-gray-700 transition-all transform hover:scale-105 hover:shadow-2xl">
                     <img class="h-20 w-20" src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera.s3.amazonaws.com/media/coursera-rebrand-logo-square.png?auto=format%2Ccompress&dpr=1" alt="Coursera">
                     <h3>COURSERA</h3>
                     <a href="https://coursera.org/share/43642a31343d8312e1ec429985f42c36" target="_blank" class="text-blue-400 hover:underline">Front-End developer from META</a>
                     <span>Jan 2025</span>
                 </div>
-                <div id="udemy" class="grid bg-gradient-to-r from-slate-900 to-slate-800 justify-center text-center text-slate-50 h-64 w-96 rounded-lg shadow-lg shadow-gray-700 transition-all transform hover:scale-105 hover:shadow-2xl">
+                <div data-aos="fade-up-left" data-aos-once = "true" id="udemy" class="grid bg-gradient-to-r from-slate-900 to-slate-800 justify-center text-center text-slate-50 h-64 w-96 rounded-lg shadow-lg shadow-gray-700 transition-all transform hover:scale-105 hover:shadow-2xl">
                     <img class="h-20 w-20" src="https://play-lh.googleusercontent.com/dsCkmJE2Fa8IjyXERAcwc5YeQ8_NvbZ4_OI8LgqyjILpXUfS5YhEcnAMajKPrZI-og" alt="Udemy">
                     <h3>UDEMY</h3>
                     <a href="https://www.udemy.com/certificate/UC-ea118b47-d9c5-4b3a-9a67-4a0094c5019d/" target="_blank" class="text-blue-400 hover:underline">Full-Stack developer</a>
@@ -200,8 +201,8 @@
         <!-- Contact Section -->
         <section id="contact">
             <div>
-                <h1>Contact</h1>
-                <h2>Contact</h2>
+                <h1 data-aos="flip-down">Contact</h1>
+                <h2 data-aos="flip-down">Contact</h2>
             </div>
             <div id="contact-container" class="min-h-screen flex items-center justify-center ">
                 <div class="bg-[#0D1117] border-2 border-gray-600 text-white rounded-lg w-full h-full max-w-5xl flex flex-col md:flex-row shadow-lg overflow-hidden">
@@ -212,7 +213,7 @@
                             <span class="block">me!</span>
                         </h2>
                         <div class="mt-8">
-                            <i class="fas fa-envelope text-6xl"></i>
+                            <i data-aos="fade-up" class="fas fa-envelope text-6xl"></i>
                         </div>
                     </div>
                     <!-- Right side (Form) -->
@@ -254,5 +255,11 @@
     <script src="./src/components/flyoutMenu.js"></script>
     <script type="module" src="./index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    AOS.init();
+  });
+</script>
 </body>
 </html>

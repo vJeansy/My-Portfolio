@@ -2,187 +2,120 @@
     {
         "id": 1,
         "tittle": "HTML5",
-        "logo": "https://www.svgrepo.com/show/452228/html-5.svg",
-        "type": "front-end"
+        "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+        "type": "front-end",
+        "color": "#E44D26"
     },
     {
         "id": 2,
         "tittle": "CSS",
-        "logo": "https://www.svgrepo.com/show/452185/css-3.svg",
-        "type": "front-end"
+        "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+        "type": "front-end",
+        "color": "#1572B6"
     },
     {
         "id": 3,
         "tittle": "JS",
-        "logo": "https://www.svgrepo.com/show/373705/js-official.svg",
-        "type": "front-end"
+        "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+        "type": "front-end",
+        "color": "#F7DF1E"
     },
     {
         "id": 4,
         "tittle": "BOOTSTRAP",
-        "logo": "https://www.svgrepo.com/show/303293/bootstrap-4-logo.svg",
-        "type": "front-end"
+        "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg",
+        "type": "front-end",
+        "color": "#7952B3"
     },
     {
         "id": 5,
         "tittle": "REACT",
-        "logo": "https://www.svgrepo.com/show/493719/react-javascript-js-framework-facebook.svg",
-        "type": "front-end"
-    },
-    {
-        "id": 6,
-        "tittle": "AXIOS",
-        "logo": "https://hernanreiq.github.io/portafolio/Habilidades/axios.svg",
-        "type": "front-end"
-    },
-    {
-        "id": 7,
-        "tittle": "UI ball LDRS",
-        "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCqvPMMZcmOtfGCKpj-BzjnIFTNpVkImodgA&s",
-        "type": "front-end"
-    },
-    {
-        "id": 8,
-        "tittle": "Chakra",
-        "logo": "https://archive.org/download/github.com-chakra-ui-chakra-ui_-_2020-02-13_17-20-29/cover.jpg",
-        "type": "front-end"
-    },
-    {
-        "id": 9,
-        "tittle": "Motion",
-        "logo": "https://user-images.githubusercontent.com/7850794/164965509-2a8dc49e-2ed7-4243-a2c9-481b03bbc31a.png",
-        "type": "front-end"
-    },
-    {
-        "id": 10,
-        "tittle": "Animate.css",
-        "logo": "https://hernanreiq.github.io/portafolio/Habilidades/animatecss.svg",
-        "type": "front-end"
-    },
-    {
-        "id": 11,
-        "tittle": "Vite.dev",
-        "logo": "https://es.vitejs.dev/logo-with-shadow.png",
-        "type": "front-end"
-    },
-    {
-        "id": 12,
-        "tittle": "React Bootstrap",
-        "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwmVA4pqRhKuQtGIe_kC8KcOj-1Aa_Y2Rm1Lg6qDCCq8Q318gvx9jPEVeOxUFlvSvxvtQ&usqp=CAU",
-        "type": "front-end"
-    },
-    {
-        "id": 13,
-        "tittle": "Figma",
-        "logo": "https://cdn-icons-png.flaticon.com/128/5968/5968705.png",
-        "type": "front-end"
+        "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+        "type": "front-end",
+        "color": "#61DAFB"
     },
     {
         "id": 14,
         "tittle": "Node.js",
-        "logo": "https://www.svgrepo.com/show/452075/node-js.svg",
-        "type": "back-end"
+        "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+        "type": "back-end",
+        "color": "#339933"
     },
     {
         "id": 15,
         "tittle": "GIT",
-        "logo": "https://www.svgrepo.com/show/452210/git.svg",
-        "type": "technologies"
+        "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+        "type": "technologies",
+        "color": "#F05032"
     },
     {
         "id": 16,
         "tittle": "NPM",
-        "logo": "https://www.svgrepo.com/show/452077/npm.svg",
-        "type": "technologies"
+        "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg",
+        "type": "technologies",
+        "color": "#CB3837"
     },
     {
         "id": 17,
         "tittle": "GITHUB",
-        "logo": "https://www.svgrepo.com/show/512317/github-142.svg",
-        "type": "technologies"
-    },
-    {
-        "id": 18,
-        "tittle": "JSON",
-        "logo": "https://www.svgrepo.com/show/353943/json.svg",
-        "type": "technologies"
-    },
-    {
-        "id": 19,
-        "tittle": "APIs",
-        "logo": "https://indiaforensic.com/wp-content/uploads/2020/09/api.png",
-        "type": "technologies"
+        "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
+        "type": "technologies",
+        "color": "#181717"
     },
     {
         "id": 20,
         "tittle": "Tailwind",
         "logo": "https://www.svgrepo.com/show/374118/tailwind.svg",
-        "type": "front-end"
+        "type": "front-end",
+        "color": "#06B6D4"
     },
     {
         "id": 21,
         "tittle": "Material-UI",
-        "logo": "https://www.svgrepo.com/show/354048/material-ui.svg",
-        "type": "front-end"
+        "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg",
+        "type": "front-end",
+        "color": "#0081CB"
     },
     {
         "id": 22,
         "tittle": "Express.JS",
-        "logo": "https://www.svgrepo.com/show/330398/express.svg",
-        "type": "back-end"
+        "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
+        "type": "back-end",
+        "color": "#000000"
     },
     {
         "id": 23,
         "tittle": "SQL",
-        "logo": "https://www.svgrepo.com/show/331760/sql-database-generic.svg",
-        "type": "back-end"
+        "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
+        "type": "back-end",
+        "color": "#4479A1"
     },
     {
         "id": 24,
         "tittle": "Mongodb",
-        "logo": "https://www.svgrepo.com/show/439231/mongodb.svg",
-        "type": "back-end"
+        "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+        "type": "back-end",
+        "color": "#47A248"
     },
     {
         "id": 25,
         "tittle": "Posgre",
-        "logo": "https://img.icons8.com/?size=96&id=38561&format=png",
-        "type": "back-end"
-    },
-    {
-        "id": 26,
-        "tittle": "Postman",
-        "logo": "https://www.svgrepo.com/show/354202/postman-icon.svg",
-        "type": "back-end"
-    },
-    {
-        "id": 25,
-        "tittle": "JWT",
-        "logo": "https://img.icons8.com/?size=96&id=rHpveptSuwDz&format=png",
-        "type": "back-end"
+        "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
+        "type": "back-end",
+        "color": "#336791"
     },
     {
         "id": 26,
         "tittle": "Jquery",
-        "logo": "https://www.svgrepo.com/show/452242/jquery.svg",
-        "type": "technologies"
-    },
-    {
-        "id": 27,
-        "tittle": "BCrypt",
-        "logo": "https://cybersensor.wordpress.com/wp-content/uploads/2018/08/bcrypt-logo.jpg?w=605",
-        "type": "technologies"
-    },
-    {
-        "id": 28,
-        "tittle": "DotEnv",
-        "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHaNT3Fi8RMNUpPDk-Zddeo2FTvDN3Sye5AA&s",
-        "type": "technologies"
+        "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg",
+        "type": "technologies",
+        "color": "#0769AD"
     },
     {
         "id": 29,
         "tittle": "Jest",
-        "logo": "https://www.svgrepo.com/show/353930/jest.svg",
-        "type": "technologies"
+        "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg",
+        "type": "technologies",
+        "color": "#C21325"
     }
 ]
