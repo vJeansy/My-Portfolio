@@ -1,4 +1,15 @@
 [
+        {
+        "id": 8,
+        "tittle": "NominaRD",
+        "path": "src/assets/projects/NominaRD/",
+        "description": "A payroll management system tailored for Dominican Republic regulations. NominaRD streamlines employee payroll processing, deductions, and reporting. Built with HTML, TypeScript and Tailwind.",
+        "pageUrl": "https://vjeansy.github.io/NominaRD/",
+        "gitUrl": "https://github.com/vJeansy/NominaRD",
+        "technologies": "HTML, CSS, Tailwind, TypeScript, NPM, Git, AOS",
+        "amountOfImages": 3,
+        "type": "project"
+    },
     {
         "id": 7,
         "tittle": "NoteNest",
