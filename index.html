@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>JPenaDev.</title>
     <meta charset="UTF-8">
@@ -12,7 +13,8 @@
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://vjeansy.github.io/My-Portfolio/public/JPDevLogo.png">
     <meta property="og:url" content="https://vjeansy.github.io/My-Portfolio/">
-    <meta property="og:description" content="JEANSY PENA. I Build things for the web. I’m a software engineer specializing in building (and occasionally designing) exceptional digital experiences. Front-End developer focus on UX|UI." />
+    <meta property="og:description"
+        content="JEANSY PENA. I Build things for the web. I’m a software engineer specializing in building (and occasionally designing) exceptional digital experiences. Front-End developer focus on UX|UI." />
     <meta property="og:locale" content="en_US">
     <meta property="og:site_name" content="JP.Dev">
 
@@ -24,65 +26,87 @@
     <!-- Fonts and Icons -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
     <!-- ================= HEADER ================= -->
-    <header id="main-header" class="w-full h-[50rem] mask-b-from-65% mask-b-to-95% bg-[url(./assets/Header5.webp)] bg-cover bg-no-repeat md:bg-center opacity-0 -translate-y-10 transition-all duration-1000">
+    <header id="main-header"
+        class="w-full h-[50rem] mask-b-from-65% mask-b-to-95% bg-[url(./assets/Header5.webp)] bg-cover bg-no-repeat md:bg-center opacity-0 -translate-y-10 transition-all duration-1000">
         <div class="flex justify-between items-center h-30">
             <!-- Logo -->
             <div class="text-slate-50 text-md hover:scale-105 transition-all duration-300">
                 <a class="flex items-center" href="index.html" title="Home">
                     <img class="h-12 w-auto" src="./src/assets/image/JPDevLogo.png" alt="logo">
-                    <p class="text-4xl font-extrabold hidden lg:flex text-slate-50">JPenaDev<span class="text-blue-400 font-extrabold">.</span></p>
+                    <p class="text-4xl font-bold bg-clip-text hidden lg:flex text-transparent bg-gradient-to-r
+                     from-blue-400 to-blue-600">JPenaDev</p>
                 </a>
             </div>
             <!-- Desktop Navigation -->
             <nav class="flex items-center [&>ul>li]:flex">
-                <ul class="text-slate-50 text-md sm:text-sm font-bold hidden md:flex gap-15 md:gap-9 [&>li]:transition-all [&>li]:duration-300 [&>li]:hover:scale-105 [&>li]:items-center">
+                <ul
+                    class="text-slate-50 text-md sm:text-sm font-bold hidden md:flex gap-15 md:gap-9 [&>li]:transition-all [&>li]:duration-300 [&>li]:hover:scale-105 [&>li]:items-center">
                     <li>
-                        <svg width="28" height="28"><use href="./src/assets/sprite.svg#exclamation-circle" /></svg>
+                        <svg width="28" height="28">
+                            <use href="./src/assets/sprite.svg#exclamation-circle" />
+                        </svg>
                         <a href="#about">About</a>
                     </li>
                     <li>
-                        <svg width="28" height="28"><use href="./src/assets/sprite.svg#cog-6-tooth" /></svg>
+                        <svg width="28" height="28">
+                            <use href="./src/assets/sprite.svg#cog-6-tooth" />
+                        </svg>
                         <a href="#skills">Skills</a>
                     </li>
                     <li>
-                        <svg width="28" height="28"><use href="./src/assets/sprite.svg#folder" /></svg>
+                        <svg width="28" height="28">
+                            <use href="./src/assets/sprite.svg#folder" />
+                        </svg>
                         <a href="#projects">Projects</a>
                     </li>
                     <li>
-                        <svg width="28" height="28"><use href="./src/assets/sprite.svg#academic-cap" /></svg>
+                        <svg width="28" height="28">
+                            <use href="./src/assets/sprite.svg#academic-cap" />
+                        </svg>
                         <a href="#education">Education</a>
                     </li>
                 </ul>
             </nav>
             <!-- Contact Button & Burger Menu -->
+            <!-- Toggle de idioma -->
             <div>
                 <!-- Desktop Contact Button -->
-                <div class="hidden md:flex items-center justify-center text-slate-50 text-center bg-blue-400 rounded-lg px-6 py-2 text-lg font-bold shadow-md h-12 w-50 hover:bg-blue-500 transition-colors duration-300 cursor-pointer md:text-md">
-                    <a class="w-full text-center" href="mailto:jeansypenar@outlook.com" title="Email me">Contact Me</a>
+                <div
+                    class="hidden md:flex items-center justify-center text-slate-50 text-center bg-blue-400 rounded-lg px-6 py-2 text-lg font-bold shadow-md h-12 w-50 hover:bg-blue-500 transition-colors duration-300 cursor-pointer md:text-md">
+                    <a class="w-full text-center" href="#contact" title="Email me">Contact Me</a>
                 </div>
                 <!-- Mobile Burger Button -->
                 <div class="flex md:hidden">
-                    <button id="burger-btn" type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-slate-50">
+                    <button id="burger-btn" type="button"
+                        class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-slate-50">
                         <span class="sr-only">Open main menu</span>
-                        <svg class="size-10" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        <svg class="size-10" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                            aria-hidden="true" data-slot="icon">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                         </svg>
                     </button>
                     <!-- Mobile Flyout Menu -->
-                    <div id="mobile-menu" class="fixed inset-0 z-50 bg-slate-900 bg-opacity-95 flex flex-col items-center justify-center gap-8 text-xl text-slate-50 transition-all duration-300 opacity-0 pointer-events-none">
+                    <div id="mobile-menu"
+                        class="fixed inset-0 z-50 bg-slate-900 bg-opacity-95 flex flex-col items-center justify-center gap-8 text-xl text-slate-50 transition-all duration-300 opacity-0 pointer-events-none">
                         <button id="close-menu" class="absolute top-6 right-6 text-4xl">&times;</button>
                         <a href="#about" class="hover:text-blue-400">About</a>
                         <a href="#skills" class="hover:text-blue-400">Skills</a>
                         <a href="#projects" class="hover:text-blue-400">Projects</a>
                         <a href="#education" class="hover:text-blue-400">Education</a>
                         <hr class="w-1/2 border-t border-slate-50">
-                        <button class="md:hidden text-slate-50 bg-blue-400 rounded-lg px-6 py-2 text-lg font-bold shadow-md h-12 w-50 hover:bg-blue-500 transition-colors duration-300 cursor-pointer md:text-md" title="Email me">
+                        <button
+                            class="md:hidden text-slate-50 bg-blue-400 rounded-lg px-6 py-2 text-lg font-bold shadow-md h-12 w-50 hover:bg-blue-500 transition-colors duration-300 cursor-pointer md:text-md"
+                            title="Email me">
                             Contact Me
                         </button>
                     </div>
@@ -94,23 +118,30 @@
             <div class="text-center">
                 <h1 id="typewriter" class="text-6xl font-extrabold text-slate-50"></h1>
                 <p class="text-xl text-slate-50 mt-4">I build things for the web.</p>
-                <p class="text-lg text-slate-50 mt-2"><span class="text-blue-400 font-extrabold">I’m a software developer</span> specializing in building (and occasionally designing) exceptional digital experiences.</p>
+                <p class="text-lg text-slate-50 mt-2"><span class="text-blue-400 font-extrabold">I’m a software
+                        developer</span> specializing in building (and occasionally designing) exceptional digital
+                    experiences.</p>
                 <a href="#projects" class="mt-6 text-blue-400 hover:underline">See my work</a>
             </div>
             <!-- Social Icons -->
             <div class="social-icons">
-                <ul class="text-slate-50 flex gap-10 [&>li]:transition-all [&>li]:duration-300 [&>li]:hover:scale-105 [&>a]:items-center [&>li>a]:text-5xl">
+                <ul
+                    class="text-slate-50 flex gap-10 [&>li]:transition-all [&>li]:duration-300 [&>li]:hover:scale-105 [&>a]:items-center [&>li>a]:text-5xl">
                     <li data-aos="fade-up" data-aos-duration="1500">
-                        <a href="https://github.com/vJeansy" title="GitHub" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://github.com/vJeansy" title="GitHub" target="_blank" rel="noopener"><i
+                                class="fa-brands fa-github"></i></a>
                     </li>
                     <li data-aos="fade-up" data-aos-duration="1800">
-                        <a href="https://www.linkedin.com/in/jeansy-peña-b575721b0/" title="LinkedIn" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.linkedin.com/in/jeansy-peña-b575721b0/" title="LinkedIn" target="_blank"
+                            rel="noopener"><i class="fa-brands fa-linkedin"></i></a>
                     </li>
                     <li data-aos="fade-up" data-aos-duration="2000">
-                        <a href="https://www.instagram.com/vjeansy/" title="Instagram" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.instagram.com/vjeansy/" title="Instagram" target="_blank" rel="noopener"><i
+                                class="fa-brands fa-instagram"></i></a>
                     </li>
                     <li data-aos="fade-up" data-aos-duration="2300">
-                        <a href="https://www.youtube.com/@vJeansy" title="YouTube" target="_blank" rel="noopener"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="https://www.youtube.com/@vJeansy" title="YouTube" target="_blank" rel="noopener"><i
+                                class="fa-brands fa-youtube"></i></a>
                     </li>
                 </ul>
             </div>
@@ -118,136 +149,285 @@
     </header>
 
     <!-- ================= MAIN ================= -->
-    <main id="main-content" class="[&>section>div]:text-center [&>section>div>h1]:text-slate-50 [&>section>div>h1]:text-4xl [&>section>div>h1]:font-extrabold [&>section>div>h2]:text-slate-50 [&>section>div>h2]:text-8xl [&>section>div>h2]:opacity-10 [&>section>div>h2]:relative [&>section>div>h2]:-top-32">
-        <!-- Skills Section -->
-        <section id="skills">
+    <main id="main-content"
+        class="[&>section>div]:text-center [&>section>div>h1]:text-slate-50 [&>section>div>h1]:text-4xl [&>section>div>h1]:font-extrabold [&>section>div>h2]:text-slate-50 [&>section>div>h2]:text-8xl [&>section>div>h2]:opacity-10 [&>section>div>h2]:relative [&>section>div>h2]:-top-32">
+
+     <!-- About Section -->
+        <section id="about">
             <div>
-                <h1 data-aos="flip-left">Skills</h1>
-                <h2 data-aos="flip-left">Skills</h2>
+                <h1 data-aos="flip-down">About</h1>
+                <h2 data-aos="flip-down">About</h2>
             </div>
-            <div id="skills-container" class="grid justify-center [&>div>h3]:my-10">
-                <div>
-                    <h3 class="text-center text-slate-50">Front-End</h3>
-                </div>
-                <div class="logos">
-                    <div id="front-end" class="logos-slide-left flex items-center">
-                        <!--skills fetched using js-->
+            <div class="max-w-4xl mx-auto px-4 py-10 text-slate-50 text-lg">
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div data-aos="fade-right">
+                        <p class="mb-4">Hello! I'm Jeansy Peña, a passionate software developer specializing in creating exceptional digital experiences.</p>
+                        <p class="mb-4">With a strong foundation in both front-end and back-end technologies, I bring ideas to life through clean, efficient code and thoughtful user experiences.</p>
+                        <p class="mb-4">When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or obtaining more knowledge through tutorials and blog posts from others.</p>
+                        <!--<div class="flex gap-4 mt-6">
+                            <a href="#skills" class="text-blue-400 hover:underline">My Skills</a>
+                            <a href="#projects" class="text-blue-400 hover:underline">My Projects</a>
+                        </div> -->
                     </div>
-                </div>
-                <div>
-                    <h3 class="text-center text-slate-50">Back-End</h3>
-                </div>
-                <div class="logos">
-                    <div id="back-end" class="logos-slide-right flex items-center">
-                        <!--skills fetched using js-->
-                    </div>
-                </div>
-                <div>
-                    <h3 class="text-center text-slate-50">Technologies</h3>
-                </div>
-                <div class="logos">
-                    <div id="technologies" class="logos-slide-left flex items-center">
-                        <!--skills fetched using js-->
+                    <div data-aos="fade-left" class="flex justify-center">
+                        <img src="./src/assets/image/JPDevLogo.png" alt="Jeansy Peña" class="rounded-full w-64 h-64 object-cover border-4 border-blue-400 shadow-lg">
                     </div>
                 </div>
             </div>
         </section>
-
-        <!-- Projects Section -->
-        <section id="projects">
-            <div>
-                <h1 data-aos="flip-right">Projects</h1>
-                <h2 data-aos="flip-right">Projects</h2>
-            </div>
-            <div id="projects-container" class="flex flex-col gap-10">
-                <!-- projects fetched using JS -->
-            </div>
-            <div id="show-more-projects" class="show-more-container flex justify-center">
-                <div class="flex text-slate-50 text-center bg-blue-400 rounded-lg px-6 py-2 text-lg font-bold h-12 w-50 hover:bg-blue-500 transition-colors duration-300 cursor-pointer md:text-md mx-auto mt-6">
-                    <button class="w-full text-center cursor-pointer" title="Show more projects">Show more</button>
-                </div>
-            </div>
-        </section>
-
-        <!-- Education Section -->
-        <section id="education">
-            <div>
-                <h1 data-aos="flip-up">Education</h1>
-                <h2 data-aos="flip-up">Education</h2>
-            </div>
-            <div id="education-container" class="flex flex-col lg:flex-row gap-10 justify-center items-center">
-                <!-- education certificates will be fetched using JS if increased -->
-                <div data-aos="fade-up-right" data-aos-once = "true" id="itsc" class="grid bg-gradient-to-r from-slate-900 to-slate-800 justify-center text-center text-slate-50 h-64 w-96 rounded-lg shadow-lg shadow-gray-700 transition-all transform hover:scale-105 hover:shadow-2xl">
-                    <img class="h-20 w-20" src="https://www.itsc.edu.do/wp-content/uploads/2023/02/logo-12-1-e1677264157702.png" alt="Instituto Tecnico Superior Comunitario">
-                    <h3>Instituto Tecnico Superior Comunitario</h3>
-                    <a href="https://www.itsc.edu.do" target="_blank" class="text-blue-400 hover:underline">Information Technology Technical Support Specialist(TI)</a>
-                    <span>Sep 2020</span>
-                </div>
-                <div data-aos="fade-up" data-aos-once = "true" id="coursera" class="grid bg-gradient-to-r from-slate-900 to-slate-800 justify-center text-center text-slate-50 h-64 w-96 rounded-lg shadow-lg shadow-gray-700 transition-all transform hover:scale-105 hover:shadow-2xl">
-                    <img class="h-20 w-20" src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera.s3.amazonaws.com/media/coursera-rebrand-logo-square.png?auto=format%2Ccompress&dpr=1" alt="Coursera">
-                    <h3>COURSERA</h3>
-                    <a href="https://coursera.org/share/43642a31343d8312e1ec429985f42c36" target="_blank" class="text-blue-400 hover:underline">Front-End developer from META</a>
-                    <span>Jan 2025</span>
-                </div>
-                <div data-aos="fade-up-left" data-aos-once = "true" id="udemy" class="grid bg-gradient-to-r from-slate-900 to-slate-800 justify-center text-center text-slate-50 h-64 w-96 rounded-lg shadow-lg shadow-gray-700 transition-all transform hover:scale-105 hover:shadow-2xl">
-                    <img class="h-20 w-20" src="https://play-lh.googleusercontent.com/dsCkmJE2Fa8IjyXERAcwc5YeQ8_NvbZ4_OI8LgqyjILpXUfS5YhEcnAMajKPrZI-og" alt="Udemy">
-                    <h3>UDEMY</h3>
-                    <a href="https://www.udemy.com/certificate/UC-ea118b47-d9c5-4b3a-9a67-4a0094c5019d/" target="_blank" class="text-blue-400 hover:underline">Full-Stack developer</a>
-                    <span>Apr 2025</span>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact">
-            <div>
-                <h1 data-aos="flip-down">Contact</h1>
-                <h2 data-aos="flip-down">Contact</h2>
-            </div>
-            <div id="contact-container" class="min-h-screen flex items-center justify-center ">
-                <div class="bg-[#0D1117] border-2 border-gray-600 text-white rounded-lg w-full h-full max-w-5xl flex flex-col md:flex-row shadow-lg overflow-hidden">
-                    <!-- Left side -->
-                    <div class="hidden w-full md:flex flex-col items-center justify-center p-8 text-center border-b md:border-b-0 md:border-r border-gray-600 bg-gradient-to-r from-slate-900 to-slate-800">
-                        <h2 class="text-4xl md:text-5xl font-serif leading-tight">
-                            <span class="block">Contact</span>
-                            <span class="block">me!</span>
-                        </h2>
-                        <div class="mt-8">
-                            <i data-aos="fade-up" class="fas fa-envelope text-6xl"></i>
-                        </div>
+                <!-- Skills Section -->
+                <section id="skills">
+                    <div>
+                        <h1 data-aos="flip-left">Skills</h1>
+                        <h2 data-aos="flip-left">Skills</h2>
                     </div>
-                    <!-- Right side (Form) -->
-                    <form id="contactForm" class="w-full h-full p-8">
+                    <div id="skills-container" class="grid justify-center [&>div>h3]:my-10">
                         <div>
-                            <label for="fullName" class="block text-md font-bold uppercase tracking-widest mb-1">Full name</label>
-                            <input type="text" id="fullName" name="fullName" class="w-full bg-transparent border-b border-gray-500 focus:outline-none focus:border-white placeholder-gray-400 text-md" placeholder="Your name">
+                            <h3 class="text-center text-slate-50">Front-End</h3>
                         </div>
-                        <div>
-                            <label for="email" class="block text-md font-bold uppercase tracking-widest mb-1">Email Address</label>
-                            <input type="email" id="email" name="email" class="w-full bg-transparent border-b border-gray-500 focus:outline-none focus:border-white placeholder-gray-400 text-md" placeholder="youremail@example.com">
-                        </div>
-                        <div>
-                            <label for="message" class="block text-md font-bold uppercase tracking-widest mb-1">Tell me all about it:</label>
-                            <textarea id="message" name="message" rows="4" class="w-full bg-transparent border border-gray-500 rounded p-2 resize-none focus:outline-none focus:border-white placeholder-gray-400 text-md" placeholder="FYI: This is just a demo since the form doesn't actually send an email bacause the project does not support back-end logic"></textarea>
-                        </div>
-                        <div class="flex justify-end">
-                            <div class="flex text-center text-slate-50 bg-blue-400 rounded-lg px-6 py-2 text-lg font-bold h-10 w-50 hover:bg-blue-500 transition-colors duration-300 cursor-pointer md:text-md mx-auto mt-6">
-                                <button id="sendBtn" type="submit" class="w-full text-center cursor-pointer">Send</button>
+                        <div class="logos">
+                            <div id="front-end" class="logos-slide-left flex items-center">
+                                <!--skills fetched using js-->
                             </div>
                         </div>
-                    </form>
-                </div>
+                        <div>
+                            <h3 class="text-center text-slate-50">Back-End</h3>
+                        </div>
+                        <div class="logos">
+                            <div id="back-end" class="logos-slide-right flex items-center">
+                                <!--skills fetched using js-->
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-center text-slate-50">Technologies</h3>
+                        </div>
+                        <div class="logos">
+                            <div id="technologies" class="logos-slide-left flex items-center">
+                                <!--skills fetched using js-->
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Projects Section -->
+                <section id="projects">
+                    <div>
+                        <h1 data-aos="flip-right">Projects</h1>
+                        <h2 data-aos="flip-right">Projects</h2>
+                    </div>
+                    <div id="projects-container" class="flex flex-col gap-10">
+                        <!-- projects fetched using JS -->
+                    </div>
+                    <div id="show-more-projects" class="show-more-container flex justify-center">
+                        <div
+                            class="flex text-slate-50 text-center bg-blue-400 rounded-lg px-6 py-2 text-lg font-bold h-12 w-50 hover:bg-blue-500 transition-colors duration-300 cursor-pointer md:text-md mx-auto mt-6">
+                            <button class="w-full text-center cursor-pointer" title="Show more projects">Show
+                                more</button>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Education Section -->
+                <section id="education">
+                    <div>
+                        <h1 data-aos="flip-up">Education</h1>
+                        <h2 data-aos="flip-up">Education</h2>
+                    </div>
+                    <div id="education-container" class="flex flex-col lg:flex-row gap-10 justify-center items-center">
+                        <!-- education certificates will be fetched using JS if increased -->
+                        <div data-aos="fade-up-right" data-aos-once="true" id="itsc"
+                            class="grid bg-gradient-to-r from-slate-900 to-slate-800 justify-center text-center text-slate-50 h-64 w-96 rounded-lg shadow-lg shadow-gray-700 transition-all transform hover:scale-105 hover:shadow-2xl">
+                            <img class="h-20 w-20"
+                                src="https://www.itsc.edu.do/wp-content/uploads/2023/02/logo-12-1-e1677264157702.png"
+                                alt="Instituto Tecnico Superior Comunitario">
+                            <h3>Instituto Tecnico Superior Comunitario</h3>
+                            <a href="https://www.itsc.edu.do" target="_blank"
+                                class="text-blue-400 hover:underline">Information
+                                Technology Technical Support Specialist(TI)</a>
+                            <span>Sep 2020</span>
+                        </div>
+                        <div data-aos="fade-up" data-aos-once="true" id="coursera"
+                            class="grid bg-gradient-to-r from-slate-900 to-slate-800 justify-center text-center text-slate-50 h-64 w-96 rounded-lg shadow-lg shadow-gray-700 transition-all transform hover:scale-105 hover:shadow-2xl">
+                            <img class="h-20 w-20"
+                                src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera.s3.amazonaws.com/media/coursera-rebrand-logo-square.png?auto=format%2Ccompress&dpr=1"
+                                alt="Coursera">
+                            <h3>COURSERA</h3>
+                            <a href="https://coursera.org/share/43642a31343d8312e1ec429985f42c36" target="_blank"
+                                class="text-blue-400 hover:underline">Front-End developer from META</a>
+                            <span>Jan 2025</span>
+                        </div>
+                        <div data-aos="fade-up-left" data-aos-once="true" id="udemy"
+                            class="grid bg-gradient-to-r from-slate-900 to-slate-800 justify-center text-center text-slate-50 h-64 w-96 rounded-lg shadow-lg shadow-gray-700 transition-all transform hover:scale-105 hover:shadow-2xl">
+                            <img class="h-20 w-20"
+                                src="https://play-lh.googleusercontent.com/dsCkmJE2Fa8IjyXERAcwc5YeQ8_NvbZ4_OI8LgqyjILpXUfS5YhEcnAMajKPrZI-og"
+                                alt="Udemy">
+                            <h3>UDEMY</h3>
+                            <a href="https://www.udemy.com/certificate/UC-ea118b47-d9c5-4b3a-9a67-4a0094c5019d/"
+                                target="_blank" class="text-blue-400 hover:underline">Full-Stack developer</a>
+                            <span>Apr 2025</span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Contact Section -->
+                <section id="contact">
+                    <div>
+                        <h1 data-aos="flip-down">Contact</h1>
+                        <h2 data-aos="flip-down">Contact</h2>
+                    </div>
+                    <div id="contact-container" class="min-h-screen flex items-center justify-center ">
+                        <div
+                            class="bg-[#0D1117] border-2 border-gray-600 text-white rounded-lg w-full h-full max-w-5xl flex flex-col md:flex-row shadow-lg overflow-hidden">
+                            <!-- Left side -->
+                            <div
+                                class="hidden w-full md:flex flex-col items-center justify-center p-8 text-center border-b md:border-b-0 md:border-r border-gray-600 bg-gradient-to-r from-slate-900 to-slate-800">
+                                <h2 class="text-4xl md:text-5xl font-serif leading-tight">
+                                    <span class="block">Contact</span>
+                                    <span class="block">me!</span>
+                                </h2>
+                                <div class="mt-8">
+                                    <i data-aos="fade-up" class="fas fa-envelope text-6xl"></i>
+                                </div>
+                            </div>
+                            <!-- Right side (Form) -->
+                            <form id="contactForm" class="w-full h-full p-4 md:p-8 space-y-4 md:space-y-6">
+                                <div class="space-y-1 md:space-y-2">
+                                    <label for="fullName"
+                                        class="block text-sm md:text-md font-bold uppercase tracking-widest">Full
+                                        name</label>
+                                    <input type="text" id="fullName" name="fullName" required
+                                        class="w-full bg-transparent border-b border-gray-500 focus:outline-none focus:border-white placeholder-gray-400 text-sm md:text-md py-1 md:py-2"
+                                        placeholder="Your name">
+                                </div>
+                                <div class="space-y-1 md:space-y-2">
+                                    <label for="email"
+                                        class="block text-sm md:text-md font-bold uppercase tracking-widest">Email
+                                        Address</label>
+                                    <input type="email" id="email" name="email"
+                                        class="w-full bg-transparent border-b border-gray-500 focus:outline-none focus:border-white placeholder-gray-400 text-sm md:text-md py-1 md:py-2"
+                                        placeholder="youremail@example.com">
+                                </div>
+                                <div class="space-y-1 md:space-y-2">
+                                    <label for="message"
+                                        class="block text-sm md:text-md font-bold uppercase tracking-widest">Tell me all
+                                        about
+                                        it:</label>
+                                    <textarea id="email" name="email" rows="4" required
+                                        class="w-full bg-transparent border border-gray-500 rounded p-2 resize-none focus:outline-none focus:border-white placeholder-gray-400 text-sm md:text-md"
+                                        placeholder="FYI: This is just a demo since the form doesn't actually send an email because the project does not support back-end logic"></textarea>
+                                </div>
+                                <div class="flex justify-end"></div>
+                                <button id="sendBtn" type="submit" class="text-slate-50 text-center bg-blue-400 rounded-lg px-6 py-2 text-lg font-bold shadow-md
+                            h-12 w-50 hover:bg-blue-500 transition-colors duration-300 cursor-pointer md:text-md">
+                                    Send
+                                </button>
+                        </div>
+                        </form>
+                    </div>
             </div>
-            <div id="error-message" class="text-red-500">
+            <div id="error-message" class="fixed right-0 bottom-0 w-96 rounded-md text-red-500 font-bold">
                 <!-- Error message will be displayed here -->
+            </div>
+            <div id="submit-message" class="fixed right-0 bottom-0 w-96 rounded-md text-green-500 font-bold">
+                <!-- Success message will be displayed here -->
             </div>
         </section>
     </main>
 
-    <!-- ================= FOOTER ================= -->
-    <footer class="bg-slate-900 text-slate-50 text-center py-4">
-        <p>&copy; <span id="current-year"></span> JPenaDev. All rights reserved.</p>
-        <p>Designed and developed by Jeansy Peña.</p>
+    <footer class="bg-gradient-to-b from-slate-900 to-slate-800 text-slate-50 w-full">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-12 text-center md:text-left">
+                <!-- Subscription Section -->
+                <div class="flex-1 flex flex-col items-center md:items-start space-y-6">
+                    <div class="flex items-center gap-2 justify-center md:justify-start">
+                        <img class="h-8 w-auto" src="./src/assets/image/JPDevLogo.png" alt="logo">
+                        <h3
+                            class="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-600">
+                            JPenaDev
+                        </h3>
+                    </div>
+                    <p class="text-slate-300 text-lg max-w-xs">Building exceptional digital experiences with passion and
+                        precision.</p>
+                    <form class="flex flex-col items-center md:items-start space-y-4 w-full max-w-xs">
+                        <input type="email" placeholder="Your email address" class="px-4 py-3 rounded-lg bg-slate-700 border border-slate-600 focus:outline-none focus:ring-2
+                            focus:ring-blue-500 text-white placeholder-slate-400 h-11 w-full">
+                        <button type="submit"
+                            class="bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 hover:cursor-pointer
+                            text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl h-11 w-full">
+                            Subscribe to Newsletter
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="flex-1 flex flex-col items-center md:items-start space-y-6">
+                    <h3 class="text-2xl font-bold text-white">Quick Links</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#about"
+                                class="text-slate-300 hover:text-blue-400 transition duration-300 flex items-center gap-2 text-lg justify-center md:justify-start">
+                                <i class="fas fa-chevron-right text-xs text-blue-400"></i> About</a></li>
+                        <li><a href="#skills"
+                                class="text-slate-300 hover:text-blue-400 transition duration-300 flex items-center gap-2 text-lg justify-center md:justify-start">
+                                <i class="fas fa-chevron-right text-xs text-blue-400"></i> Skills</a></li>
+                        <li><a href="#projects"
+                                class="text-slate-300 hover:text-blue-400 transition duration-300 flex items-center gap-2 text-lg justify-center md:justify-start">
+                                <i class="fas fa-chevron-right text-xs text-blue-400"></i> Projects</a></li>
+                        <li><a href="#education"
+                                class="text-slate-300 hover:text-blue-400 transition duration-300 flex items-center gap-2 text-lg justify-center md:justify-start">
+                                <i class="fas fa-chevron-right text-xs text-blue-400"></i> Education</a></li>
+                        <li><a href="#contact"
+                                class="text-slate-300 hover:text-blue-400 transition duration-300 flex items-center gap-2 text-lg justify-center md:justify-start">
+                                <i class="fas fa-chevron-right text-xs text-blue-400"></i> Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Social Links -->
+                <div class="flex-1 flex flex-col items-center md:items-start space-y-6">
+                    <h3 class="text-2xl font-bold text-white">Connect With Me</h3>
+                    <div class="flex justify-center md:justify-start space-x-5">
+                        <a href="https://github.com/vJeansy"
+                            class="text-slate-300 hover:text-white hover:bg-blue-500 text-2xl transition-all duration-300 bg-slate-700 p-3 rounded-full w-12 h-12 flex items-center justify-center"
+                            target="_blank" rel="noopener">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/jeansy-peña-b575721b0/"
+                            class="text-slate-300 hover:text-white hover:bg-blue-500 text-2xl transition-all duration-300 bg-slate-700 p-3 rounded-full w-12 h-12 flex items-center justify-center"
+                            target="_blank" rel="noopener">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://www.instagram.com/vjeansy/"
+                            class="text-slate-300 hover:text-white hover:bg-pink-500 text-2xl transition-all duration-300 bg-slate-700 p-3 rounded-full w-12 h-12 flex items-center justify-center"
+                            target="_blank" rel="noopener">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@vJeansy"
+                            class="text-slate-300 hover:text-white hover:bg-red-500 text-2xl transition-all duration-300 bg-slate-700 p-3 rounded-full w-12 h-12 flex items-center justify-center"
+                            target="_blank" rel="noopener">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                    <div class="pt-4">
+                        <a href="mailto:jeansypenar@outlook.com" target="_blank" title="Email me"
+                            class="text-blue-400 hover:text-blue-300 transition duration-300 text-lg flex items-center gap-2 justify-center md:justify-start">
+                            <i class="fas fa-envelope"></i> jeansypenar@outlook.com
+                        </a>
+                    </div>
+                    <div class="pt-1">
+                        <a href="https://wa.me/+18099175579" target="_blank" title="Whatsapp me"
+                            class="text-blue-400 hover:text-blue-300 transition duration-300 text-lg flex items-center gap-2 justify-center md:justify-start">
+                            <i class="fa-brands fa-whatsapp"></i> 🇩🇴 +1 (809) 917-5579
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright Section -->
+            <div class="border-t border-slate-700 mt-12 pt-8 text-center">
+                <p class="text-slate-400">&copy; <span id="current-year"></span> JPenaDev. All rights reserved.</p>
+                <p class="text-slate-500 mt-2">Designed and developed with <span class="heartbeat">❤️</span> by Jeansy
+                    Peña</p>
+            </div>
+        </div>
     </footer>
 
     <!-- ================= SCRIPTS ================= -->
@@ -257,9 +437,10 @@
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    AOS.init();
-  });
-</script>
+        document.addEventListener('DOMContentLoaded', function () {
+            AOS.init();
+        });
+    </script>
 </body>
+
 </html>
