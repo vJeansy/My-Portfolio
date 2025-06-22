@@ -88,14 +88,19 @@ function renderProjects(count) {
         // Even id: left card
         if (project.id % 2 === 0) {
             card = document.createElement('div');
-            card.className = 'flex flex-col lg:flex-row items-center gap-6 lg:gap-8 p-7 rounded-2xl';
+            card.className = 'flex flex-col lg:flex-row items-center gap-4 md:gap-6 lg:gap-8 p-4 md:p-7 rounded-2xl w-full';
             projectsContainer.appendChild(card);
 
             imgContainer = document.createElement('div');
             imgContainer.setAttribute('data-aos', 'fade-right');
             imgContainer.setAttribute('data-aos-once', 'true');
             imgContainer.className = [
-                'flex-shrink-0'
+                'flex-shrink-0',
+                'w-full',
+                'max-w-xs',
+                'sm:max-w-md',
+                'md:max-w-lg',
+                'lg:max-w-2xl'
             ].join(' ');
             card.appendChild(imgContainer);
 
@@ -117,16 +122,20 @@ function renderProjects(count) {
                 'xl:mask-r-from-50%',
                 'xl:mask-r-to-90%',
                 'xl:blur-xs',
-                'hover:blur-none'
+                'hover:blur-none',
+                'w-full',
+                'h-auto',
+                'max-h-80',
+                'object-cover'
             ].join(' ');
-            img.style.height = '20rem';
-            img.style.width = '40rem';
+            img.style.height = '';
+            img.style.width = '';
             img.style.objectFit = 'cover';
             img.alt = project.tittle;
             imgContainer.appendChild(img);
 
             textContainer = document.createElement('div');
-            textContainer.className = 'flex flex-col items-center lg:items-start text-left lg:text-left w-full';
+            textContainer.className = 'flex flex-col items-center lg:items-start text-left lg:text-left w-full max-w-xs sm:max-2-md md:max-w-lg lg:max-2-2xl';
             card.appendChild(textContainer);
 
             // Title
@@ -197,7 +206,12 @@ function renderProjects(count) {
             imgContainer.setAttribute('data-aos', 'fade-left');
             imgContainer.setAttribute('data-aos-once', 'true');
             imgContainer.className = [
-                'flex-shrink-0'
+                'flex-shrink-0',
+                'w-full',
+                'max-w-xs',
+                'sm:max-w-md',
+                'md:max-w-lg',
+                'lg:max-w-2xl'
             ].join(' ');
             card.appendChild(imgContainer);
 
@@ -219,16 +233,20 @@ function renderProjects(count) {
                 'xl:mask-l-from-50%',
                 'xl:mask-l-to-90%',
                 'xl:blur-xs',
-                'hover:blur-none'
+                'hover:blur-none',
+                'w-full',
+                'h-auto',
+                'max-h-80',
+                'object-cover'
             ].join(' ');
-            img.style.height = '20rem';
-            img.style.width = '40rem';
+            img.style.height = '';
+            img.style.width = '';
             img.style.objectFit = 'cover';
             img.alt = project.tittle;
             imgContainer.appendChild(img);
 
             textContainer = document.createElement('div');
-            textContainer.className = 'flex flex-col items-center lg:items-start text-left lg:text-left w-full';
+            textContainer.className = 'flex flex-col items-center lg:items-start text-left lg:text-left w-full max-w-xs sm:max-2-md md:max-w-lg lg:max-2-2xl';
             card.appendChild(textContainer);
 
             // Title

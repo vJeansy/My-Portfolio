@@ -1,6 +1,7 @@
 export function contactForm() {
     const form = document.getElementById("contactForm");
-    const emailInput = document.getElementById("email");
+    const emailInput = document.getElementById("emailaddress");
+    const textarea = document.getElementById("email");
     const errorMessage = document.getElementById("error-message");
     const submitMessage = document.getElementById("submit-message");
     const fullName = document.getElementById("fullName");
@@ -12,9 +13,9 @@ export function contactForm() {
         if (validateEmail(emailValue)) {
             errorMessage.textContent = "";
             // Handle successful email submission
-            fullName.textContent = ""
-            emailInput.textContent = ""
-
+            fullName.value = ""
+            emailInput.value = ""
+            textarea.value = "";
             submitMessage.textContent = 'Email succesfully sent!'
             submitMessage.classList.add("bg-green-100", "h-10", "py-2");
             setTimeout(() => {
