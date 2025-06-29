@@ -15,7 +15,8 @@ html {
 body {
      font-family: "Inter", sans-serif;
      font-optical-sizing: auto;
-     font-weight: weight; /* Consider replacing 'weight' with a numeric value */
+     font-weight: weight;
+     /* Consider replacing 'weight' with a numeric value */
      font-style: normal;
      background-color: #0D1117;
      overflow-x: hidden;
@@ -24,7 +25,7 @@ body {
 /* =========================
     2. Layout Containers
     ========================= */
-header > div {
+header>div {
      margin: 0 10rem;
 }
 
@@ -36,10 +37,11 @@ header > div {
 }
 
 #projects-container {
-    max-width: 80rem; /* or the value you prefer, e.g., 1200px or 1000px */
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+     max-width: 80rem;
+     /* or the value you prefer, e.g., 1200px or 1000px */
+     width: 100%;
+     margin-left: auto;
+     margin-right: auto;
 }
 
 #contactForm {
@@ -60,11 +62,18 @@ header > div {
 /* =========================
     3. Section Headings & Content
     ========================= */
-#about h1, #about h2,
-#skills h1, #skills h2,
-#projects h1, #projects h2,
-#education h1, #education h2,
-#contact h1, #contact h2 {
+#about h1,
+#about h2,
+#skills h1,
+#skills h2,
+#projects h1,
+#projects h2,
+#education h1,
+#education h2,
+#faq h1,
+#faq h2,
+#contact h1,
+#contact h2 {
      margin: 2.5rem 0 0 0;
 }
 
@@ -91,8 +100,8 @@ header > div {
      margin: 0.5rem auto;
 }
 
-.img-container-left > img,
-.img-container-right > img {
+.img-container-left>img,
+.img-container-right>img {
      height: 20rem;
      width: 40rem;
 }
@@ -134,45 +143,98 @@ header > div {
 
 /* Infinite logo carousel */
 @keyframes slide-left {
-     from { transform: translateX(0); }
-     to { transform: translateX(-100%); }
+     from {
+          transform: translateX(0);
+     }
+
+     to {
+          transform: translateX(-100%);
+     }
 }
 
 @keyframes slide-right {
-     from { transform: translateX(-100%); }
-     to { transform: translateX(0); }
+     from {
+          transform: translateX(-100%);
+     }
+
+     to {
+          transform: translateX(0);
+     }
 }
 
 @keyframes fadeZoom {
-     0% { opacity: 0; transform: scale(0.9); }
-     100% { opacity: 1; transform: scale(1); }
+     0% {
+          opacity: 0;
+          transform: scale(0.9);
+     }
+
+     100% {
+          opacity: 1;
+          transform: scale(1);
+     }
+}
+
+.faq-answer {
+     transition: all 0.3s ease;
+}
+
+.heartbeat {
+     animation: heartbeat 1.5s infinite;
+}
+
+@keyframes heartbeat {
+     0% {
+          transform: scale(1);
+     }
+
+     25% {
+          transform: scale(1.1);
+     }
+
+     50% {
+          transform: scale(1);
+     }
+
+     75% {
+          transform: scale(1.1);
+     }
+
+     100% {
+          transform: scale(1);
+     }
 }
 
 /* Heart animation */
 .heartbeat {
-  display: inline-block;
-  animation: heartbeat 1.5s ease-in-out infinite;
+     display: inline-block;
+     animation: heartbeat 1.5s ease-in-out infinite;
 }
 
 @keyframes heartbeat {
-  0%, 100% {
-    transform: scale(1);
-  }
-  14% {
-    transform: scale(1.3);
-  }
-  28% {
-    transform: scale(1);
-  }
-  42% {
-    transform: scale(1.3);
-  }
-  70% {
-    transform: scale(1);
-  }
+
+     0%,
+     100% {
+          transform: scale(1);
+     }
+
+     14% {
+          transform: scale(1.3);
+     }
+
+     28% {
+          transform: scale(1);
+     }
+
+     42% {
+          transform: scale(1.3);
+     }
+
+     70% {
+          transform: scale(1);
+     }
 }
 
-.logos {
+/*.logos {
      overflow: hidden;
      white-space: nowrap;
      margin: 25px 0;
@@ -197,7 +259,7 @@ header > div {
 
 .logos-slide > a {
      margin: -25px;
-}
+}*/
 
 /* =========================
     7. Buttons & Modals
@@ -211,9 +273,11 @@ header > div {
      cursor: pointer;
      font-size: 2.5rem;
 }
+
 .up-button:hover {
      border: 1px solid white;
 }
+
 .up-button .show {
      display: block;
 }
@@ -227,13 +291,15 @@ header > div {
 /* =========================
     8. Miscellaneous
     ========================= */
-#itsc, #coursera, #udemy {
+#itsc,
+#coursera,
+#udemy {
      margin: 1rem 3rem;
      padding: 1rem 1rem;
 }
 
-#contactForm > div,
-#contactForm > div > label {
+#contactForm>div,
+#contactForm>div>label {
      margin: 1.5rem 0;
 }
 
@@ -241,9 +307,10 @@ header > div {
     9. Responsive Design
     ========================= */
 @media screen and (max-width: 1080px) {
-     header > div {
+     header>div {
           margin: 0 2rem;
      }
+
      #about-container,
      #skills-container,
      #projects-container,
@@ -254,12 +321,14 @@ header > div {
 }
 
 @media screen and (max-width: 480px) {
-     header > div {
+     header>div {
           margin: 0 1rem;
      }
-     #skills-container{
+
+     #skills-container {
           margin: 0 3rem;
      }
+
      #contactForm {
           margin: 0;
      }
@@ -279,17 +348,24 @@ header > div {
 
 /* Para navegadores con motor WebKit (Chrome, Safari, Edge) */
 *::-webkit-scrollbar {
-  width: 20px; /* Ancho de la barra de desplazamiento */
-  background: #4e4e4e; /* Fondo de la barra de desplazamiento */
+     width: 20px;
+     /* Ancho de la barra de desplazamiento */
+     background: #4e4e4e;
+     /* Fondo de la barra de desplazamiento */
 }
 
 *::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2); /* Sombra del fondo */
-  border-radius: 10px; /* Bordes redondeados */
+     box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+     /* Sombra del fondo */
+     border-radius: 10px;
+     /* Bordes redondeados */
 }
 
 *::-webkit-scrollbar-thumb {
-  background: #42A5F5; /* Color de la parte móvil */
-  border-radius: 0; /* Bordes redondeados */
-  box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.2); /* Sombra de la parte móvil */
+     background: #42A5F5;
+     /* Color de la parte móvil */
+     border-radius: 0;
+     /* Bordes redondeados */
+     box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.2);
+     /* Sombra de la parte móvil */
 }

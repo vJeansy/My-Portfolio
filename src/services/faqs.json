@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "question": "What project are you most proud of and why?",
+    "answer": "NoteNest is the project I'm most proud of. It’s my first full-stack app built in a monorepo, using React, Node.js, PostgreSQL, and JWT. I deployed it with Vercel and Render after overcoming several challenges, including limitations with free hosting and backend integration."
+  },
+  {
+    "id": 2,
+    "question": "Have you faced any technical challenges, and how did you solve them?",
+    "answer": "Yes. In NoteNest, connecting user notes through a relational database was tough at first. After hours of researching documentation and watching tutorials, I figured out the logic. I also fixed deployment issues on Render by debugging build configurations and adjusting scripts based on error messages."
+  },
+  {
+    "id": 3,
+    "question": "How do you process a new task or request when it’s assigned to you?",
+    "answer": "I first ensure I fully understand the goal and scope. If anything’s unclear, I ask clarifying questions early. Then I break the task into smaller steps, prioritize them, and work through them methodically—providing updates when needed and testing thoroughly before delivering results."
+  },
+  {
+    "id": 4,
+    "question": "How do you decide what design pattern or architecture to use in a project?",
+    "answer": "It depends on the scope and complexity. For simple apps, I keep it lean. For scalable apps, I use patterns like MVC or modular React structures, focusing on reusability and maintainability. I always prioritize clarity over trendiness."
+  },
+  {
+    "id": 5,
+    "question": "How do you approach learning new technologies or solving unfamiliar problems?",
+    "answer": "I use official documentation, online tutorials, and tools like ChatGPT to understand things in plain language. I avoid blindly copying code—I prefer to understand how and why it works first."
+  },
+  {
+    "id": 6,
+    "question": "How does your technical support and math background help you as a developer?",
+    "answer": "My tech support background sharpened my troubleshooting and communication skills, while my math training helps me reason through complex logic and systems. Both have made me a more analytical and resilient developer."
+  },
+  {
+    "id": 7,
+    "question": "Do you have experience leading or working in a team?",
+    "answer": "Yes. I currently lead three departments in a contact center, managing teams focused on quality, documentation, and escalation resolution. While not tech-related, it’s strengthened my decision-making, leadership, and teamwork—skills I bring into my dev work as well."
+  },
+  {
+    "id": 8,
+    "question": "Where do you see yourself in the next few years?",
+    "answer": "I aim to lead a development team, combining my leadership background with my growing technical skills. I also plan to build tech solutions tailored to local needs—like a subway app for the Dominican Republic."
+  }
+]

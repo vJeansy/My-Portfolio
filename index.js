@@ -1,26 +1,35 @@
+// =======================
 // Import dependencies and modules
-import { projects, educations, skills } from './src/services/api.js';
+// =======================
+import { projects, educations, skills, faqs } from './src/services/api.js';
 import { currentYear } from './src/utils/currentYear.js';
 import { initScrollButton } from './src/utils/upButton.js';
 import { createModal } from './src/components/modal.js';
 import { contactForm } from './src/components/contactForm.js';
+import { type, attachFaqListeners } from './src/components/animation.js';
 
+// =======================
 // DOM Elements
+// =======================
 const year = document.getElementById('current-year');
 const frontEndSkills = document.getElementById('front-end');
 const backEndSkills = document.getElementById('back-end');
 const technologiesSkills = document.getElementById('technologies');
 const projectsContainer = document.getElementById('projects-container');
+const devops = document.getElementById('devops');
+const showMoreBtn = document.getElementById('show-more-projects');
 
-// Initialize current year in footer
-currentYear(year.id);
+// =======================
+// Initialize UI Elements
+// =======================
+currentYear(year.id);          // Set current year in footer
+initScrollButton();            // Scroll-to-top button
+contactForm();                 // Initialize contact form
+type();                        // Initialize type animation.
 
-// Initialize scroll-to-top button
-initScrollButton();
-
-/**
- * Fetch and render skills data
- */
+// =======================
+// Skills Section
+// =======================
 export async function skillsData() {
     const res = await skills();
     const skillList = res;
@@ -31,35 +40,40 @@ export async function skillsData() {
     technologiesSkills.innerHTML = "";
 
     skillList.forEach(function (skill) {
-        const container =
+        const mainContainer =
             skill.type === 'front-end' ? frontEndSkills :
             skill.type === 'back-end' ? backEndSkills :
             skill.type === 'technologies' ? technologiesSkills :
+            skill.type === 'devops' ? devops :
             null;
-            container.setAttribute('data-aos', 'fade-up');
-            container.setAttribute('data-aos-once', 'true');
 
-        if (container) {
-            const img = document.createElement('img');
-            img.src = skill.logo;
-            img.alt = skill.tittle;
-            img.title = skill.tittle;
-            img.className = 'h-16 w-auto cursor-grab';
-            img.style.filter = `drop-shadow(0 0 0.75rem ${skill.color})`;
+        if (!mainContainer) return;
 
-            const p = document.createElement('p');
-            p.textContent = skill.tittle;
-            p.className = 'text-slate-50 font-extrabold text-4xl cursor-grab';
+        const container = document.createElement('div');
+        container.setAttribute('data-aos', 'fade-up');
+        container.className = 'flex items-center gap-3';
 
-            container.appendChild(img);
-            container.appendChild(p);
-        }
+        const img = document.createElement('img');
+        img.src = skill.logo;
+        img.alt = skill.tittle;
+        img.title = skill.tittle;
+        img.className = 'h-12 w-auto cursor-grab';
+        img.style.filter = `drop-shadow(0 0 0.75rem ${skill.color})`;
+
+        const s = document.createElement('span');
+        s.textContent = skill.tittle;
+        s.className = 'text-slate-50 font-extrabold text-2xl cursor-grab';
+
+        container.appendChild(img);
+        container.appendChild(s);
+        mainContainer.appendChild(container);
     });
 }
-
 skillsData(); // Initial skills render
 
-// Project rendering state
+// =======================
+// Projects Section
+// =======================
 let displayedProjects = 0;
 let projectsListCache = [];
 
@@ -94,39 +108,18 @@ function renderProjects(count) {
             imgContainer = document.createElement('div');
             imgContainer.setAttribute('data-aos', 'fade-right');
             imgContainer.setAttribute('data-aos-once', 'true');
-            imgContainer.className = [
-                'flex-shrink-0',
-                'w-full',
-                'max-w-xs',
-                'sm:max-w-md',
-                'md:max-w-lg',
-                'lg:max-w-2xl'
-            ].join(' ');
+            imgContainer.className = 'flex-shrink-0 w-full max-w-xs sm:max-w-md md:max-w-lg lg:max-w-2xl';
             card.appendChild(imgContainer);
 
             img = document.createElement('img');
             img.id = `project-img-${project.id}`;
             img.src = project.path + '1.png';
             img.className = [
-                'imgs-projects',
-                'img-container-left',
-                'shadow-xl',
-                'rounded-md',
-                'transition-all',
-                'duration-300',
-                'ease-in-out',
-                'hover:scale-105',
-                'hover:mask-r-from-100%',
-                'hover:mask-r-to-100%',
-                'cursor-pointer',
-                'xl:mask-r-from-50%',
-                'xl:mask-r-to-90%',
-                'xl:blur-xs',
-                'hover:blur-none',
-                'w-full',
-                'h-auto',
-                'max-h-80',
-                'object-cover'
+                'imgs-projects', 'img-container-left', 'shadow-xl', 'rounded-md',
+                'transition-all', 'duration-300', 'ease-in-out', 'hover:scale-105',
+                'hover:mask-r-from-100%', 'hover:mask-r-to-100%', 'cursor-pointer',
+                'xl:mask-r-from-50%', 'xl:mask-r-to-90%', 'xl:blur-xs', 'hover:blur-none',
+                'w-full', 'h-auto', 'max-h-80', 'object-cover'
             ].join(' ');
             img.style.height = '';
             img.style.width = '';
@@ -205,39 +198,18 @@ function renderProjects(count) {
             imgContainer = document.createElement('div');
             imgContainer.setAttribute('data-aos', 'fade-left');
             imgContainer.setAttribute('data-aos-once', 'true');
-            imgContainer.className = [
-                'flex-shrink-0',
-                'w-full',
-                'max-w-xs',
-                'sm:max-w-md',
-                'md:max-w-lg',
-                'lg:max-w-2xl'
-            ].join(' ');
+            imgContainer.className = 'flex-shrink-0 w-full max-w-xs sm:max-w-md md:max-w-lg lg:max-w-2xl';
             card.appendChild(imgContainer);
 
             img = document.createElement('img');
             img.id = `project-img-${project.id}`;
             img.src = project.path + '1.png';
             img.className = [
-                'imgs-projects',
-                'img-container-left',
-                'shadow-xl',
-                'rounded-md',
-                'transition-all',
-                'duration-300',
-                'ease-in-out',
-                'hover:scale-105',
-                'hover:mask-l-from-100%',
-                'hover:mask-l-to-100%',
-                'cursor-pointer',
-                'xl:mask-l-from-50%',
-                'xl:mask-l-to-90%',
-                'xl:blur-xs',
-                'hover:blur-none',
-                'w-full',
-                'h-auto',
-                'max-h-80',
-                'object-cover'
+                'imgs-projects', 'img-container-left', 'shadow-xl', 'rounded-md',
+                'transition-all', 'duration-300', 'ease-in-out', 'hover:scale-105',
+                'hover:mask-l-from-100%', 'hover:mask-l-to-100%', 'cursor-pointer',
+                'xl:mask-l-from-50%', 'xl:mask-l-to-90%', 'xl:blur-xs', 'hover:blur-none',
+                'w-full', 'h-auto', 'max-h-80', 'object-cover'
             ].join(' ');
             img.style.height = '';
             img.style.width = '';
@@ -311,36 +283,67 @@ function renderProjects(count) {
     displayedProjects += projectsToShow.length;
 
     // Show/hide "Show More" button
-    const showMoreBtn = document.getElementById('show-more-projects');
     if (showMoreBtn) {
-        if (displayedProjects >= projectsListCache.length) {
-            showMoreBtn.style.display = 'none';
-        } else {
-            showMoreBtn.style.display = '';
-        }
+        showMoreBtn.style.display = (displayedProjects >= projectsListCache.length) ? 'none' : '';
     }
 }
-
 projectsData(); // Initial projects render
 
 // "Show More Projects" button handler
-const showMoreBtn = document.getElementById('show-more-projects');
 if (showMoreBtn) {
     showMoreBtn.addEventListener('click', () => {
         renderProjects(3);
     });
 }
 
-/**
- * Fetch and handle education data
- */
+// =======================
+// FAQ Section
+// =======================
+export async function faqsData() {
+    const res = await faqs();
+    const faqList = res;
+
+    faqList.forEach(faq => {
+        const faqContainer = document.getElementById('faq-items');
+        const faqItems = document.createElement('div');
+        faqItems.setAttribute('data-aos', 'fade-up');
+        faqItems.className = 'bg-slate-800 rounded-lg p-6 shadow-lg';
+
+        const button = document.createElement('button');
+        button.className = 'faq-question flex justify-between items-center w-full h-full text-left text-slate-50 text-lg font-bold hover:cursor-pointer';
+
+        const span = document.createElement('span');
+        span.textContent = faq.question;
+
+        const i = document.createElement('i');
+        i.className = 'fas fa-chevron-down transition-transform duration-300';
+
+        const faqanswer = document.createElement('div');
+        faqanswer.className = 'faq-answer mt-4 text-slate-300 hidden';
+        faqanswer.textContent = faq.answer;
+
+        faqContainer.appendChild(faqItems);
+        faqItems.appendChild(button);
+        button.appendChild(span);
+        button.appendChild(i);
+        faqItems.appendChild(faqanswer);
+    });
+
+    // Initialize the attachFaqListeners function.
+    attachFaqListeners();
+}
+faqsData(); // Initial faqs render
+
+// =======================
+// Education Section
+// =======================
 export async function educationData() {
     const res = await educations();
     // Handle education data as needed
     // console.log(res);
 }
-
 educationData(); // Initial education fetch
 
-// Initialize contact form
-contactForm();
+// =======================
+// End of file
+// =======================

@@ -73,6 +73,11 @@
                             <use href="./src/assets/sprite.svg#academic-cap" />
                         </svg>
                         <a href="#education">Education</a>
+                    <li>
+                        <svg width="28" height="28">
+                            <use href="./src/assets/sprite.svg#faqsvg" />
+                        </svg>
+                        <a href="#faq">FAQs</a>
                     </li>
                 </ul>
             </nav>
@@ -102,6 +107,7 @@
                         <a href="#skills" class="hover:text-blue-400">Skills</a>
                         <a href="#projects" class="hover:text-blue-400">Projects</a>
                         <a href="#education" class="hover:text-blue-400">Education</a>
+                        <a href="#faq" class="hover:text-blue-400">FAQs</a>
                         <hr class="w-1/2 border-t border-slate-50">
                         <button
                             class="md:hidden text-slate-50 bg-blue-400 rounded-lg px-6 py-2 text-lg font-bold shadow-md h-12 w-50 hover:bg-blue-500 transition-colors duration-300 cursor-pointer md:text-md"
@@ -173,36 +179,45 @@
                     </div>
                 </div>
             </div>
-        </section>
-                <!-- Skills Section -->
-                <section id="skills">
+            </section>
+                            <!-- Skills demo -->
+                <section id="skills" class="py-16">
                     <div>
                         <h1 data-aos="flip-left">Skills</h1>
                         <h2 data-aos="flip-left">Skills</h2>
                     </div>
-                    <div id="skills-container" class="grid justify-center [&>div>h3]:my-10">
-                        <div>
-                            <h3 class="text-center text-slate-50">Front-End</h3>
-                        </div>
-                        <div class="logos">
-                            <div id="front-end" class="logos-slide-left flex items-center">
-                                <!--skills fetched using js-->
+                    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
+                            <!-- Front-End Card -->
+                            <div class="bg-gradient-to-br from-slate-800 to-slate-900 rounded-xl p-6 shadow-lg border border-slate-700">
+                                <h3 class="text-xl font-bold text-blue-400 mb-6 text-center">Front-End</h3>
+                                <div id="front-end" class="space-y-4">
+                                    <!-- skills fetched using js -->
+                                </div>
                             </div>
-                        </div>
-                        <div>
-                            <h3 class="text-center text-slate-50">Back-End</h3>
-                        </div>
-                        <div class="logos">
-                            <div id="back-end" class="logos-slide-right flex items-center">
-                                <!--skills fetched using js-->
+
+                            <!-- Back-End Card -->
+                            <div class="bg-gradient-to-br from-slate-800 to-slate-900 rounded-xl p-6 shadow-lg border border-slate-700">
+                                <h3 class="text-xl font-bold text-blue-400 mb-6 text-center">Back-End</h3>
+                                <div id="back-end" class="space-y-4">
+                                    <!-- skills fetched using js -->
+                                </div>
                             </div>
-                        </div>
-                        <div>
-                            <h3 class="text-center text-slate-50">Technologies</h3>
-                        </div>
-                        <div class="logos">
-                            <div id="technologies" class="logos-slide-left flex items-center">
-                                <!--skills fetched using js-->
+
+                            <!-- Technologies Card -->
+                            <div class="bg-gradient-to-br from-slate-800 to-slate-900 rounded-xl p-6 shadow-lg border border-slate-700">
+                                <h3 class="text-xl font-bold text-blue-400 mb-6 text-center">Technologies</h3>
+                                <div id="technologies" class="space-y-4">
+                                    <!-- skills fetched using js -->
+                                </div>
+                            </div>
+
+                            <!-- DevOps Card -->
+                            <div class="bg-gradient-to-br from-slate-800 to-slate-900 rounded-xl p-6 shadow-lg border border-slate-700">
+                                <h3 class="text-xl font-bold text-blue-400 mb-6 text-center">DevOps</h3>
+                                <div id="devops" class="space-y-4">
+                                    <!-- skills fetched using js -->
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -264,6 +279,19 @@
                             <a href="https://www.udemy.com/certificate/UC-ea118b47-d9c5-4b3a-9a67-4a0094c5019d/"
                                 target="_blank" class="text-blue-400 hover:underline">Full-Stack developer</a>
                             <span>Apr 2025</span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- FAQ Section -->
+                <section id="faq" class="py-16">
+                    <div>
+                        <h1 data-aos="flip-down">FAQ</h1>
+                        <h2 data-aos="flip-down">FAQ</h2>
+                    </div>
+                    <div class="max-w-4xl mx-auto px-4 py-10">
+                        <div id="faq-items" class="space-y-4">
+                            <!-- Faqs fetched using js-->
                         </div>
                     </div>
                 </section>
@@ -430,7 +458,6 @@
     </footer>
 
     <!-- ================= SCRIPTS ================= -->
-    <script src="./src/components/animation.js"></script>
     <script src="./src/components/flyoutMenu.js"></script>
     <script type="module" src="./index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>

@@ -14,7 +14,7 @@ let currentWord = "";
 //let isDeleting = false;
 let pageStated = false;
 
-function type() {
+export function type() {
   currentWord = words[i];
   if (pageStated) {
     document.getElementById("typewriter").textContent = currentWord.substring(0, j-1);
@@ -38,3 +38,15 @@ function type() {
 }
 
 type();
+
+export function attachFaqListeners() {
+  const faqQuestions = document.querySelectorAll('.faq-question');
+  faqQuestions.forEach(question => {
+    question.addEventListener('click', () => {
+      const answer = question.nextElementSibling;
+      const icon = question.querySelector('i');
+      answer.classList.toggle('hidden');
+      icon.classList.toggle('rotate-180');
+    });
+  });
+}

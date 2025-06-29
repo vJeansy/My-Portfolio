@@ -33,3 +33,14 @@ export async function projects(id) {
     return null;
   }
 }
+
+export async function faqs() {
+  try {
+    const response = await axios.get(`${path}/faqs.json`);
+    //console.log(response.data);
+    return response.data
+  } catch (error) {
+    logError.error('Error trying to obatin the information of fqas', error)
+    return null;
+  }
+}

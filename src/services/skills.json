@@ -15,7 +15,7 @@
     },
     {
         "id": 3,
-        "tittle": "JS",
+        "tittle": "JavaScript",
         "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
         "type": "front-end",
         "color": "#F7DF1E"
@@ -45,21 +45,21 @@
         "id": 15,
         "tittle": "GIT",
         "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
-        "type": "technologies",
+        "type": "devops",
         "color": "#F05032"
     },
     {
         "id": 16,
         "tittle": "NPM",
         "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg",
-        "type": "technologies",
+        "type": "devops",
         "color": "#CB3837"
     },
     {
         "id": 17,
         "tittle": "GITHUB",
         "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
-        "type": "technologies",
+        "type": "devops",
         "color": "#181717"
     },
     {
@@ -99,7 +99,7 @@
     },
     {
         "id": 25,
-        "tittle": "Posgre",
+        "tittle": "PostgreSQL",
         "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
         "type": "back-end",
         "color": "#336791"
@@ -108,7 +108,7 @@
         "id": 26,
         "tittle": "Jquery",
         "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg",
-        "type": "technologies",
+        "type": "front-end",
         "color": "#0769AD"
     },
     {
@@ -117,5 +117,75 @@
         "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg",
         "type": "technologies",
         "color": "#C21325"
+    },
+    {
+        "id": 30,
+        "tittle": "Render",
+        "logo": "https://avatars.githubusercontent.com/u/42880151?s=200&v=4",
+        "type": "devops",
+        "color": "#46E3B7"
+    },
+    {
+        "id": 31,
+        "tittle": "Vercel",
+        "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg",
+        "type": "devops",
+        "color": "#000000"
+    },
+    {
+        "id": 32,
+        "tittle": "Supabase",
+        "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/supabase/supabase-original.svg",
+        "type": "back-end",
+        "color": "#3ECF8E"
+    },
+    {
+        "id": 33,
+        "tittle": "TypeScript",
+        "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+        "type": "front-end",
+        "color": "#1572B6"
+    },
+    {
+        "id": 36,
+        "tittle": "Postman",
+        "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg",
+        "type": "technologies",
+        "color": "#FF6C37"
+    },
+    {
+        "id": 34,
+        "tittle": "Figma",
+        "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
+        "type": "technologies",
+        "color": "#F24E1E"
+    },
+    {
+        "id": 35,
+        "tittle": "OBS Studio",
+        "logo": "https://obsproject.com/assets/images/new_icon_small-r.png",
+        "type": "technologies",
+        "color": "#302E31"
+    },
+    {
+        "id": 37,
+        "tittle": "GIMP",
+        "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gimp/gimp-original.svg",
+        "type": "technologies",
+        "color": "#5C5543"
+    },
+    {
+        "id": 38,
+        "tittle": "JWT.js",
+        "logo": "https://jwt.io/img/pic_logo.svg",
+        "type": "back-end",
+        "color": "#000000"
+    },
+    {
+        "id": 39,
+        "tittle": "Passport.js",
+        "logo": "https://www.passportjs.org/images/logo.svg",
+        "type": "back-end",
+        "color": "#34E27A"
     }
 ]
