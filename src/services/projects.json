@@ -1,4 +1,15 @@
 [
+            {
+        "id": 9,
+        "tittle": "Pasantiando",
+        "path": "src/assets/projects/Pasantiando/",
+        "description": "Pasantiando is a platform that connects students and young professionals in the Dominican Republic with internship opportunities. Users can create profiles, explore curated listings, and apply directly to companies. Businesses can publish openings, manage applicants, and streamline recruitment.",
+        "pageUrl": "https://pasantiando.com",
+        "gitUrl": "https://github.com/vJeansy/pasantiando-backend",
+        "technologies": "ReactJS, CSS, Tailwind, TypeScript, NestJS, Prisma, Postgress, Neon, Render, Vercel, Git, AOS",
+        "amountOfImages": 5,
+        "type": "project"
+    },
         {
         "id": 8,
         "tittle": "NominaRD",
