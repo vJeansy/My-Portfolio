@@ -21,11 +21,11 @@
         "color": "#F7DF1E"
     },
     {
-        "id": 4,
-        "tittle": "BOOTSTRAP",
-        "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg",
+        "id": 33,
+        "tittle": "TypeScript",
+        "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
         "type": "front-end",
-        "color": "#7952B3"
+        "color": "#1572B6"
     },
     {
         "id": 5,
@@ -140,11 +140,11 @@
         "color": "#3ECF8E"
     },
     {
-        "id": 33,
-        "tittle": "TypeScript",
-        "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+        "id": 4,
+        "tittle": "BOOTSTRAP",
+        "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg",
         "type": "front-end",
-        "color": "#1572B6"
+        "color": "#7952B3"
     },
     {
         "id": 36,
